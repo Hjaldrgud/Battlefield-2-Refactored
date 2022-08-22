@@ -35,3 +35,5 @@ The game reads ServerArchives.con from bottom to top. Top .zips gets top priorit
 No levels are included. You have to paste them there yourself.
 
 I have worked on this for well over six months now, and there has been a lot of trial and error. I think most bugs and typos are gone, but I’m sure there still are some typos/errors left and there is certainly some combinations of mutators that doesn’t work.
+
+<b>Simply install by dropping "refactored" folder into /mods folder in you BF2 installation. Then add the maps you want to play afterwards. </b>
