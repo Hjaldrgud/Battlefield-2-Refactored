@@ -1,0 +1,14 @@
+<mod>
+	<title> BF2 Refactored </title>
+	<desc> Refactor Refactored. </desc>
+	<url> http://www.battlefield2specialforces.ea.com </url>
+	<logo> mod.jpg </logo>
+	<music> common/sound/menu/music/menu_music.ogg </music>
+	<version> BF2 1.4 </version>
+	<default_soldier_template> sas_heavy_soldier </default_soldier_template>
+	<default_soldier_kit_template> sas_assault </default_soldier_kit_template>
+	<sp_startup_map> night_flight </sp_startup_map>
+	<parentmod> bf2 </parentmod>
+	<logo> mod.png </logo>
+	<icon> mod_icon.png </icon>
+</mod>

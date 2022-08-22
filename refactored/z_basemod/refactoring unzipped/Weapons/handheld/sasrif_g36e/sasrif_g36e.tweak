@@ -1,0 +1,228 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/9/16 0:21]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm sasrif_g36e
+ObjectTemplate.creator DANR_XP:danri
+ObjectTemplate.modifiedByUser "julioce"
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\sasrif_g36e.tga
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\sasrif_g36e_mini.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\sasrif_g36e.tga
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_g36e"
+ObjectTemplate.weaponHud.guiIndex 4
+ObjectTemplate.weaponHud.altGuiIndex 52
+ObjectTemplate.weaponHud.deviationFactor 5
+ObjectTemplate.weaponHud.maxVisualDeviation 23
+ObjectTemplate.weaponHud.minVisualDeviation 2
+ObjectTemplate.weaponHud.disableOnSprint 1
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 900
+ObjectTemplate.fire.addFireRate 1
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.reloadTime 3.8
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+include ../../common/recoil/infantry/rif_g36e.tweak
+include ../../common/deviation/infantry/rif_g36e.tweak
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+include ../../common/zoom/infantry/rif_g36e.tweak
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+ObjectTemplate.geometry sasrif_g36e
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate ai_rifle_standard
+ObjectTemplate.material 38
+rem -------------------------------------
+ObjectTemplate.addTemplate S_sasrif_g36e_Fire1P
+ObjectTemplate.addTemplate S_sasrif_g36e_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_sasrif_g36e_Fire3P
+ObjectTemplate.addTemplate S_sasrif_g36e_BoltClick
+ObjectTemplate.addTemplate S_sasrif_g36e_TriggerClick
+ObjectTemplate.addTemplate S_sasrif_g36e_SwitchFireRate
+ObjectTemplate.addTemplate S_sasrif_g36e_Reload1P
+ObjectTemplate.addTemplate S_sasrif_g36e_Reload3P
+ObjectTemplate.addTemplate S_sasrif_g36e_Deploy1P
+ObjectTemplate.addTemplate S_sasrif_g36e_Deploy3P
+ObjectTemplate.addTemplate S_sasrif_g36e_Zoom
+ObjectTemplate.addTemplate e_muzz_g36
+ObjectTemplate.setPosition -0.000596644/0.0007727/0.557834
+ObjectTemplate.addTemplate e_shellejection_556
+ObjectTemplate.setPosition 0.00766509/-0.000832111/0.0210335
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/sasrif_g36e/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/sasrif_g36e/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate rif_G36E_projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 1000
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 1.166
+
+ObjectTemplate.activeSafe Sound S_sasrif_g36e_Fire1P
+ObjectTemplate.modifiedByUser "julioce"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/sasrif_g36e/sounds/g36_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.72
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.99/1.025/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_sasrif_g36e_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "julioce"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/sasrif_g36e/sounds/g36_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.72
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.99/1.025/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_sasrif_g36e_Fire3P
+ObjectTemplate.modifiedByUser "julioce"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/sasrif_g36e/sounds/g36_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.985/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe Sound S_sasrif_g36e_BoltClick
+ObjectTemplate.modifiedByUser "julioce"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/chrif_type95/sounds/type95_bolt_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_sasrif_g36e_TriggerClick
+ObjectTemplate.modifiedByUser "julioce"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.3
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.3
+
+ObjectTemplate.activeSafe Sound S_sasrif_g36e_SwitchFireRate
+ObjectTemplate.modifiedByUser "julioce"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_g36c/sounds/g36c_fire_rate_switch.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.45
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_sasrif_g36e_Reload1P
+ObjectTemplate.modifiedByUser "julioce"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_g36c/sounds/g36c_reload_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_sasrif_g36e_Reload3P
+ObjectTemplate.modifiedByUser "julioce"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_g36c/sounds/g36c_reload_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.8
+ObjectTemplate.halfVolumeDistance 1.6
+
+ObjectTemplate.activeSafe Sound S_sasrif_g36e_Deploy1P
+ObjectTemplate.modifiedByUser "julioce"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_g36c/sounds/g36c_deploy_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_sasrif_g36e_Deploy3P
+ObjectTemplate.modifiedByUser "julioce"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_g36c/sounds/g36c_deploy_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_sasrif_g36e_Zoom
+ObjectTemplate.modifiedByUser "julioce"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/zoom_generic.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1

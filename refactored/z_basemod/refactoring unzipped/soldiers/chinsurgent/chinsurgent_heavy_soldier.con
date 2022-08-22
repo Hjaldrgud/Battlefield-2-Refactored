@@ -1,0 +1,8 @@
+GeometryTemplate.create SkinnedMesh chinsurgent_heavy_soldier
+
+ObjectTemplate.create Soldier chinsurgent_heavy_soldier
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAY:jayev
+ObjectTemplate.geometry chinsurgent_heavy_soldier
+
+include chinsurgent_heavy_soldier.tweak

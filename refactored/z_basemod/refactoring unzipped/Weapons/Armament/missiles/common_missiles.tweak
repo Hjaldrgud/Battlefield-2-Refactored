@@ -1,0 +1,18 @@
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.cullRadiusScale 5
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+ObjectTemplate.collision.hasCollisionEffect 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.timeToLive CRD_NONE/12/0/0

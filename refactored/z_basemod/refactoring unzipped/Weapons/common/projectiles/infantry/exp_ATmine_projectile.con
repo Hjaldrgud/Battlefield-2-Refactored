@@ -1,0 +1,55 @@
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.create GenericProjectile exp_ATmine_projectile
+ObjectTemplate.setNetworkableInfo BasicInfo
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 1000
+ObjectTemplate.armor.defaultMaterial 90
+ObjectTemplate.armor.waterLevel -0.3
+rem ---EndComp ---
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+ObjectTemplate.collision.bouncing 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 49
+ObjectTemplate.detonation.explosionRadius 7
+ObjectTemplate.detonation.explosionForce 10
+ObjectTemplate.detonation.explosionDamage 2500
+ObjectTemplate.detonation.endEffectTemplate e_exp_MineExp
+ObjectTemplate.detonation.useMMOnEndEffect 1
+ObjectTemplate.detonation.triggerRadius 1
+ObjectTemplate.detonation.triggerType MTYVehicle
+ObjectTemplate.detonation.triggerVictimMinSpeed 1
+ObjectTemplate.detonation.detectionRadius 25
+ObjectTemplate.detonation.showMineIndicationIcon 1
+ObjectTemplate.detonation.allowFriendlyFireDetonation 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.geometry at_mine
+ObjectTemplate.setCollisionMesh at_mine
+ObjectTemplate.mass 25
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 90
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/9999/0/0
+ObjectTemplate.material 90
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.armingDelay 3
+ObjectTemplate.localPredictOnClient 1
+ObjectTemplate.damage 0
+ObjectTemplate.visibleOn3dMap 1
+ObjectTemplate.3dMapIcon 9
+ObjectTemplate.canPickup 1

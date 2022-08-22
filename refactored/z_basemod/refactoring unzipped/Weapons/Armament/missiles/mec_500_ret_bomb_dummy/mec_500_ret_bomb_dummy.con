@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh mec_500_ret_bomb_dummy
+CollisionManager.createTemplate mec_500_ret_bomb_dummy
+
+ObjectTemplate.create SimpleObject mec_500_ret_bomb_dummy
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MEI-2:mei
+ObjectTemplate.collisionMesh mec_500_ret_bomb_dummy
+ObjectTemplate.mapMaterial 0 airplane 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry mec_500_ret_bomb_dummy
+
+include mec_500_ret_bomb_dummy.tweak

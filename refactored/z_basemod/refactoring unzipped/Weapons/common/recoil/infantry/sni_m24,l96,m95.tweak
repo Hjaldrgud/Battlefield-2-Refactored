@@ -1,0 +1,10 @@
+rem ---BeginComp:SoldierBasedRecoilComp ---
+ObjectTemplate.createComponent SoldierBasedRecoilComp
+ObjectTemplate.recoil.hasRecoilForce 1
+ObjectTemplate.recoil.recoilForceUp CRD_UNIFORM/5.2/4/0
+ObjectTemplate.recoil.recoilForceLeftRight CRD_UNIFORM/-1/1/0
+ObjectTemplate.recoil.zoomModifier 0.25
+ObjectTemplate.recoil.recoilGraphFrameCount 14
+ObjectTemplate.recoil.recoilGraphExponent 7
+ObjectTemplate.recoil.recoilGraphTotalMovement 0.1
+rem ---EndComp ---

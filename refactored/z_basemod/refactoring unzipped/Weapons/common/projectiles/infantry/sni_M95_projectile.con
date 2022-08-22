@@ -1,0 +1,5 @@
+ObjectTemplate.create GenericProjectile sni_M95_projectile
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.minDamage 1
+ObjectTemplate.damage 190
+include ../common_Bullet_50caliber.tweak

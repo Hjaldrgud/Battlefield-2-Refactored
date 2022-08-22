@@ -1,0 +1,41 @@
+ObjectTemplate.create Kit Spetsnaz_AT
+ObjectTemplate.geometry Spetz_Kits
+ObjectTemplate.geometry.kit 2
+ObjectTemplate.geometry.dropGeom 13
+include ../common/common_kits_at.tweak
+ObjectTemplate.addTemplate spets_lt_mask
+ObjectTemplate.addTemplate spets_lt_nvg
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate RUPIS_Baghira
+rem ------------------3------------------
+ObjectTemplate.addTemplate RURIF_Bizon
+rem ------------------4------------------
+ObjectTemplate.addTemplate CHAT_ERYX
+rem ------------------5------------------
+
+rem ------------------6------------------
+ObjectTemplate.addTemplate nsrif_grapplinghook
+rem ------------------7------------------
+ObjectTemplate.addTemplate nightvisiongoggles
+rem ------------------8------------------
+ObjectTemplate.addTemplate gasmask
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockSpetsAT
+ObjectTemplate.addTemplate UnlockSpetsAT2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockSpetsAT
+ObjectTemplate.addTemplate chsht_protecta
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockSpetsAT2
+ObjectTemplate.addTemplate eurif_fnp90
+ObjectTemplate.replaceItem RURIF_Bizon
+ObjectTemplate.replaceItem chsht_protecta
+ObjectTemplate.unlockLevel 2

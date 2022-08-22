@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm xpak2_tnkc2_SmokeLauncher
+
+include xpak2_tnkc2_SmokeLauncher.tweak
+

@@ -1,0 +1,39 @@
+ObjectTemplate.create Kit EU_AT
+ObjectTemplate.geometry eu_kits
+ObjectTemplate.geometry.kit 3
+ObjectTemplate.geometry.dropGeom 13
+include ../common/common_kits_at.tweak
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate USPIS_92FS
+rem ------------------3------------------
+ObjectTemplate.addTemplate eurif_fnp90
+rem ------------------4------------------
+ObjectTemplate.addTemplate USATP_Predator
+rem ------------------5------------------
+
+rem ------------------6------------------
+
+rem ------------------7------------------
+
+rem ------------------8------------------
+
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockEUAT
+ObjectTemplate.addTemplate UnlockEUAT2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockEUAT
+ObjectTemplate.addTemplate chsht_protecta
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockEUAT2
+ObjectTemplate.addTemplate USRIF_MP5_A3
+ObjectTemplate.replaceItem eurif_fnp90
+ObjectTemplate.replaceItem chsht_protecta
+ObjectTemplate.unlockLevel 2

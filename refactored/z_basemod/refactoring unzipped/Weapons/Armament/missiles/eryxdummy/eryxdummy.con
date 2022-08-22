@@ -1,0 +1,12 @@
+GeometryTemplate.create BundledMesh eryxdummy
+
+ObjectTemplate.create GenericProjectile eryxdummy
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MBA-1:mba
+ObjectTemplate.collisionMesh eryxdummy
+ObjectTemplate.mapMaterial 0 lambert1 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry eryxdummy
+
+include eryxdummy.tweak

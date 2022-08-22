@@ -1,0 +1,42 @@
+ObjectTemplate.create Kit sas_Medic
+ObjectTemplate.geometry sas_kits
+ObjectTemplate.geometry.kit 1
+ObjectTemplate.geometry.dropGeom 11
+ObjectTemplate.dropHeadwear helmet
+ObjectTemplate.addTemplate sas_mask
+ObjectTemplate.addTemplate sas_nvg
+include ../common/common_kits_medic.tweak
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate USPIS_92FS
+rem ------------------3------------------
+ObjectTemplate.addTemplate sasrif_g36e
+rem ------------------4------------------
+ObjectTemplate.addTemplate USHGR_M67
+rem ------------------5------------------
+ObjectTemplate.addTemplate medikit
+rem ------------------6------------------
+ObjectTemplate.addTemplate defibrillator
+rem ------------------7------------------
+ObjectTemplate.addTemplate nightvisiongoggles
+rem ------------------8------------------
+ObjectTemplate.addTemplate gasmask
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockSASMedic
+ObjectTemplate.addTemplate UnlockSASMedic2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockSASMedic
+ObjectTemplate.addTemplate usrif_sa80
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockSASMedic2
+ObjectTemplate.addTemplate usrif_m16a2
+ObjectTemplate.replaceItem sasrif_g36e
+ObjectTemplate.replaceItem usrif_sa80
+ObjectTemplate.unlockLevel 2

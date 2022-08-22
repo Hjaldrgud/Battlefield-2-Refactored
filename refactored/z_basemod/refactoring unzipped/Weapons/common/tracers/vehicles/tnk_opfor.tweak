@@ -1,0 +1,4 @@
+ObjectTemplate.tracerScaler 3
+ObjectTemplate.maxTracerScaler 5
+ObjectTemplate.minTracerScaler 1
+ObjectTemplate.tracerTemplate p_tracer_tank

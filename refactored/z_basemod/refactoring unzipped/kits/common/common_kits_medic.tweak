@@ -1,0 +1,41 @@
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.kitType Medic
+ObjectTemplate.aiTemplate Medic
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.abilityRestoreRate 0.05
+ObjectTemplate.abilityInVehicleRadius 7
+ObjectTemplate.abilityInVehicleStrength 0.25
+ObjectTemplate.abilityInVehicleMaterial 73
+ObjectTemplate.unlockIndex 3
+ObjectTemplate.cullRadiusScale 12.5
+ObjectTemplate.timeToLiveAftherDeath 60
+
+ObjectTemplate.createComponent Ability
+ObjectTemplate.ability.hasHealingAbility 1
+
+ObjectTemplate.createComponent AbilityHud
+ObjectTemplate.abilityHud.healingSound S_Heal
+ObjectTemplate.abilityHud.repairingSound S_Repair
+ObjectTemplate.abilityHud.ammoSound S_Resupply
+
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName 			"HUD_TEXT_MENU_SPAWN_KIT_MEDIC"
+ObjectTemplate.vehicleHud.miniMapIcon			"Ingame\Kits\Icons\kit_Medic_outline.tga"
+ObjectTemplate.vehicleHud.vehicleIcon			"Ingame\Kits\Icons\kit_Medic.tga"
+ObjectTemplate.vehicleHud.spottedIcon 			"Ingame\Player\Icons\Minimap\mini_Soldier.dds"
+ObjectTemplate.vehicleHud.pantingSound			S_SprintBreath
+ObjectTemplate.vehicleHud.injurySound			S_Injury
+ObjectTemplate.vehicleHud.vehicleType 			7
+
+ObjectTemplate.sprintStaminaDissipationFactor 0.2
+
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_KIT_MEDIC_inVehicle"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_KIT_MEDIC_inVehicle"
+rem ---EndComp ---
+
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage	"infantry_spotted"
+rem ---EndComp ---

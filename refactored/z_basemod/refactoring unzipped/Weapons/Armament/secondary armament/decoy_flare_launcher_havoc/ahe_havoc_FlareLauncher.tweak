@@ -1,0 +1,100 @@
+ObjectTemplate.activeSafe GenericFireArm ahe_havoc_FlareLauncher
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent MultiFireComp
+ObjectTemplate.fire.roundsPerMinute 1800
+ObjectTemplate.fire.fireInput PIFlareFire
+ObjectTemplate.fire.addFireRate 1
+ObjectTemplate.fire.burstSize 6
+ObjectTemplate.fire.addBarrelName ahe_havoc_Flare_barrel
+rem ---EndComp ---
+include ../common_flare_heli.tweak
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_havoc_FlareLauncher_Fire1P
+ObjectTemplate.addTemplate S_ahe_havoc_FlareLauncher_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_ahe_havoc_FlareLauncher_Fire3P
+ObjectTemplate.addTemplate S_ahe_havoc_FlareLauncher_BoltClick
+ObjectTemplate.addTemplate S_ahe_havoc_FlareLauncher_TriggerClick
+ObjectTemplate.addTemplate S_ahe_havoc_FlareLauncher_SwitchFireRate
+ObjectTemplate.addTemplate S_ahe_havoc_FlareLauncher_Reload1P
+ObjectTemplate.addTemplate S_ahe_havoc_FlareLauncher_Reload3P
+ObjectTemplate.addTemplate S_ahe_havoc_FlareLauncher_Deploy1P
+ObjectTemplate.addTemplate S_ahe_havoc_FlareLauncher_Deploy3P
+ObjectTemplate.addTemplate S_ahe_havoc_FlareLauncher_Zoom
+ObjectTemplate.addTemplate ahe_havoc_Flare_barrel
+ObjectTemplate.setPosition 3.2/0.11/-0.62
+ObjectTemplate.setRotation 30/0/0
+ObjectTemplate.addTemplate ahe_havoc_Flare_barrel
+ObjectTemplate.setPosition 3.2/0.11/-0.852
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate ahe_havoc_Flare_barrel
+ObjectTemplate.setPosition 3.2/0.11/-1.044
+ObjectTemplate.setRotation 150/0/0
+ObjectTemplate.addTemplate ahe_havoc_Flare_barrel
+ObjectTemplate.setPosition -3.2/0.11/-0.62
+ObjectTemplate.setRotation -30/0/0
+ObjectTemplate.addTemplate ahe_havoc_Flare_barrel
+ObjectTemplate.setPosition -3.2/0.11/-0.852
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate ahe_havoc_Flare_barrel
+ObjectTemplate.setPosition -3.2/0.11/-1.044
+ObjectTemplate.setRotation -150/0/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate flare_ahe_projectile
+ObjectTemplate.velocity 10
+
+ObjectTemplate.activeSafe Sound S_ahe_havoc_FlareLauncher_Fire1P
+ObjectTemplate.modifiedByUser psh
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/flare_launcher_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_ahe_havoc_FlareLauncher_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser psh
+
+ObjectTemplate.activeSafe Sound S_ahe_havoc_FlareLauncher_Fire3P
+ObjectTemplate.modifiedByUser psh
+
+ObjectTemplate.activeSafe Sound S_ahe_havoc_FlareLauncher_BoltClick
+ObjectTemplate.modifiedByUser psh
+
+ObjectTemplate.activeSafe Sound S_ahe_havoc_FlareLauncher_TriggerClick
+ObjectTemplate.modifiedByUser psh
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/out_of_flares.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_ahe_havoc_FlareLauncher_SwitchFireRate
+ObjectTemplate.modifiedByUser psh
+
+ObjectTemplate.activeSafe Sound S_ahe_havoc_FlareLauncher_Reload1P
+ObjectTemplate.modifiedByUser psh
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/flare_reload.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_ahe_havoc_FlareLauncher_Reload3P
+ObjectTemplate.modifiedByUser psh
+
+ObjectTemplate.activeSafe Sound S_ahe_havoc_FlareLauncher_Deploy1P
+ObjectTemplate.modifiedByUser psh
+
+ObjectTemplate.activeSafe Sound S_ahe_havoc_FlareLauncher_Deploy3P
+ObjectTemplate.modifiedByUser psh
+
+ObjectTemplate.activeSafe Sound S_ahe_havoc_FlareLauncher_Zoom
+ObjectTemplate.modifiedByUser psh

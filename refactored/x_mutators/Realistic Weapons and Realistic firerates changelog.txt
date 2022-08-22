@@ -1,0 +1,84 @@
+Renames in localization:
+MR-444 	to MP-444
+92FS 	to M9
+AK-74U 	to AKS-74U
+AK-47 	to Type 56
+M3A1 	to Jackhammer
+11-87 	to M870
+M4 		to M4A1
+QBZ-97	to QBZ-95B
+L96A1	to AWM (I just like it more)
+	
+
+OS_Weapons_handheld_more_realistic:
+mp7 		- 20 magsize(down), 3x magcount
+saiga 		- 8 magsize(up), -1 magcount
+Bizon 		- 64 magsize(up), 600rpm(down)
+Jackhammer 	- 10 magsize(up), -1 magcount, 220rpm(down)
+FAMAS 		- 25 magsize(down)
+FN2000		- 900rpm(up)
+Scar-H 		- 20 magsize(down), +1 magcount
+G3 			- +1 magcount
+G36K		- Removed burst, added semi
+G36E		- Removed burst, added semi
+MG36		- Removed burst, added semi
+HK53		- 25 magsize(down), +1 magcount
+M16 assault	- -2 magcount
+QBZ-95B		- 900rpm(up)
+L96A1(AWM)	- 10 magsize(up), -4 magcount
+HK21		- 900rpm(up), added semi
+Type 95		- 75 magsize(down)
+PKM			- 600rpm(up)
+RPK-74		- 75 magsize(down), +1 magcount
+
+OS_Vehicles_handheld_more_realistic:
+
+
+Tunguska		- 300 magsize(down), 3600rpm
+Type 95			- 1800rpm
+M6				- 200rpm(down)
+Phalanx	CIWS	- 3600rpm
+
+btr90			- 500 magsize(up)
+wz551			- 400 magsize(down), 200rpm(up)
+LAV25			- 420 magsize(down), 200rpm(down)
+bmp3			- 30mm cannon as secondary (btr90 cannon), 500 magsize(down)
+
+AH1Z rockets	- 14 magsize(up), 	+1 magcount
+AH1Z gun 		- 750 magsize(down), 900rpm(up)
+Havoc rockets	- 38 magsize(up), 	-3 magcount
+Havoc gun		- 250 magsize(down)
+z10 rockets		- 64 magsize(up), 	-4 magcount
+Apache guns		- 1800 magsize(up)
+Apache rockets  - 38 magsize(up), 	-3 magcount 
+Hind guns		- 1470 magsize(up), 3600rpm, now fires HMG-bullets
+Hind rockets 	- 64 magsize(up), 	-4 magcount
+
+F35				- 180 magsize(down), 3600rpm
+J10				- 200 magsize(down), 3600rpm
+MiG29			- 150 magsize(down), 1800rpm
+F18				- 578 magsize(up), 	 5400rpm
+Eurofighter		- 150 magsize(down), 1800rpm
+
+SU30MKK			- 150 magsize(down), 1800rpm
+F15				- 940 magsize(up),	 5400rpm
+SU34			- 180 magsize(down), 1800rpm
+
+Fantan			- 200 magsize(down), 1800rpm(2x900
+A-10			- 1174 magsize(up), 3600rpm
+SU-25			- 250 magsize(down), 1800rpm
+
+wz-11			- 1800rpm(2x900), now fires HMG-bullets
+EC635			- 1800rpm(2x900), now fires HMG-bullets
+Littlebird		- 5400rpm, now fires PKM-bullets
+M134 Gatling	- 5400rpm, now fires PKM-bullets
+
+
+
+
+
+
+
+
+
+

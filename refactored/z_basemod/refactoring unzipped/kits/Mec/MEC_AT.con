@@ -1,0 +1,39 @@
+ObjectTemplate.create Kit MEC_AT
+ObjectTemplate.geometry MEC_Kits
+ObjectTemplate.geometry.kit 5
+ObjectTemplate.geometry.dropGeom 13
+include ../common/common_kits_at.tweak
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate RUPIS_Baghira
+rem ------------------3------------------
+ObjectTemplate.addTemplate RURIF_Bizon
+rem ------------------4------------------
+ObjectTemplate.addTemplate CHAT_ERYX
+rem ------------------5------------------
+
+rem ------------------6------------------
+
+rem ------------------7------------------
+
+rem ------------------8------------------
+
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockMECAT
+ObjectTemplate.addTemplate UnlockMECAT2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockMECAT
+ObjectTemplate.addTemplate chsht_protecta
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockMECAT2
+ObjectTemplate.addTemplate eurif_fnp90
+ObjectTemplate.replaceItem RURIF_Bizon
+ObjectTemplate.replaceItem chsht_protecta
+ObjectTemplate.unlockLevel 2

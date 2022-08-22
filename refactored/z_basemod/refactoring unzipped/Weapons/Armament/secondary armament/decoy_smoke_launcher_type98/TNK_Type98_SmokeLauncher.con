@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm TNK_Type98_SmokeLauncher
+
+include TNK_Type98_SmokeLauncher.tweak
+

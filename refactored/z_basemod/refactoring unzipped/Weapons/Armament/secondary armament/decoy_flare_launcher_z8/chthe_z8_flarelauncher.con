@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm chthe_z8_flarelauncher
+
+include chthe_z8_flarelauncher.tweak
+

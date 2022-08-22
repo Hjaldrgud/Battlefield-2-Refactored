@@ -1,0 +1,30 @@
+GeometryTemplate.create SkinnedMesh mec_kits
+
+ObjectTemplate.create SimpleObject mec_kits
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JSA-1:jsa
+ObjectTemplate.geometry mec_kits
+
+ObjectTemplate.create SimpleObject mec_spec_kit_gun
+
+ObjectTemplate.create SimpleObject mec_spec_kit_sinrad
+
+ObjectTemplate.create SimpleObject mec_spec_kit_pouch4
+
+ObjectTemplate.create SimpleObject mec_spec_kit_pouch2
+
+ObjectTemplate.create SimpleObject mec_spec_kit_baray
+
+ObjectTemplate.create SimpleObject mec_spec_kit_pouch1
+
+ObjectTemplate.create SimpleObject mec_spec_kit_Akmag
+
+ObjectTemplate.create SimpleObject mec_spec_kit_pouch5
+
+ObjectTemplate.create SimpleObject mec_spec_kit_pouch6
+
+ObjectTemplate.create SimpleObject mec_spec_kit_pouch7
+
+ObjectTemplate.create SimpleObject mec_canteen
+
+include mec_kits.tweak

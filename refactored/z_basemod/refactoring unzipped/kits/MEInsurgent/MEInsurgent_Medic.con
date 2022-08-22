@@ -1,0 +1,41 @@
+ObjectTemplate.create Kit MEInsurgent_Medic	
+ObjectTemplate.geometry meinsurgent_kits
+ObjectTemplate.geometry.kit 4
+ObjectTemplate.geometry.dropGeom 11
+ObjectTemplate.addTemplate meinsurgent_lt_mask
+ObjectTemplate.addTemplate meinsurgent_lt_nvg
+include ../common/common_kits_medic.tweak
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate RUPIS_Baghira
+rem ------------------3------------------
+ObjectTemplate.addTemplate RURIF_AK101
+rem ------------------4------------------
+ObjectTemplate.addTemplate USHGR_M67
+rem ------------------5------------------
+ObjectTemplate.addTemplate medikit
+rem ------------------6------------------
+ObjectTemplate.addTemplate defibrillator
+rem ------------------7------------------
+ObjectTemplate.addTemplate nightvisiongoggles
+rem ------------------8------------------
+ObjectTemplate.addTemplate gasmask
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockMEIMedic
+ObjectTemplate.addTemplate UnlockMEIMedic2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockMEIMedic
+ObjectTemplate.addTemplate usrif_sa80
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockMEIMedic2
+ObjectTemplate.addTemplate RURIF_AK47
+ObjectTemplate.replaceItem RURIF_AK101
+ObjectTemplate.replaceItem usrif_sa80
+ObjectTemplate.unlockLevel 2

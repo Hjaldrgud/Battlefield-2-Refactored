@@ -1,0 +1,50 @@
+ObjectTemplate.create Kit Spetsnaz_Assault
+ObjectTemplate.geometry Spetz_Kits
+ObjectTemplate.geometry.kit 5
+ObjectTemplate.geometry.dropGeom 15
+ObjectTemplate.dropHeadwear mec_helmet
+ObjectTemplate.addTemplate spets_lt_mask
+ObjectTemplate.addTemplate spets_lt_nvg
+include ../common/common_kits_assault.tweak
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate RUPIS_Baghira
+rem ------------------3------------------
+ObjectTemplate.addTemplate RURIF_GP30
+rem ------------------4------------------
+ObjectTemplate.addTemplate RURGL_GP30
+rem ------------------5------------------
+ObjectTemplate.addTemplate nshgr_flashbang
+rem ------------------6------------------
+ObjectTemplate.addTemplate nsrif_grapplinghook
+rem ------------------7------------------
+ObjectTemplate.addTemplate nightvisiongoggles
+rem ------------------8------------------
+ObjectTemplate.addTemplate gasmask
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockSpetsAssault
+ObjectTemplate.addTemplate UnlockSpetsAssault2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockSpetsAssault
+ObjectTemplate.addTemplate usrif_G3A3
+ObjectTemplate.replaceItem rurif_gp30
+Objecttemplate.addTemplate ushgr_m67
+ObjectTemplate.replaceItem rurgl_gp30
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockSpetsAssault2
+ObjectTemplate.addTemplate sasrif_fn2000
+ObjectTemplate.replaceItem rurif_gp30
+ObjectTemplate.replaceItem usrif_G3A3
+Objecttemplate.addTemplate sasgr_fn2000
+ObjectTemplate.replaceItem rurgl_gp30
+ObjectTemplate.replaceItem ushgr_m67
+ObjectTemplate.addTemplate nshgr_flashbang
+Objecttemplate.replaceItem ushgr_smoke
+ObjectTemplate.unlockLevel 2

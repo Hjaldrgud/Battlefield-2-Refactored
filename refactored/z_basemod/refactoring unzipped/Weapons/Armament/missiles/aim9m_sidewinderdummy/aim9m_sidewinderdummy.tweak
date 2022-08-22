@@ -1,0 +1,7 @@
+ObjectTemplate.active aim9m_sidewinderDummy
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry aim9m_sidewinder
+ObjectTemplate.setCollisionMesh aim9m_sidewinder
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.mapMaterial 0 Airplane 32

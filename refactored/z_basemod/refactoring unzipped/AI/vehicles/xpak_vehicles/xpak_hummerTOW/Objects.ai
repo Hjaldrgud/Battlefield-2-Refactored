@@ -1,0 +1,246 @@
+rem *** Plugins ***
+aiTemplatePlugIn.create Mobile jep_HmmwvTow_ai_Mobile
+aiTemplatePlugIn.setPathfindingMap Vehicle
+aiTemplatePlugIn.maxSpeed 25.0
+aiTemplatePlugIn.turnRadius 5.0
+aiTemplatePlugIn.coverSearchRadius 50.0
+
+aiTemplatePlugIn.create Physical jep_HmmwvTow_ai_Physical
+aiTemplatePlugIn.setStrType LightArmour
+
+aiTemplatePlugIn.create Cover jep_HmmwvTow_ai_Cover
+aiTemplatePlugIn.coverValue 2.0
+
+aiTemplatePlugIn.create Unit jep_HmmwvTow_ai_Unit
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 0
+aiTemplatePlugIn.equipmentTypeName Car
+aiTemplatePlugIn.setHasExposedSoldier 1
+
+aiTemplatePlugIn.create ControlInfo jep_HmmwvTow_ai_Ctrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+rem aiTemplatePlugIn.pitchSensitivity           0.021817
+rem aiTemplatePlugIn.rollSensitivity           -0.021817
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+rem aiTemplatePlugIn.lookVerticalSensitivity    0.021817
+rem aiTemplatePlugIn.lookHorizontalSensitivity -0.021817
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 1.0
+aiTemplatePlugIn.rollScale                  1.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -99/-20/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 90/20/0
+
+
+rem *** AITemplate ***
+aiTemplate.create jep_HmmwvTow_ai
+aiTemplate.addType ITBiological
+aiTemplate.addType ITGround
+aiTemplate.addType ITMobile
+aiTemplate.addType ITHasWreck
+aiTemplate.degeneration 10
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 7
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn jep_HmmwvTow_ai_Mobile
+aiTemplate.addPlugIn jep_HmmwvTow_ai_Physical
+aiTemplate.addPlugIn jep_HmmwvTow_ai_Cover
+aiTemplate.addPlugIn jep_HmmwvTow_ai_Ctrl
+aiTemplate.addPlugIn jep_HmmwvTow_ai_Unit
+
+
+rem ******************************************************************
+rem ******************************************************************
+
+rem *** Plugins ***
+
+aiTemplatePlugIn.create Unit jep_HmmwvTow_ai_PassengerUnit
+aiTemplatePlugIn.equipmentTypeName Fixed
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 1
+aiTemplatePlugIn.setHasExposedSoldier 1
+
+aiTemplatePlugIn.create ControlInfo jep_HmmwvTow_ai_PassengerCtrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+rem aiTemplatePlugIn.pitchSensitivity           0.021817
+rem aiTemplatePlugIn.rollSensitivity           -0.021817
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+rem aiTemplatePlugIn.lookVerticalSensitivity    0.021817
+rem aiTemplatePlugIn.lookHorizontalSensitivity -0.021817
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.proportionalConstant	   -10
+aiTemplatePlugIn.derivativeConstant	   -2
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeDofRotationOffsetDeg 180
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -25/-80/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 25/80/0
+
+rem *** AITemplate ***
+aiTemplate.create jep_HmmwvTow_ai_Passenger
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITGround
+aiTemplate.degeneration 10
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 5
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn jep_HmmwvTow_ai_PassengerUnit
+aiTemplate.addPlugIn jep_HmmwvTow_ai_PassengerCtrl
+
+aiTemplatePlugIn.create Unit jep_HmmwvTow_ai_RearPassengerUnit
+aiTemplatePlugIn.equipmentTypeName Fixed
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 1
+aiTemplatePlugIn.setHasExposedSoldier 1
+
+aiTemplatePlugIn.create ControlInfo jep_HmmwvTow_ai_RearPassengerCtrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+rem aiTemplatePlugIn.pitchSensitivity           0.021817
+rem aiTemplatePlugIn.rollSensitivity           -0.021817
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+rem aiTemplatePlugIn.lookVerticalSensitivity    0.021817
+rem aiTemplatePlugIn.lookHorizontalSensitivity -0.021817
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.proportionalConstant	   -10
+aiTemplatePlugIn.derivativeConstant	   -2
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -25/-80/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 25/80/0
+
+rem *** AITemplate ***
+aiTemplate.create jep_HmmwvTow_ai_RearPassenger
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITGround
+aiTemplate.degeneration 10
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 5
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn jep_HmmwvTow_ai_RearPassengerUnit
+aiTemplate.addPlugIn jep_HmmwvTow_ai_RearPassengerCtrl
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Armament jep_HmmwvTow_ai_TopMgArms
+aiTemplatePlugIn.setIsAntiAircraft 1
+
+aiTemplatePlugIn.create Unit jep_HmmwvTow_ai_TopMgUnit
+aiTemplatePlugIn.equipmentTypeName Fixed
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 1
+aiTemplatePlugIn.setHasExposedSoldier 1
+
+aiTemplatePlugIn.create ControlInfo jep_HmmwvTow_ai_TopMgCtrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+rem aiTemplatePlugIn.pitchSensitivity           0.021817
+rem aiTemplatePlugIn.rollSensitivity           -0.021817
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+rem aiTemplatePlugIn.lookVerticalSensitivity    0.021817
+rem aiTemplatePlugIn.lookHorizontalSensitivity -0.021817
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.proportionalConstant	   -7
+aiTemplatePlugIn.derivativeConstant	   -1
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -180/-20/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 180/45/0
+
+
+rem *** AITemplate ***
+aiTemplate.create jep_HmmwvTow_ai_Gunner
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITGround
+aiTemplate.degeneration 15
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 6
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn jep_HmmwvTow_ai_TopMgArms
+aiTemplate.addPlugIn jep_HmmwvTow_ai_TopMgUnit
+aiTemplate.addPlugIn jep_HmmwvTow_ai_TopMgCtrl
+
+rem ******************************************************************
+rem ******************************************************************

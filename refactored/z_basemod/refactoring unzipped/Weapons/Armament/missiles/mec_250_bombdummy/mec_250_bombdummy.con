@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject mec_250_bombdummy
+ObjectTemplate.createdInEditor 1
+
+include mec_250_bombdummy.tweak

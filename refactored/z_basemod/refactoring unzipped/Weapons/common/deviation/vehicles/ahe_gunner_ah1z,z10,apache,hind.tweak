@@ -1,0 +1,4 @@
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+ObjectTemplate.deviation.minDev 0.5
+rem ---EndComp ---

@@ -1,0 +1,14 @@
+weaponTemplate.create ai_lmg_type95,rpk74
+weaponTemplate.indirect 0
+weaponTemplate.minRange 20.0
+weaponTemplate.maxRange 80.0
+weaponTemplate.optimalRangePercentage 80
+weaponTemplate.setFiringPose Lying
+weaponTemplate.setStrength Infantry    7.0
+weaponTemplate.setStrength LightArmour 1.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  1.0
+weaponTemplate.setStrength AirPlane    0.5
+weaponTemplate.setSoundSphereRadius   60.0
+weaponTemplate.allowedDeviation 5.0

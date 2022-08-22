@@ -1,0 +1,199 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/3/29 18:47]
+GeometryTemplate.maxSkip3pLods 0
+GeometryTemplate.setMaterialReflectionScale 0 0 0 0.35
+GeometryTemplate.setMaterialReflectionScale 0 0 1 2
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm chat_eryx
+ObjectTemplate.creator TLO-1:tlo
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\USLMG_M249SAW.tga
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\USLMG_M249SAW_mini.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\CHAT_ERYX.tga
+ObjectTemplate.weaponHud.specialAbilityIcon Ingame\Weapons\Icons\Hud\SpecialKitIcons\antiTank.tga
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_eryx"
+ObjectTemplate.weaponHud.guiIndex 0
+ObjectTemplate.weaponHud.altGuiIndex 58
+ObjectTemplate.weaponHud.disableOnSprint 1
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.projectileStartPosition 0.13/-0.1/0
+ObjectTemplate.fire.showWeaponAfterReloadDelay 3
+ObjectTemplate.fire.hideWeaponAfterReloadDelay 2.25
+ObjectTemplate.fire.dropWeaponAfterReloadDelay 2.21667
+ObjectTemplate.fire.dropLod 3
+ObjectTemplate.fire.hideLod 2
+ObjectTemplate.fire.busyUntilButtonRelease 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.nrOfMags 6
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.reloadTime 4.65
+ObjectTemplate.ammo.minimumTimeUntilReload 0.2
+rem ---EndComp ---
+rem ---BeginComp:SoldierBasedRecoilComp ---
+ObjectTemplate.createComponent SoldierBasedRecoilComp
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_WEAPON_HANDHELD_SNIPERRIFLE_CONTROLS_switchToScopeView"
+ObjectTemplate.HelpHud.helpSoundKey "USRIF_M24"
+rem ---EndComp ---
+rem ---BeginComp:SoldierDeviationComp ---
+ObjectTemplate.createComponent SoldierDeviationComp
+ObjectTemplate.deviation.setTurnDev 0 0 0 0
+ObjectTemplate.deviation.setSpeedDev 0 0 0 0
+ObjectTemplate.deviation.setMiscDev 0 0 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+include ../../common/zoom/infantry/exp_eryx.tweak
+rem ---BeginComp:LPTargetComp ---
+ObjectTemplate.createComponent LPTargetComp
+ObjectTemplate.target.maxDistance 9999
+ObjectTemplate.target.setTargetAtMaxDistance 1
+ObjectTemplate.target.targetSystem TSWireGuided
+ObjectTemplate.target.connectionEffect e_predatorscope
+ObjectTemplate.target.connectionEffectOnlyWhenZoomed 1
+ObjectTemplate.target.targetObjectTemplate UniqueTarget
+ObjectTemplate.target.disableGuidanceOnReload 1
+rem ---EndComp ---
+ObjectTemplate.geometry CHAT_ERYX
+ObjectTemplate.setCollisionMesh chat_eryx
+ObjectTemplate.mapMaterial 0 Collision_Material 68
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.aiTemplate ai_explosives_antitank
+rem -------------------------------------
+ObjectTemplate.addTemplate S_chat_eryx_Fire1P
+ObjectTemplate.addTemplate S_chat_eryx_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_chat_eryx_Fire3P
+ObjectTemplate.addTemplate S_chat_eryx_BoltClick
+ObjectTemplate.addTemplate S_chat_eryx_TriggerClick
+ObjectTemplate.addTemplate S_chat_eryx_SwitchFireRate
+ObjectTemplate.addTemplate S_chat_eryx_Reload1P
+ObjectTemplate.addTemplate S_chat_eryx_Reload3P
+ObjectTemplate.addTemplate S_chat_eryx_Deploy1P
+ObjectTemplate.addTemplate S_chat_eryx_Deploy3P
+ObjectTemplate.addTemplate S_chat_eryx_Zoom
+ObjectTemplate.addTemplate e_muzz_eryx
+ObjectTemplate.setPosition 0/0.0130506/0
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/CHAT_ERYX/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/CHAT_ERYX/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate eryx
+ObjectTemplate.velocity 30
+ObjectTemplate.itemIndex 4
+ObjectTemplate.delayToUse 1.0
+
+ObjectTemplate.activeSafe Sound S_chat_eryx_Fire1P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/chat_eryx/sounds/eryx_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_chat_eryx_Fire3P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/chat_eryx/sounds/eryx_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.95
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 10
+
+ObjectTemplate.activeSafe Sound S_chat_eryx_BoltClick
+ObjectTemplate.modifiedByUser jsa
+
+ObjectTemplate.activeSafe Sound S_chat_eryx_TriggerClick
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_chat_eryx_SwitchFireRate
+ObjectTemplate.modifiedByUser jsa
+
+ObjectTemplate.activeSafe Sound S_chat_eryx_Reload1P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/chat_eryx/sounds/eryx_reload_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_chat_eryx_Reload3P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/chat_eryx/sounds/eryx_reload_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_chat_eryx_Deploy1P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/chat_eryx/sounds/eryx_deploy_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_chat_eryx_Deploy3P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/chat_eryx/sounds/eryx_deploy_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.7
+ObjectTemplate.halfVolumeDistance 1.4
+
+ObjectTemplate.activeSafe Sound S_chat_eryx_Zoom
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/usatp_predator/sounds/mono/zoom.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+

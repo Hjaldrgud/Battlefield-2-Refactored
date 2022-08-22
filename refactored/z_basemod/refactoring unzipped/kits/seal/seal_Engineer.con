@@ -1,0 +1,41 @@
+ObjectTemplate.create Kit seal_Engineer
+ObjectTemplate.geometry seal_Kits
+ObjectTemplate.geometry.kit 2
+ObjectTemplate.geometry.dropGeom 12
+include ../common/common_kits_engineer.tweak
+ObjectTemplate.addTemplate seal_hv_mask
+ObjectTemplate.addTemplate seal_hv_nvg
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate USPIS_92FS
+rem ------------------3------------------
+ObjectTemplate.addTemplate usrif_remington11-87
+rem ------------------4------------------
+ObjectTemplate.addTemplate USHGR_M67
+rem ------------------5------------------
+ObjectTemplate.addTemplate at_mine
+rem ------------------6------------------
+ObjectTemplate.addTemplate wrench
+rem ------------------7------------------
+ObjectTemplate.addTemplate nightvisiongoggles
+rem ------------------8------------------
+ObjectTemplate.addTemplate gasmask
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockSEALEngineer
+ObjectTemplate.addTemplate UnlockSEALEngineer2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockSEALEngineer
+ObjectTemplate.addTemplate ussht_Jackhammer
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockSEALEngineer2
+ObjectTemplate.addTemplate sasrif_mp7
+ObjectTemplate.replaceItem usrif_remington11-87
+ObjectTemplate.replaceItem ussht_Jackhammer
+ObjectTemplate.unlockLevel 2

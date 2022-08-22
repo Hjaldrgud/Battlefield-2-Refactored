@@ -1,0 +1,53 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/5/2 12:12]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericProjectile mk82_dumbbomb
+include ../common_missiles.tweak
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 56
+ObjectTemplate.detonation.explosionRadius 17
+ObjectTemplate.detonation.explosionForce 20
+ObjectTemplate.detonation.explosionDamage 350
+ObjectTemplate.detonation.endEffectTemplate e_exp_Xlarge
+ObjectTemplate.detonation.useMMOnEndEffect 1
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+ObjectTemplate.geometry mk82_dumbbomb
+ObjectTemplate.setCollisionMesh MK82_dumbbomb
+ObjectTemplate.mapMaterial 0 metal 32
+ObjectTemplate.drag 0.5
+ObjectTemplate.mass 500
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 56
+rem -------------------------------------
+ObjectTemplate.addTemplate S_mk82_dumbbomb_Looping
+rem -------------------------------------
+ObjectTemplate.material 56
+ObjectTemplate.armingDelay 0.5
+ObjectTemplate.minDamage 1
+ObjectTemplate.damage 0
+
+ObjectTemplate.activeSafe Sound S_mk82_dumbbomb_Looping
+ObjectTemplate.modifiedByUser mei
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/stationary/usart_lw155/sounds/artillery_projectile_01.wav,objects/weapons/stationary/usart_lw155/sounds/artillery_projectile_02.wav,objects/weapons/stationary/usart_lw155/sounds/artillery_projectile_03.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.93/1.1/
+ObjectTemplate.minDistance 8
+ObjectTemplate.halfVolumeDistance 10
+

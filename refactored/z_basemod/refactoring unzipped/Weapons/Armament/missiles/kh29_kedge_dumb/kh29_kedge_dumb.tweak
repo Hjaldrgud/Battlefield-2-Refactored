@@ -1,0 +1,43 @@
+rem *** Generated with Bf2Editor.exe [created: 2004/12/3 0:16]
+ObjectTemplate.activeSafe GenericProjectile kh29_kedge_dumb
+include ../common_missiles.tweak
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 70
+ObjectTemplate.detonation.explosionRadius 20
+ObjectTemplate.detonation.explosionForce 25
+ObjectTemplate.detonation.explosionDamage 2000
+ObjectTemplate.detonation.endEffectTemplate e_exp_Xlarge
+ObjectTemplate.detonation.useMMOnEndEffect 1
+rem ---EndComp ---
+ObjectTemplate.geometry kh29_kedge
+ObjectTemplate.setCollisionMesh kh29_kedge
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.drag 0.1
+ObjectTemplate.mass 500
+ObjectTemplate.gravityModifier 0.1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.material 56
+rem -------------------------------------
+ObjectTemplate.addTemplate S_kh29_kedge_dumb_Looping
+ObjectTemplate.addTemplate e_missile_trail
+ObjectTemplate.setPosition 0/0/-2.0462
+rem -------------------------------------
+ObjectTemplate.material 56
+ObjectTemplate.damage 10000
+ObjectTemplate.acceleration 300
+ObjectTemplate.maxSpeed 175
+
+ObjectTemplate.activeSafe Sound S_kh29_kedge_dumb_Looping
+ObjectTemplate.modifiedByUser ngo
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/rocket_engine_start_idle.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 6

@@ -1,0 +1,47 @@
+ObjectTemplate.create Kit CH_Assault
+ObjectTemplate.geometry CH_Kits
+ObjectTemplate.geometry.kit 0
+ObjectTemplate.geometry.dropGeom 15
+include ../common/common_kits_assault.tweak
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate chpis_qsz92
+rem ------------------3------------------
+ObjectTemplate.addTemplate RURIF_GP25
+rem ------------------4------------------
+ObjectTemplate.addTemplate RURGL_GP25
+rem ------------------5------------------
+ObjectTemplate.addTemplate hgr_smoke
+rem ------------------6------------------
+
+rem ------------------7------------------
+
+rem ------------------8------------------
+
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockChAssault
+ObjectTemplate.addTemplate UnlockChAssault2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockCHAssault
+ObjectTemplate.addTemplate usrif_G3A3
+ObjectTemplate.replaceItem rurif_gp25
+Objecttemplate.addTemplate ushgr_m67
+ObjectTemplate.replaceItem rurgl_gp25
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockCHAssault2
+ObjectTemplate.addTemplate sasrif_fn2000
+ObjectTemplate.replaceItem rurif_gp25
+ObjectTemplate.replaceItem usrif_G3A3
+Objecttemplate.addTemplate sasgr_fn2000
+ObjectTemplate.replaceItem rurgl_gp25
+ObjectTemplate.replaceItem ushgr_m67
+ObjectTemplate.addTemplate nshgr_flashbang
+Objecttemplate.replaceItem ushgr_smoke
+ObjectTemplate.unlockLevel 2

@@ -1,0 +1,13 @@
+ObjectTemplate.create GenericProjectile ahe_havoc_projectile
+include ../common_Shell_20mm.tweak
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 87
+ObjectTemplate.detonation.explosionRadius 5
+ObjectTemplate.detonation.explosionForce 3.5
+ObjectTemplate.detonation.explosionDamage 200
+ObjectTemplate.detonation.endEffectTemplate e_exp_grenade
+rem ---EndComp ---
+ObjectTemplate.minDamage 1
+ObjectTemplate.damage 100
+include ../../tracers/vehicles/ahe_havoc.tweak 1

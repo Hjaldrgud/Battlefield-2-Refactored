@@ -1,0 +1,42 @@
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.create GenericProjectile exp_gl_m203,sa80_projectile
+ObjectTemplate.setNetworkableInfo BasicInfo
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+ObjectTemplate.collision.hasCollisionEffect 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 69
+ObjectTemplate.detonation.explosionRadius 4.5
+ObjectTemplate.detonation.explosionForce 7
+ObjectTemplate.detonation.explosionDamage 150
+ObjectTemplate.detonation.endEffectTemplate e_exp_grenade
+ObjectTemplate.detonation.timeUntilCanDetonate 0.3
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.geometry shell_m203
+ObjectTemplate.setCollisionMesh ushgr_m67
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType RotationalPoint
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.mapMaterial 0 Collision_Material 46
+rem -------------------------------------
+ObjectTemplate.addTemplate e_rifgrenade_trail
+ObjectTemplate.setPosition 0/0/-0.00992489
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.hasOnTimeEffect 1

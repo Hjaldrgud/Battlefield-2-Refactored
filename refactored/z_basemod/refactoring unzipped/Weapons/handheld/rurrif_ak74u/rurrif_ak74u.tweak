@@ -1,0 +1,196 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/2/24 20:1]
+GeometryTemplate.setMaterialReflectionScale 0 0 1 2
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm rurrif_ak74u
+ObjectTemplate.creator TDA-1:tda
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\RURRIF_AK74U.tga
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\RURRIF_AK74U_mini.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\RURRIF_AK74U.tga
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_ak74u"
+ObjectTemplate.weaponHud.guiIndex 4
+ObjectTemplate.weaponHud.altGuiIndex 53
+ObjectTemplate.weaponHud.deviationFactor 5
+ObjectTemplate.weaponHud.maxVisualDeviation 29
+ObjectTemplate.weaponHud.minVisualDeviation 3
+ObjectTemplate.weaponHud.disableOnSprint 1
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.addFireRate 2
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.reloadTime 4.291
+rem ---EndComp ---
+include ../../common/recoil/infantry/car_aks74u.tweak
+include ../../common/deviation/infantry/car_aks74u.tweak
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+include ../../common/zoom/infantry/car_aks74u.tweak
+ObjectTemplate.geometry rurrif_ak74u
+ObjectTemplate.setCollisionMesh rurrif_ak74u
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate ai_carbine_standard
+rem -------------------------------------
+ObjectTemplate.addTemplate S_rurrif_ak74u_Fire1P
+ObjectTemplate.addTemplate S_rurrif_ak74u_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_rurrif_ak74u_Fire3P
+ObjectTemplate.setPosition 0/0.00733514/0.335472
+ObjectTemplate.addTemplate S_rurrif_ak74u_BoltClick
+ObjectTemplate.addTemplate S_rurrif_ak74u_TriggerClick
+ObjectTemplate.addTemplate S_rurrif_ak74u_SwitchFireRate
+ObjectTemplate.addTemplate S_rurrif_ak74u_Reload1P
+ObjectTemplate.addTemplate S_rurrif_ak74u_Reload3P
+ObjectTemplate.setPosition 0/-0.0408787/0.0733307
+ObjectTemplate.addTemplate S_rurrif_ak74u_Deploy1P
+ObjectTemplate.addTemplate S_rurrif_ak74u_Deploy3P
+ObjectTemplate.setPosition 0/0.0255172/-0.0830525
+ObjectTemplate.addTemplate S_rurrif_ak74u_Zoom
+ObjectTemplate.addTemplate e_shellejection_556
+ObjectTemplate.setPosition 0.0270596/0.0285763/0.0961491
+ObjectTemplate.setRotation -9.50291/-3.33505e-008/8.49964
+ObjectTemplate.addTemplate e_muzz_ak101
+ObjectTemplate.setPosition 0/0.00976789/0.331932
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/rurrif_ak74u/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/rurrif_ak74u/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate car_AKS74U_projectile
+ObjectTemplate.velocity 1000
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 1.208
+
+ObjectTemplate.activeSafe Sound S_rurrif_ak74u_Fire1P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurrif_ak74u/sounds/ak74u_fire_1p_outdoor.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.71
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.035/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.95/1/
+
+
+ObjectTemplate.activeSafe Sound S_rurrif_ak74u_Fire3P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurrif_ak74u/sounds/ak74u_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.96/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0.00733514/0.335472
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe Sound S_rurrif_ak74u_BoltClick
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_gp30/sounds/gp30_bolt_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.5
+
+ObjectTemplate.activeSafe Sound S_rurrif_ak74u_TriggerClick
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_rurrif_ak74u_SwitchFireRate
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/chrif_type95/sounds/type95_firerate.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.3
+
+ObjectTemplate.activeSafe Sound S_rurrif_ak74u_Reload1P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurrif_ak74u/sounds/ak74u_reload_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_rurrif_ak74u_Reload3P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurrif_ak74u/sounds/ak74u_reload_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.0408787/0.0733307
+ObjectTemplate.minDistance 0.7
+ObjectTemplate.halfVolumeDistance 1.4
+
+ObjectTemplate.activeSafe Sound S_rurrif_ak74u_Deploy1P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurrif_ak74u/sounds/ak74u_deploy_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.53
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_rurrif_ak74u_Deploy3P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurrif_ak74u/sounds/ak74u_deploy_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.53
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0255172/-0.0830525
+ObjectTemplate.minDistance 0.3
+ObjectTemplate.halfVolumeDistance 0.6
+
+ObjectTemplate.activeSafe Sound S_rurrif_ak74u_Zoom
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/zoom_generic.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1

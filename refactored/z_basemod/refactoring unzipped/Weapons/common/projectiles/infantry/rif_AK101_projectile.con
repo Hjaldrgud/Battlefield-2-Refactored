@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericProjectile rif_AK101_projectile
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.damage 37
+include ../common_Bullet_small_arms.tweak

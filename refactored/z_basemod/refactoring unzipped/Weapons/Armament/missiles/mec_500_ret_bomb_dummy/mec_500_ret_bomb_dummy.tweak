@@ -1,0 +1,16 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/1/21 11:11]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe SimpleObject mec_500_ret_bomb_dummy
+ObjectTemplate.creator MEI-2:mei
+ObjectTemplate.modifiedByUser mei
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.geometry mec_500_ret_bomb_dummy
+ObjectTemplate.setCollisionMesh mec_500_ret_bomb_dummy
+ObjectTemplate.mapMaterial 0 airplane 32
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

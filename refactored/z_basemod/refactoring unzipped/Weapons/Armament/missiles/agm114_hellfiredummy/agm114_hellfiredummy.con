@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject agm114_hellfiredummy
+ObjectTemplate.createdInEditor 1
+
+include agm114_hellfiredummy.tweak

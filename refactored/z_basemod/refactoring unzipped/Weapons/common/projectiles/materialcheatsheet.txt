@@ -1,0 +1,74 @@
+Material.active 38
+Material.name "Bullet_small_arms"
+
+Material.active 39
+Material.name "Bullet_50caliber"
+
+Material.active 40
+Material.name "Bullet_minigun"
+
+Material.active 41
+Material.name "Bullet_shotgun"
+
+Material.active 42
+Material.name "Shell_25mm"
+
+Material.active 43
+Material.name "Shell_tank"
+
+Material.active 44
+Material.name "Shell_artillery"
+
+Material.active 45
+Material.name "Grenade_rifle"
+
+Material.active 46
+Material.name "Grenade_hand"
+
+Material.active 47
+Material.name "Flare"
+
+Material.active 48
+Material.name "Knife"
+
+Material.active 49
+Material.name "Mine_antitank"
+
+Material.active 50
+Material.name "Detonation_claymore"
+
+Material.active 52
+Material.name "Missile_antitank"
+
+Material.active 53
+Material.name "Missile_antiair_light"
+
+Material.active 55
+Material.name "Missile_airtoground_light"
+
+Material.active 56
+Material.name "Missile_airtoground_heavy"
+
+Material.active 57
+Material.name "Shell_20mm_AAA"
+
+Material.active 69
+Material.name "Detonation_grenade"
+
+Material.active 70
+Material.name "Explosion_blastwave"
+
+Material.active 80
+Material.name "Detonation_C4"
+
+Material.active 87
+Material.name "Shell_20mm"
+
+Material.active 88
+Material.name "Shell_25mm_AAA"
+
+Material.active 109
+Material.name "Explosion_AA_blastwave"
+
+Material.active 113
+Material.name "Shell_30mm"

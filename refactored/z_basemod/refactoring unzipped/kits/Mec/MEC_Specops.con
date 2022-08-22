@@ -1,0 +1,39 @@
+ObjectTemplate.create Kit MEC_Specops
+ObjectTemplate.geometry MEC_Kits
+ObjectTemplate.geometry.kit 2
+ObjectTemplate.geometry.dropGeom 10
+include ../common/common_kits_specops.tweak
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate RUPIS_Baghira_silencer 
+rem ------------------3------------------
+ObjectTemplate.addTemplate rurrif_ak74u
+rem ------------------4------------------
+ObjectTemplate.addTemplate USHGR_M67
+rem ------------------5------------------
+ObjectTemplate.addTemplate c4_explosives
+rem ------------------6------------------
+rem ObjectTemplate.addTemplate SIMRAD
+rem ------------------7------------------
+
+rem ------------------8------------------
+
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockMECSpecops
+ObjectTemplate.addTemplate UnlockMECSpecops2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockMECSpecops
+ObjectTemplate.addTemplate usrif_g36c
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockMECSpecops2
+ObjectTemplate.addTemplate usrif_fnscarl
+ObjectTemplate.replaceItem rurrif_ak74u
+ObjectTemplate.replaceItem usrif_g36c
+ObjectTemplate.unlockLevel 2

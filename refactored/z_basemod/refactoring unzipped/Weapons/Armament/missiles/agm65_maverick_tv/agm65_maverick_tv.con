@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh agm65_maverick_tv
+
+ObjectTemplate.create GenericProjectile agm65_maverick_tv
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-3:dsu
+ObjectTemplate.collisionMesh AGM65_Maverick
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry agm65_maverick
+
+include agm65_maverick_tv.tweak
+

@@ -1,0 +1,6 @@
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+ObjectTemplate.recoil.recoilSize 1.01
+ObjectTemplate.recoil.cameraRecoilSpeed 13
+ObjectTemplate.recoil.cameraRecoilSize 1
+rem ---EndComp ---

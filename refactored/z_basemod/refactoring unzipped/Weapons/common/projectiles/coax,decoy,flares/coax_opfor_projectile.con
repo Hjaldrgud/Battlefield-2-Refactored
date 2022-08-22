@@ -1,0 +1,5 @@
+ObjectTemplate.create GenericProjectile coax_opfor_projectile
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.damage 50
+include ../common_SmallArms.tweak
+include ../../tracers/stationary/hmg,coax_opfor.tweak 3

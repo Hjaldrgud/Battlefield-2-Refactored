@@ -1,0 +1,4 @@
+ObjectTemplate.tracerScaler 10
+ObjectTemplate.maxTracerScaler 50
+ObjectTemplate.minTracerScaler 1
+ObjectTemplate.tracerSizeModifier 5

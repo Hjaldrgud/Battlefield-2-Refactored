@@ -1,0 +1,39 @@
+ObjectTemplate.create Kit CH_Medic	
+ObjectTemplate.geometry CH_Kits
+ObjectTemplate.geometry.kit 4
+ObjectTemplate.geometry.dropGeom 11
+include ../common/common_kits_medic.tweak
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate chpis_qsz92
+rem ------------------3------------------
+ObjectTemplate.addTemplate RURIF_AK47
+rem ------------------4------------------
+ObjectTemplate.addTemplate USHGR_M67
+rem ------------------5------------------
+ObjectTemplate.addTemplate medikit
+rem ------------------6------------------
+ObjectTemplate.addTemplate defibrillator
+rem ------------------7------------------
+
+rem ------------------8------------------
+
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockCHMedic
+ObjectTemplate.addTemplate UnlockCHMedic2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockCHMedic
+ObjectTemplate.addTemplate usrif_sa80
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockCHMedic2
+ObjectTemplate.addTemplate sasrif_g36e
+ObjectTemplate.replaceItem RURIF_AK47
+ObjectTemplate.replaceItem usrif_sa80
+ObjectTemplate.unlockLevel 2

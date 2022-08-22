@@ -1,0 +1,15 @@
+ObjectTemplate.create GenericProjectile air_jet_a_fantan_projectile
+include ../common_Shell_30mm.tweak
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 113
+ObjectTemplate.detonation.explosionRadius 3
+ObjectTemplate.detonation.explosionForce 2.5
+ObjectTemplate.detonation.explosionDamage 200
+ObjectTemplate.detonation.endEffectTemplate e_exp_small
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+rem ---EndComp ---
+ObjectTemplate.minDamage 1
+ObjectTemplate.damage 120
+include ../../tracers/vehicles/air_jet_a_opfor.tweak 1

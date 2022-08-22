@@ -1,0 +1,43 @@
+ObjectTemplate.create Kit MECSF_Assault
+ObjectTemplate.geometry MECSF_Kits
+ObjectTemplate.geometry.kit 0	
+ObjectTemplate.geometry.dropGeom 15
+ObjectTemplate.dropHeadwear helmet
+ObjectTemplate.addTemplate mecsf_hv_mask
+ObjectTemplate.addTemplate mecsf_hv_nvg	
+include ../common/common_kits_assault.tweak
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate RUPIS_Baghira
+rem ------------------3------------------
+ObjectTemplate.addTemplate RURIF_AK101
+rem ------------------4------------------
+ObjectTemplate.addTemplate USHGR_M67
+rem ------------------5------------------
+ObjectTemplate.addTemplate nshgr_flashbang
+rem ------------------6------------------
+ObjectTemplate.addTemplate nsrif_grapplinghook
+rem ------------------7------------------
+ObjectTemplate.addTemplate nightvisiongoggles
+rem ------------------8------------------
+ObjectTemplate.addTemplate gasmask
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockMECSFAssault
+ObjectTemplate.addTemplate UnlockMECSFAssault2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockMECSFAssault
+ObjectTemplate.addTemplate usrif_G3A3
+ObjectTemplate.replaceItem RURIF_AK101
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockMECSFAssault2
+ObjectTemplate.addTemplate RURIF_AK47
+ObjectTemplate.replaceItem RURIF_AK101
+ObjectTemplate.replaceItem usrif_G3A3
+ObjectTemplate.unlockLevel 2

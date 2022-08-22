@@ -1,0 +1,12 @@
+GeometryTemplate.create BundledMesh helmet
+
+ObjectTemplate.create Particle helmet
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator POS-1:pos
+ObjectTemplate.collisionMesh helmet
+ObjectTemplate.mapMaterial 0 Human_bodyarmour 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry helmet
+
+include helmet.tweak

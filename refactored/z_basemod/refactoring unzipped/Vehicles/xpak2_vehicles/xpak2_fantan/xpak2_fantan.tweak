@@ -1,0 +1,1126 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/4/26 7:9]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe PlayerControlObject xpak2_fantan
+ObjectTemplate.creator JEFFO:jeffev
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.cullRadiusScale 1.347
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 850
+ObjectTemplate.armor.hitPoints 850
+ObjectTemplate.armor.defaultMaterial 32
+ObjectTemplate.armor.hpLostWhileUpSideDown 350
+ObjectTemplate.armor.hpLostWhileInWater 400
+ObjectTemplate.armor.hpLostWhileInDeepWater 400
+ObjectTemplate.armor.hpLostWhileCriticalDamage 18
+ObjectTemplate.armor.waterDamageDelay 1
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.explosionForce 15
+ObjectTemplate.armor.explosionForceMod 8
+ObjectTemplate.armor.explosionForceMax 5000
+ObjectTemplate.armor.explosionDamage 400
+ObjectTemplate.armor.explosionRadius 15
+ObjectTemplate.armor.explosionMaterial 99
+ObjectTemplate.armor.wreckExplosionForce 7
+ObjectTemplate.armor.wreckExplosionDamage 200
+ObjectTemplate.armor.wreckExplosionRadius 5
+ObjectTemplate.armor.wreckExplosionMaterial 70
+ObjectTemplate.armor.wreckHitPoints 500
+ObjectTemplate.armor.timeToStayAsWreck 10
+ObjectTemplate.armor.criticalDamage 101
+ObjectTemplate.armor.addArmorEffect 0 e_vexp_AirGeneric 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_vexp_fantan 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_vexp_AirGeneric_Spec 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 75 e_dstate_jets_lightsmoke -2.28/0.42/-1.75 0/0/0
+ObjectTemplate.armor.addArmorEffect 50 e_dstate_jets_heavysmoke -2.28/0.42/-1.75 0/0/0
+ObjectTemplate.armor.addArmorEffect 10 e_dstate_jets_firesmoke -2.28/0.42/-1.75 0/0/0
+ObjectTemplate.armor.addArmorEffect -20 e_dstate_Jets_wrecksmoke 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect -100 e_vexp_AirGeneric_2nd 0/0/0 0/0/0
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage air_spotted
+rem ---EndComp ---
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_fantan"
+ObjectTemplate.vehicleHud.typeIcon Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_plane.tga
+ObjectTemplate.vehicleHud.miniMapIcon Ingame\Vehicles\Icons\Minimap\mini_Jet.tga
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.showCrosshair 0
+ObjectTemplate.vehicleHud.vehicleIconPos 58/14
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 1
+ObjectTemplate.vehicleHud.vehicleType 4
+ObjectTemplate.vehicleHud.vehicleIcon Ingame\Vehicles\Icons\Hud\VehicleIcons\xpak2_fantan.tga
+ObjectTemplate.vehicleHud.useSelectionIcons 0
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.warningType 2
+ObjectTemplate.WarningHud.firstWarningSound HUD_Heatseeker_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Heatseeker_Lock_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserLockIcon.tga
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_VEHICLE_JET_PILOT_CONTROLS_toggleWeaponsShortcut"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_VEHICLE_JET_PILOT_CONTROLS_toggleWeaponsShortcut"
+ObjectTemplate.HelpHud.lowArmorHelpSoundKey "HUD_HELP_VEHICLE_JET_LOWHEALTH_useFriendlyRepairStation"
+ObjectTemplate.HelpHud.lowArmorHelpStringKey "HUD_HELP_VEHICLE_JET_LOWHEALTH_useFriendlyRepairStation"
+rem ---EndComp ---
+ObjectTemplate.geometry xpak2_fantan
+ObjectTemplate.setCollisionMesh xpak2_fantan
+ObjectTemplate.mapMaterial 0 col_armor 32
+ObjectTemplate.mapMaterial 1 col_glass 1006
+ObjectTemplate.mapMaterial 2 col_wreck 60
+ObjectTemplate.mapMaterial 3 col_rubber 102
+ObjectTemplate.drag 0.8
+ObjectTemplate.mass 5000
+ObjectTemplate.inertiaModifier 0.4/0.4/0.4
+ObjectTemplate.floaterMod 0.8
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate air_jet_f
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak2_fantan_Ambient
+ObjectTemplate.addTemplate S_xpak2_fantan_AmbientDamaged
+ObjectTemplate.addTemplate xpak2_fantan_Cam
+ObjectTemplate.setPosition -5.59111e-007/1.10083/2.90047
+ObjectTemplate.addTemplate xpak2_fantan_EP
+ObjectTemplate.setPosition -1.09629e-006/-0.398877/2.6716
+ObjectTemplate.addTemplate fantan_EngineLeft
+ObjectTemplate.setPosition 0/0.23/-7.1
+ObjectTemplate.addTemplate fantan_WingVerticalBody
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate decoy_Flare_Launcher
+ObjectTemplate.setPosition -1.64216/0.695881/-0.288468
+ObjectTemplate.setRotation -180/-60/-180
+ObjectTemplate.addTemplate HeatObject
+ObjectTemplate.setPosition 1.8593e-005/0.189525/-2.19316
+ObjectTemplate.addTemplate ElevatorRearL_wing
+ObjectTemplate.setPosition -1.4/0.03/-10
+ObjectTemplate.setRotation 0/1.9/0
+ObjectTemplate.addTemplate ElevatorRearR_wing
+ObjectTemplate.setPosition 1.4/0.03/-10
+ObjectTemplate.setRotation 0/1.9/0
+ObjectTemplate.addTemplate fantan_Autocannon
+ObjectTemplate.setPosition 0.23683/0.143354/5.65983
+ObjectTemplate.addTemplate xpak2_fantan_FlapL_Wing
+ObjectTemplate.setPosition -4.5/0/1
+ObjectTemplate.addTemplate xpak2_fantan_FlapR_Wing
+ObjectTemplate.setPosition 4.5/0/1
+ObjectTemplate.addTemplate xpak2_fantan_Rudder_Wing
+ObjectTemplate.setPosition -5.43274e-008/1.5872/-7.55754
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate xpak2_fantan_bomblauncher
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 5/1/2 0/0/0
+ObjectTemplate.altSoldierExitPosition -5/1/2
+ObjectTemplate.exitSpeedMod 0.5
+ObjectTemplate.seatInformation xpak2_fantan 0/0.965214/2.73263 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Common/Animations/3p_aircraftPilot_A_animSys.inc
+ObjectTemplate.soundFilter airplane
+ObjectTemplate.vehicleCategory VCAir
+ObjectTemplate.listenerObstruction 0.8
+ObjectTemplate.damagedAmbientSoundLimit 0.15
+ObjectTemplate.crewKitIndex 8
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.altSoldierExitPosition -5/1/2
+
+ObjectTemplate.activeSafe Sound S_xpak2_fantan_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak2_fantan_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe LandingGear Fantan_LGearHatch
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Fantan_LGearHatch_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-90
+ObjectTemplate.setMaxSpeed 0/0/-100
+ObjectTemplate.setAcceleration 0/0/100
+ObjectTemplate.setGearDownHeight 40
+ObjectTemplate.setGearUpHeight 10
+ObjectTemplate.setGearDownSpeed 80
+ObjectTemplate.setGearUpSpeed 50
+ObjectTemplate.setGearUpDelay 1
+ObjectTemplate.setGearDownDelay 0.2
+
+ObjectTemplate.activeSafe Sound S_Fantan_LGearHatch_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe LandingGear Fantan_LGearFlap
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Fantan_LGearFlap_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/111
+ObjectTemplate.setMaxSpeed 0/0/-100
+ObjectTemplate.setAcceleration 0/0/100
+ObjectTemplate.setGearDownHeight 40
+ObjectTemplate.setGearUpHeight 10
+ObjectTemplate.setGearDownSpeed 80
+ObjectTemplate.setGearUpSpeed 50
+ObjectTemplate.setGearUpDelay 1
+ObjectTemplate.setGearDownDelay 0.2
+ObjectTemplate.invertGear 1
+
+ObjectTemplate.activeSafe Sound S_Fantan_LGearFlap_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe LandingGear Fantan_LGear
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Fantan_LGear_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-0.01
+ObjectTemplate.setMaxRotation 0/0/90.3
+ObjectTemplate.setMaxSpeed 0/0/55
+ObjectTemplate.setAcceleration 0/0/600
+ObjectTemplate.setGearDownHeight 40
+ObjectTemplate.setGearUpHeight 10
+ObjectTemplate.setGearDownSpeed 80
+ObjectTemplate.setGearUpSpeed 50
+ObjectTemplate.setGearDownDelay 1.6
+
+ObjectTemplate.activeSafe Sound S_Fantan_LGear_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring Fantan_LWheel
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 16
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Fantan_LWheel_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4
+
+ObjectTemplate.activeSafe Sound S_Fantan_LWheel_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe LandingGear Fantan_RGearHatch
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Fantan_RGearHatch_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/90
+ObjectTemplate.setMaxSpeed 0/0/100
+ObjectTemplate.setAcceleration 0/0/100
+ObjectTemplate.setGearDownHeight 40
+ObjectTemplate.setGearUpHeight 10
+ObjectTemplate.setGearDownSpeed 80
+ObjectTemplate.setGearUpSpeed 50
+ObjectTemplate.setGearUpDelay 1
+ObjectTemplate.setGearDownDelay 0.2
+
+ObjectTemplate.activeSafe Sound S_Fantan_RGearHatch_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe LandingGear Fantan_RGearFlap
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Fantan_RGearFlap_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-111
+ObjectTemplate.setMaxSpeed 0/0/100
+ObjectTemplate.setAcceleration 0/0/100
+ObjectTemplate.setGearDownHeight 40
+ObjectTemplate.setGearUpHeight 10
+ObjectTemplate.setGearDownSpeed 80
+ObjectTemplate.setGearUpSpeed 50
+ObjectTemplate.setGearUpDelay 1
+ObjectTemplate.setGearDownDelay 0.2
+ObjectTemplate.invertGear 1
+
+ObjectTemplate.activeSafe Sound S_Fantan_RGearFlap_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe LandingGear Fantan_RGear
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Fantan_RGear_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-90.3
+ObjectTemplate.setMaxRotation 0/0/0.01
+ObjectTemplate.setMaxSpeed 0/0/55
+ObjectTemplate.setAcceleration 0/0/600
+ObjectTemplate.setGearDownHeight 40
+ObjectTemplate.setGearUpHeight 10
+ObjectTemplate.setGearDownSpeed 80
+ObjectTemplate.setGearUpSpeed 50
+ObjectTemplate.setGearDownDelay 1.6
+ObjectTemplate.invertGear 1
+
+ObjectTemplate.activeSafe Sound S_Fantan_RGear_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring Fantan_RWheel
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 16
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Fantan_RWheel_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4
+
+ObjectTemplate.activeSafe Sound S_Fantan_RWheel_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe LandingGear Fantan_FGearLHatch
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Fantan_FGearLHatch_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/80
+ObjectTemplate.setMaxSpeed 0/0/-100
+ObjectTemplate.setAcceleration 0/0/100
+ObjectTemplate.setGearDownHeight 40
+ObjectTemplate.setGearUpHeight 10
+ObjectTemplate.setGearDownSpeed 80
+ObjectTemplate.setGearUpSpeed 50
+ObjectTemplate.setGearUpDelay 1
+ObjectTemplate.setGearDownDelay 0.1
+ObjectTemplate.invertGear 1
+
+ObjectTemplate.activeSafe Sound S_Fantan_FGearLHatch_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe LandingGear Fantan_FGearLFlap
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Fantan_FGearLFlap_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/90
+ObjectTemplate.setMaxSpeed 0/0/-100
+ObjectTemplate.setAcceleration 0/0/100
+ObjectTemplate.setGearDownHeight 40
+ObjectTemplate.setGearUpHeight 10
+ObjectTemplate.setGearDownSpeed 80
+ObjectTemplate.setGearUpSpeed 50
+ObjectTemplate.setGearUpDelay 1
+ObjectTemplate.setGearDownDelay 0.5
+ObjectTemplate.invertGear 1
+
+ObjectTemplate.activeSafe Sound S_Fantan_FGearLFlap_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe LandingGear Fantan_FGearRHatch
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Fantan_FGearRHatch_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-80
+ObjectTemplate.setMaxSpeed 0/0/100
+ObjectTemplate.setAcceleration 0/0/100
+ObjectTemplate.setGearDownHeight 40
+ObjectTemplate.setGearUpHeight 10
+ObjectTemplate.setGearDownSpeed 80
+ObjectTemplate.setGearUpSpeed 50
+ObjectTemplate.setGearUpDelay 1
+ObjectTemplate.setGearDownDelay 0.1
+ObjectTemplate.invertGear 1
+
+ObjectTemplate.activeSafe Sound S_Fantan_FGearRHatch_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe LandingGear Fantan_FGearRFlap
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Fantan_FGearRFlap_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-90
+ObjectTemplate.setMaxSpeed 0/0/100
+ObjectTemplate.setAcceleration 0/0/100
+ObjectTemplate.setGearDownHeight 40
+ObjectTemplate.setGearUpHeight 10
+ObjectTemplate.setGearDownSpeed 80
+ObjectTemplate.setGearUpSpeed 50
+ObjectTemplate.setGearUpDelay 1
+ObjectTemplate.setGearDownDelay 0.5
+ObjectTemplate.invertGear 1
+
+ObjectTemplate.activeSafe Sound S_Fantan_FGearRFlap_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe LandingGear Fantan_FGear
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Fantan_FGear_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-120/0
+ObjectTemplate.setMaxSpeed 0/100/20
+ObjectTemplate.setAcceleration 0/100/0
+ObjectTemplate.setGearDownHeight 40
+ObjectTemplate.setGearUpHeight 10
+ObjectTemplate.setGearDownSpeed 80
+ObjectTemplate.setGearUpSpeed 50
+ObjectTemplate.setGearDownDelay 1.6
+ObjectTemplate.invertGear 1
+
+ObjectTemplate.activeSafe Sound S_Fantan_FGear_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe RotationalBundle Fantan_FGearRot
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Fantan_FGearRot_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -30/0/0
+ObjectTemplate.setMaxRotation 30/0/0
+ObjectTemplate.setMaxSpeed 300/0/0
+ObjectTemplate.setAcceleration 100/0/0
+ObjectTemplate.setInputToYaw PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_Fantan_FGearRot_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring Fantan_FWheel
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.grip 16
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Fantan_FWheel_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 30
+ObjectTemplate.setDamping 5
+
+ObjectTemplate.activeSafe Sound S_Fantan_FWheel_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe RotationalBundle Fantan_ElevatorL
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Fantan_ElevatorL_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-8/0
+ObjectTemplate.setMaxRotation 0/8/0
+ObjectTemplate.setMaxSpeed 0/200/0
+ObjectTemplate.setAcceleration 0/-30/0
+ObjectTemplate.setInputToPitch PIPitch
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_Fantan_ElevatorL_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe RotationalBundle Fantan_ElevatorR
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Fantan_ElevatorR_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-8/0
+ObjectTemplate.setMaxRotation 0/8/0
+ObjectTemplate.setMaxSpeed 0/300/0
+ObjectTemplate.setAcceleration 0/-30/0
+ObjectTemplate.setInputToPitch PIPitch
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_Fantan_ElevatorR_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe RotationalBundle Fantan_FlapL
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.hasRelativeOffset 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Fantan_FlapL_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/100/0
+ObjectTemplate.setAcceleration 0/-45/0
+ObjectTemplate.setInputToPitch PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_Fantan_FlapL_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe RotationalBundle Fantan_FlapR
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Fantan_FlapR_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/100/0
+ObjectTemplate.setAcceleration 0/45/0
+ObjectTemplate.setInputToPitch PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_Fantan_FlapR_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe RotationalBundle Fantan_Rudder
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Fantan_Rudder_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -20/0/0
+ObjectTemplate.setMaxRotation 20/0/0
+ObjectTemplate.setMaxSpeed 300/0/0
+ObjectTemplate.setAcceleration -100/0/0
+ObjectTemplate.setInputToYaw PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_Fantan_Rudder_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Camera xpak2_fantan_Cam
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak2_fantan_Cam_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -95/-40/0
+ObjectTemplate.setMaxRotation 95/20/0
+ObjectTemplate.setPivotPosition 0/0/-0.2
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.CVMNose 1
+ObjectTemplate.cameraShakeSensitivity 1
+ObjectTemplate.cameraShakeStartSpeed 110
+ObjectTemplate.cameraShakeMaxSpeed 125
+ObjectTemplate.nosePos 0/0/4
+ObjectTemplate.followStiffness 2
+ObjectTemplate.chaseDistance 28
+ObjectTemplate.chaseAngle 0.18
+ObjectTemplate.chaseOffset 0/2.5/6
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.allowInsideDynamicLights 0
+ObjectTemplate.allowInsideStaticSun 1
+ObjectTemplate.insideStaticSunDirection 0/-2/2
+ObjectTemplate.insideStaticSunColor 0.4/0.462745/0.388235
+ObjectTemplate.insideStaticSunDamageColor 0.501961/0/0
+ObjectTemplate.insideDamageFrequency 5
+ObjectTemplate.insideDamageThreshold 0.1
+ObjectTemplate.insideStaticSunAmbientColor 0.266667/0.317647/0.356863
+
+ObjectTemplate.activeSafe Sound S_xpak2_fantan_Cam_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create EntryPoint xpak2_fantan_EP
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 3
+
+ObjectTemplate.create Engine fantan_EngineLeft
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_fantan_EngineLeft_RotationRpm
+ObjectTemplate.addTemplate S_fantan_EngineLeft_Idle
+ObjectTemplate.setPosition 0.872924/0.502408/8.81835
+ObjectTemplate.setRotation 0/1.45079/0
+ObjectTemplate.addTemplate S_fantan_EngineLeft_Rpm1
+ObjectTemplate.setPosition 0.93555/0.108305/-0.326949
+ObjectTemplate.setRotation -180/0/180
+ObjectTemplate.addTemplate S_fantan_EngineLeft_Rpm2
+ObjectTemplate.setPosition 0.932404/0.132309/-0.0972958
+ObjectTemplate.setRotation -180/0/180
+ObjectTemplate.addTemplate S_fantan_EngineLeft_Load
+ObjectTemplate.setPosition -1.14412/0/-2.44501
+ObjectTemplate.addTemplate e_jetexhaust
+ObjectTemplate.setPosition -0.332547/-0.112113/0.727959
+ObjectTemplate.addTemplate e_jetexhaust_AB
+ObjectTemplate.setPosition -0.344319/-0.112113/0.727959
+ObjectTemplate.addTemplate e_contrail
+ObjectTemplate.setPosition -4.74168/-0.318892/1.46658
+ObjectTemplate.addTemplate e_AB_snd
+ObjectTemplate.setPosition -0.427047/0/0
+ObjectTemplate.addTemplate e_jetexhaust
+ObjectTemplate.setPosition 0.372912/-0.11211/0.72796
+ObjectTemplate.addTemplate e_jetexhaust_AB
+ObjectTemplate.setPosition 0.315547/-0.11211/0.72796
+ObjectTemplate.addTemplate e_AB_snd
+ObjectTemplate.setPosition 0.319589/0/0
+ObjectTemplate.addTemplate e_contrail
+ObjectTemplate.setPosition 4.68327/-0.331421/1.47263
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-1000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/150
+ObjectTemplate.setAcceleration 0/0/400
+ObjectTemplate.setInputToRoll PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 200
+ObjectTemplate.setDifferential 20
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.noPropellerEffectAtSpeed 125
+ObjectTemplate.noPropellerEffectAtSpeed 125
+ObjectTemplate.noEffectAtPerpSpeed 125
+
+ObjectTemplate.activeSafe Sound S_fantan_EngineLeft_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_fantan_EngineLeft_Idle
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/ruair_mig29/sounds/mig_29_start_idle_stop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/3/0.003/0.525/0/0.256/0.773/0/0.997/0.99/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/4/0.003/1/0/0.31/1/0/0.495/0.812/0/0.99/0.3/0/
+ObjectTemplate.position 0.872924/0.502408/8.81835
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 7
+ObjectTemplate.coneDirection 0/-0.0253184/0.999679
+ObjectTemplate.coneInnerAngle 115
+ObjectTemplate.coneOuterAngle 140
+ObjectTemplate.coneOuterVolume 0.2
+
+ObjectTemplate.activeSafe Sound S_fantan_EngineLeft_Rpm1
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/sounds/jet_distant.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 0.93
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/2/0.003/0.354/0/1/1.313/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/4/0.003/0/0/0.338/0.536/0/0.792/0.987/0/0.8/1/0/
+ObjectTemplate.position 0.93555/0.108305/-0.326949
+ObjectTemplate.minDistance 25
+ObjectTemplate.halfVolumeDistance 45
+ObjectTemplate.coneDirection -8.74228e-008/0/-1
+ObjectTemplate.coneInnerAngle 180
+ObjectTemplate.coneOuterVolume 0.5
+
+ObjectTemplate.activeSafe Sound S_fantan_EngineLeft_Rpm2
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/sounds/jet_low_freq.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/2/0.013/0.617/0/0.997/0.853/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/4/0.003/0/0/0.338/0.536/0/0.792/0.987/0/0.8/1/0/
+ObjectTemplate.position 0.932404/0.132309/-0.0972958
+ObjectTemplate.minDistance 20
+ObjectTemplate.halfVolumeDistance 30
+ObjectTemplate.coneDirection -8.74228e-008/0/-1
+ObjectTemplate.coneInnerAngle 180
+ObjectTemplate.coneOuterVolume 0.2
+
+ObjectTemplate.activeSafe Sound S_fantan_EngineLeft_Load
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Wing fantan_WingVerticalBody
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_fantan_WingVerticalBody_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 2
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_fantan_WingVerticalBody_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Wing ElevatorRearL_wing
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ElevatorRearL_wing_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-23/0
+ObjectTemplate.setMaxRotation 0/23/0
+ObjectTemplate.setMaxSpeed 0/300/0
+ObjectTemplate.setAcceleration 0/-50/0
+ObjectTemplate.setInputToPitch PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setPitchOffset -0.1
+ObjectTemplate.setPositionOffset -0.1466/-0.1837/-4.9302
+ObjectTemplate.setWingLift 0.5
+ObjectTemplate.setFlapLift 0.8
+
+ObjectTemplate.activeSafe Sound S_ElevatorRearL_wing_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Wing ElevatorRearR_wing
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ElevatorRearR_wing_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-23/0
+ObjectTemplate.setMaxRotation 0/23/0
+ObjectTemplate.setMaxSpeed 0/300/0
+ObjectTemplate.setAcceleration 0/-50/0
+ObjectTemplate.setInputToPitch PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setPitchOffset -0.1
+ObjectTemplate.setPositionOffset 0.1466/-0.1837/-4.9302
+ObjectTemplate.setWingLift 0.5
+ObjectTemplate.setFlapLift 0.8
+
+ObjectTemplate.activeSafe Sound S_ElevatorRearR_wing_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create GenericFireArm fantan_Autocannon
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\bomb.tga
+ObjectTemplate.weaponHud.guiIndex -1
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.showClips 0
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 450
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags 1
+ObjectTemplate.ammo.magSize 500
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+include ../../../weapons/common/recoil/vehicles/air_jet_a_fantan.tweak
+include ../../../weapons/common/deviation/vehicles/air_jet_machinecannons_all.tweak
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+include ../../../Weapons/common/zoom/aaa_default.tweak
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate air_jet_fb_opfor_AutoCannon
+rem -------------------------------------
+ObjectTemplate.addTemplate S_fantan_Autocannon_Fire1P
+ObjectTemplate.addTemplate S_fantan_Autocannon_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_fantan_Autocannon_Fire3P
+ObjectTemplate.addTemplate S_fantan_Autocannon_BoltClick
+ObjectTemplate.addTemplate S_fantan_Autocannon_TriggerClick
+ObjectTemplate.addTemplate S_fantan_Autocannon_SwitchFireRate
+ObjectTemplate.addTemplate S_fantan_Autocannon_Reload1P
+ObjectTemplate.addTemplate S_fantan_Autocannon_Reload3P
+ObjectTemplate.addTemplate S_fantan_Autocannon_Deploy1P
+ObjectTemplate.addTemplate S_fantan_Autocannon_Deploy3P
+ObjectTemplate.addTemplate S_fantan_Autocannon_Zoom
+ObjectTemplate.addTemplate e_muzz_minigun
+ObjectTemplate.setPosition 1.42238e-007/5.03023e-009/0.298345
+rem -------------------------------------
+ObjectTemplate.projectileTemplate air_jet_a_fantan_projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 500
+ObjectTemplate.itemIndex 1
+
+ObjectTemplate.activeSafe Sound S_fantan_Autocannon_Fire1P
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/xpak2_vehicles/xpak2_fantan/sounds/fantan_cannon_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.95/1/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_fantan_Autocannon_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_fantan_Autocannon_Fire3P
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/xpak2_vehicles/xpak2_fantan/sounds/fantan_cannon_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe Sound S_fantan_Autocannon_BoltClick
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_fantan_Autocannon_TriggerClick
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/ustnk_m1a2/sounds/vehicle_weapon_trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.41
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.3
+
+ObjectTemplate.activeSafe Sound S_fantan_Autocannon_SwitchFireRate
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_fantan_Autocannon_Reload1P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_fantan_Autocannon_Reload3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_fantan_Autocannon_Deploy1P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_fantan_Autocannon_Deploy3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_fantan_Autocannon_Zoom
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Wing xpak2_fantan_FlapL_Wing
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak2_fantan_FlapL_Wing_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/100/0
+ObjectTemplate.setAcceleration 0/-40/0
+ObjectTemplate.setInputToPitch PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 1.5
+ObjectTemplate.setFlapLift 0.85
+
+ObjectTemplate.activeSafe Sound S_xpak2_fantan_FlapL_Wing_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Wing xpak2_fantan_FlapR_Wing
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak2_fantan_FlapR_Wing_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/100/0
+ObjectTemplate.setAcceleration 0/40/0
+ObjectTemplate.setInputToPitch PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 1.5
+ObjectTemplate.setFlapLift 0.85
+
+ObjectTemplate.activeSafe Sound S_xpak2_fantan_FlapR_Wing_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Wing xpak2_fantan_Rudder_Wing
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak2_fantan_Rudder_Wing_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-23/0
+ObjectTemplate.setMaxRotation 0/23/0
+ObjectTemplate.setMaxSpeed 0/300/0
+ObjectTemplate.setAcceleration 0/50/0
+ObjectTemplate.setInputToPitch PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0.4
+ObjectTemplate.setFlapLift 0.5
+
+ObjectTemplate.activeSafe Sound S_xpak2_fantan_Rudder_Wing_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create GenericFireArm xpak2_fantan_bomblauncher
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.guiIndex 47
+ObjectTemplate.weaponHud.addShowOnCamMode 2
+rem ---EndComp ---
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent MultiFireComp
+ObjectTemplate.fire.roundsPerMinute 150
+ObjectTemplate.fire.fireInput PIAltFire
+ObjectTemplate.fire.addFireRate 1
+ObjectTemplate.fire.burstSize 2
+ObjectTemplate.fire.useDummyProjectiles 1
+ObjectTemplate.fire.addBarrelName mec_250_bombdummy
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags 1
+ObjectTemplate.ammo.magSize 4
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+rem ---EndComp ---
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+include ../../../Weapons/common/zoom/aaa_default.tweak
+rem ---BeginComp:MultiFireArmTargetComp ---
+ObjectTemplate.createComponent MultiFireArmTargetComp
+ObjectTemplate.target.maxDistance 375
+ObjectTemplate.target.targetSystem TSLaserGuided
+ObjectTemplate.target.useCameraDirectionToTarget 1
+ObjectTemplate.target.lockAngle 45
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate air_jet_fb_opfor_Bombs
+rem -------------------------------------
+ObjectTemplate.addTemplate S_xpak2_fantan_bomblauncher_Fire1P
+ObjectTemplate.addTemplate S_xpak2_fantan_bomblauncher_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_xpak2_fantan_bomblauncher_Fire3P
+ObjectTemplate.addTemplate S_xpak2_fantan_bomblauncher_BoltClick
+ObjectTemplate.addTemplate S_xpak2_fantan_bomblauncher_TriggerClick
+ObjectTemplate.addTemplate S_xpak2_fantan_bomblauncher_SwitchFireRate
+ObjectTemplate.addTemplate S_xpak2_fantan_bomblauncher_Reload1P
+ObjectTemplate.addTemplate S_xpak2_fantan_bomblauncher_Reload3P
+ObjectTemplate.addTemplate S_xpak2_fantan_bomblauncher_Deploy1P
+ObjectTemplate.addTemplate S_xpak2_fantan_bomblauncher_Deploy3P
+ObjectTemplate.addTemplate S_xpak2_fantan_bomblauncher_Zoom
+ObjectTemplate.addTemplate mec_250_bombdummy
+ObjectTemplate.setPosition 1.8643/-0.361825/-1.05593
+ObjectTemplate.setRotation 0/-0.841374/0
+ObjectTemplate.addTemplate mec_250_bombdummy
+ObjectTemplate.setPosition -1.8643/-0.361825/-1.05593
+ObjectTemplate.setRotation 0/-0.841374/0
+ObjectTemplate.addTemplate mec_250_bombdummy
+ObjectTemplate.setPosition 3.65952/-0.400989/-3.72272
+ObjectTemplate.setRotation 0/-0.841374/0
+ObjectTemplate.addTemplate mec_250_bombdummy
+ObjectTemplate.setPosition -3.69236/-0.468425/-3.66862
+ObjectTemplate.setRotation 0/-0.841374/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate mec_250_bomb
+ObjectTemplate.keepProjectiles 4
+ObjectTemplate.velocity 0
+ObjectTemplate.itemIndex 2
+
+ObjectTemplate.activeSafe Sound S_xpak2_fantan_bomblauncher_Fire1P
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/bomb_release.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.76
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_xpak2_fantan_bomblauncher_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak2_fantan_bomblauncher_Fire3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak2_fantan_bomblauncher_BoltClick
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak2_fantan_bomblauncher_TriggerClick
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/out_of_flares.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_xpak2_fantan_bomblauncher_SwitchFireRate
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak2_fantan_bomblauncher_Reload1P
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/bomb_reload.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_xpak2_fantan_bomblauncher_Reload3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak2_fantan_bomblauncher_Deploy1P
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "common/sound/weapon_toggle_vehicle.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_xpak2_fantan_bomblauncher_Deploy3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_xpak2_fantan_bomblauncher_Zoom
+ObjectTemplate.modifiedByUser "armandoma"
+

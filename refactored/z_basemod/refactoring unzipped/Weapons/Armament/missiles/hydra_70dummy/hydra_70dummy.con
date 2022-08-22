@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject hydra_70dummy
+ObjectTemplate.createdInEditor 1
+
+include hydra_70dummy.tweak

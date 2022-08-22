@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm ahe_z10_FlareLauncher
+
+include ahe_z10_FlareLauncher.tweak
+

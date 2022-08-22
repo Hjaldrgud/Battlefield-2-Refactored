@@ -1,0 +1,3 @@
+ObjectTemplate.create GenericFireArm xpak_hind_FlareLauncher
+
+include xpak_hind_FlareLauncher.tweak

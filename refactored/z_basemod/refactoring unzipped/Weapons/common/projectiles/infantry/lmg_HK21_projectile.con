@@ -1,0 +1,5 @@
+ObjectTemplate.create GenericProjectile lmg_HK21_projectile
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.damage 33
+include ../common_Bullet_small_arms.tweak
+include ../../tracers/infantry/lmg_m249,type95,mg36,hk21,rpk74.tweak 3

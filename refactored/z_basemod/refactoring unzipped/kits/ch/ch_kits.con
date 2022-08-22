@@ -1,0 +1,32 @@
+GeometryTemplate.create SkinnedMesh ch_kits
+
+ObjectTemplate.create SimpleObject ch_kits
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JSA-1:jsa
+ObjectTemplate.geometry ch_kits
+
+ObjectTemplate.create SimpleObject pouch1
+
+ObjectTemplate.create SimpleObject pouch6
+
+ObjectTemplate.create SimpleObject pouch7
+
+ObjectTemplate.create SimpleObject pouch8
+
+ObjectTemplate.create SimpleObject pouch9
+
+ObjectTemplate.create SimpleObject pouch10
+
+ObjectTemplate.create SimpleObject pouch11
+
+ObjectTemplate.create SimpleObject basker
+
+ObjectTemplate.create SimpleObject canteen40
+
+ObjectTemplate.create SimpleObject sim_kit
+
+ObjectTemplate.create SimpleObject ch_kit_gun2
+
+ObjectTemplate.create SimpleObject knife5
+
+include ch_kits.tweak

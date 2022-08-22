@@ -1,0 +1,186 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/4/5 15:44]
+GeometryTemplate.setMaterialReflectionScale 0 0 1 2
+GeometryTemplate.setMaterialReflectionScale 1 0 0 0.25
+GeometryTemplate.setMaterialReflectionScale 1 0 1 2
+GeometryTemplate.setMaterialReflectionScale 1 1 1 2
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 8
+ObjectTemplate.activeSafe GenericFireArm chsni_type88
+ObjectTemplate.creator MBA-1:mba
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\CHSNI_Type88.tga
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\CHSNI_Type88_mini.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\CHSNI_Type88.tga
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_type88"
+ObjectTemplate.weaponHud.guiIndex 0
+ObjectTemplate.weaponHud.altGuiIndex 52
+ObjectTemplate.weaponHud.deviationFactor 5
+ObjectTemplate.weaponHud.maxVisualDeviation 39
+ObjectTemplate.weaponHud.minVisualDeviation 5
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.magSize 10
+ObjectTemplate.ammo.nrOfMags 7
+ObjectTemplate.ammo.reloadTime 4
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+include ../../common/recoil/infantry/sni_type88.tweak
+include ../../common/deviation/infantry/sni_type88,svd.tweak
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+include ../../common/zoom/infantry/sni_type88.tweak
+ObjectTemplate.geometry chsni_type88
+ObjectTemplate.setCollisionMesh chsni_type88
+ObjectTemplate.mapMaterial 0 Collision_Material 68
+ObjectTemplate.mapMaterial 1 lambert1 68
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate ai_sniper_standard
+rem -------------------------------------
+ObjectTemplate.addTemplate S_chsni_type88_Fire1P
+ObjectTemplate.addTemplate S_chsni_type88_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_chsni_type88_Fire3P
+ObjectTemplate.setPosition 0/0.0131251/0.522905
+ObjectTemplate.addTemplate S_chsni_type88_BoltClick
+ObjectTemplate.addTemplate S_chsni_type88_TriggerClick
+ObjectTemplate.addTemplate S_chsni_type88_SwitchFireRate
+ObjectTemplate.addTemplate S_chsni_type88_Reload1P
+ObjectTemplate.addTemplate S_chsni_type88_Reload3P
+ObjectTemplate.addTemplate S_chsni_type88_Deploy1P
+ObjectTemplate.addTemplate S_chsni_type88_Deploy3P
+ObjectTemplate.addTemplate S_chsni_type88_Zoom
+ObjectTemplate.addTemplate e_muzz_sniper
+ObjectTemplate.setPosition -0.00022652/0.013967/0.524617
+ObjectTemplate.addTemplate e_shellejection_556
+ObjectTemplate.setPosition 0.0179642/0.0207936/-0.198724
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/chsni_type88/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/chsni_type88/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate sni_SVD,Type88_projectile
+ObjectTemplate.velocity 1000
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 1
+
+ObjectTemplate.activeSafe Sound S_chsni_type88_Fire1P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/chsni_type88/sounds/type88_fire_1p_outdoor.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+
+ObjectTemplate.activeSafe Sound S_chsni_type88_Fire3P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_dragunov/sounds/dragunov_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.95/1/
+ObjectTemplate.position 0/0.0131251/0.522905
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 10
+
+ObjectTemplate.activeSafe Sound S_chsni_type88_BoltClick
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_gp30/sounds/gp30_bolt_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.78
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.5
+
+ObjectTemplate.activeSafe Sound S_chsni_type88_TriggerClick
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_chsni_type88_SwitchFireRate
+ObjectTemplate.modifiedByUser dsu
+
+ObjectTemplate.activeSafe Sound S_chsni_type88_Reload1P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/chsni_type88/sounds/type88_reload_1p3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.68
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_chsni_type88_Reload3P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/chsni_type88/sounds/type88_reload_1p3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.68
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_chsni_type88_Deploy1P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/chsni_type88/sounds/type88_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_chsni_type88_Deploy3P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/chsni_type88/sounds/type88_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_chsni_type88_Zoom
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/zoom_generic.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1

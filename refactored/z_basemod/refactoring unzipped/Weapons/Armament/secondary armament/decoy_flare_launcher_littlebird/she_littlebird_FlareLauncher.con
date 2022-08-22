@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm she_littlebird_FlareLauncher
+
+include she_littlebird_FlareLauncher.tweak
+

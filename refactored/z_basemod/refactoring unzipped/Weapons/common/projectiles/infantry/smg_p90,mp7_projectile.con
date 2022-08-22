@@ -1,0 +1,3 @@
+ObjectTemplate.create GenericProjectile smg_p90,mp7_projectile
+ObjectTemplate.damage 19
+include ../common_Bullet_small_arms.tweak

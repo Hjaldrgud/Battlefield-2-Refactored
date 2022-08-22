@@ -1,0 +1,14 @@
+rem *** coaxial Browning Machine Gun ***
+weaponTemplate.create ats_atgm_missile
+weaponTemplate.indirect 0
+weaponTemplate.minRange 10.0
+weaponTemplate.maxRange 110.0
+weaponTemplate.setStrength Infantry     1.0
+weaponTemplate.setStrength LightArmour 12.0
+weaponTemplate.setStrength HeavyArmour  8.0
+weaponTemplate.setStrength NavalArmour  0.0
+weaponTemplate.setStrength Helicopter   2.0
+weaponTemplate.setStrength AirPlane     1.0
+weaponTemplate.setSoundSphereRadius   120.0
+weaponTemplate.allowedDeviation 1.0
+weaponTemplate.setFiresThroughTransparent 0

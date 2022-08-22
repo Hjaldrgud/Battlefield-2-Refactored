@@ -1,0 +1,113 @@
+ObjectTemplate.activeSafe GenericFireArm chthe_z8_flarelauncher
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent MultiFireComp
+ObjectTemplate.fire.roundsPerMinute 1800
+ObjectTemplate.fire.fireInput PIFlareFire
+ObjectTemplate.fire.addFireRate 1
+ObjectTemplate.fire.burstSize 6
+ObjectTemplate.fire.addBarrelName chthe_z8_flarelauncher_barrel
+rem ---EndComp ---
+include ../common_flare_heli.tweak
+rem -------------------------------------
+ObjectTemplate.addTemplate S_chthe_z8_flarelauncher_Fire1P
+ObjectTemplate.addTemplate S_chthe_z8_flarelauncher_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_chthe_z8_flarelauncher_Fire3P
+ObjectTemplate.addTemplate S_chthe_z8_flarelauncher_BoltClick
+ObjectTemplate.addTemplate S_chthe_z8_flarelauncher_TriggerClick
+ObjectTemplate.addTemplate S_chthe_z8_flarelauncher_SwitchFireRate
+ObjectTemplate.addTemplate S_chthe_z8_flarelauncher_Reload1P
+ObjectTemplate.addTemplate S_chthe_z8_flarelauncher_Reload3P
+ObjectTemplate.addTemplate S_chthe_z8_flarelauncher_Deploy1P
+ObjectTemplate.addTemplate S_chthe_z8_flarelauncher_Deploy3P
+ObjectTemplate.addTemplate S_chthe_z8_flarelauncher_Zoom
+ObjectTemplate.addTemplate chthe_z8_flarelauncher_barrel
+ObjectTemplate.setPosition -1.78655/-1.04125/0
+ObjectTemplate.setRotation -45/0/0
+ObjectTemplate.addTemplate chthe_z8_flarelauncher_barrel
+ObjectTemplate.setPosition 1.78655/-1.04125/0
+ObjectTemplate.setRotation 45/0/0
+ObjectTemplate.addTemplate chthe_z8_flarelauncher_barrel
+ObjectTemplate.setPosition 1.86538/-1.04125/-8.15381e-008
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate chthe_z8_flarelauncher_barrel
+ObjectTemplate.setPosition -1.8721/-1.04125/-8.18321e-008
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate chthe_z8_flarelauncher_barrel
+ObjectTemplate.setPosition -1.82736/-1.04125/-0.380761
+ObjectTemplate.setRotation -135/0/0
+ObjectTemplate.addTemplate chthe_z8_flarelauncher_barrel
+ObjectTemplate.setPosition 1.88903/-1.04125/0
+ObjectTemplate.setRotation 135/0/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate flare_ahe_projectile_z8,z10
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 10
+
+ObjectTemplate.activeSafe Sound S_chthe_z8_flarelauncher_Fire1P
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/flare_launcher_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_chthe_z8_flarelauncher_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.activeSafe Sound S_chthe_z8_flarelauncher_Fire3P
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.activeSafe Sound S_chthe_z8_flarelauncher_BoltClick
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.activeSafe Sound S_chthe_z8_flarelauncher_TriggerClick
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/out_of_flares.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_chthe_z8_flarelauncher_SwitchFireRate
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.activeSafe Sound S_chthe_z8_flarelauncher_Reload1P
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/flare_reload.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_chthe_z8_flarelauncher_Reload3P
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.activeSafe Sound S_chthe_z8_flarelauncher_Deploy1P
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.activeSafe Sound S_chthe_z8_flarelauncher_Deploy3P
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.activeSafe Sound S_chthe_z8_flarelauncher_Zoom
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.create Bundle chthe_z8_flarelauncher_barrel
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0

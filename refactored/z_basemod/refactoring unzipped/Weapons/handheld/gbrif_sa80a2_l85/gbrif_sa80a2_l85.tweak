@@ -1,0 +1,217 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/12/1 6:11]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm gbrif_sa80a2_l85
+ObjectTemplate.creator JULIO:julioce
+ObjectTemplate.modifiedByUser "daveke"
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\gbrif_sa80a2_l85.tga
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\gbrif_sa80a2_l85_mini.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\gbrif_sa80a2_l85.tga
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_gbrif_sa80a2_l85"
+ObjectTemplate.weaponHud.guiIndex 4
+ObjectTemplate.weaponHud.altGuiIndex 52
+ObjectTemplate.weaponHud.deviationFactor 5
+ObjectTemplate.weaponHud.maxVisualDeviation 23
+ObjectTemplate.weaponHud.minVisualDeviation 4
+ObjectTemplate.weaponHud.disableOnSprint 1
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.addFireRate 2
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.reloadTime 4.3
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+include ../../common/recoil/infantry/rif_m16assault,sa80.tweak
+include ../../common/deviation/infantry/rif_sa80.tweak
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+include ../../common/zoom/infantry/rif_sa80.tweak
+ObjectTemplate.geometry gbrif_sa80a2_l85
+ObjectTemplate.setCollisionMesh gbrif_sa80a2_l85
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.mapMaterial 1 alphascope_envmap 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate ai_rifle_standard
+rem -------------------------------------
+ObjectTemplate.addTemplate S_gbrif_sa80a2_l85_Fire1P
+ObjectTemplate.addTemplate S_gbrif_sa80a2_l85_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_gbrif_sa80a2_l85_Fire3P
+ObjectTemplate.setPosition 0/0.00944515/0.484029
+ObjectTemplate.addTemplate S_gbrif_sa80a2_l85_BoltClick
+ObjectTemplate.addTemplate S_gbrif_sa80a2_l85_TriggerClick
+ObjectTemplate.addTemplate S_gbrif_sa80a2_l85_SwitchFireRate
+ObjectTemplate.addTemplate S_gbrif_sa80a2_l85_Reload1P
+ObjectTemplate.addTemplate S_gbrif_sa80a2_l85_Reload3P
+ObjectTemplate.setPosition 0/-0.0576745/-0.101432
+ObjectTemplate.addTemplate S_gbrif_sa80a2_l85_Deploy1P
+ObjectTemplate.addTemplate S_gbrif_sa80a2_l85_Deploy3P
+ObjectTemplate.addTemplate S_gbrif_sa80a2_l85_Zoom
+ObjectTemplate.addTemplate e_shellejection_556
+ObjectTemplate.setPosition 0/0.026656/-0.109191
+ObjectTemplate.addTemplate e_muzz_g3a3
+ObjectTemplate.setPosition 0/0.0103897/0.491207
+rem -------------------------------------
+ObjectTemplate.animationSystem1P objects/weapons/handheld/gbrif_sa80a2_l85/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P objects/weapons/handheld/gbrif_sa80a2_l85/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate rif_L85,F2000_projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 1000
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 1
+
+ObjectTemplate.activeSafe Sound S_gbrif_sa80a2_l85_Fire1P
+ObjectTemplate.modifiedByUser "daveke"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/gbrif_sa80a2_l85/sounds/sa80a2_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.82
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.981/1.035/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_gbrif_sa80a2_l85_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "daveke"
+
+ObjectTemplate.activeSafe Sound S_gbrif_sa80a2_l85_Fire3P
+ObjectTemplate.modifiedByUser "daveke"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/gbrif_sa80a2_l85/sounds/sa80a2_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.975/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0.00944515/0.484029
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe Sound S_gbrif_sa80a2_l85_BoltClick
+ObjectTemplate.modifiedByUser "daveke"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/chrif_type95/sounds/type95_bolt_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.9
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.5
+
+ObjectTemplate.activeSafe Sound S_gbrif_sa80a2_l85_TriggerClick
+ObjectTemplate.modifiedByUser "daveke"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_gbrif_sa80a2_l85_SwitchFireRate
+ObjectTemplate.modifiedByUser "daveke"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_g36c/sounds/g36c_fire_rate_switch.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.54
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.3
+
+ObjectTemplate.activeSafe Sound S_gbrif_sa80a2_l85_Reload1P
+ObjectTemplate.modifiedByUser "daveke"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/gbrif_sa80a2_l85/sounds/sa80a2_reload1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_gbrif_sa80a2_l85_Reload3P
+ObjectTemplate.modifiedByUser "daveke"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/gbrif_sa80a2_l85/sounds/sa80a2_reload3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.0576745/-0.101432
+ObjectTemplate.minDistance 0.8
+ObjectTemplate.halfVolumeDistance 1.6
+
+ObjectTemplate.activeSafe Sound S_gbrif_sa80a2_l85_Deploy1P
+ObjectTemplate.modifiedByUser "daveke"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usatp_predator/sounds/mono/deploy_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.57
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_gbrif_sa80a2_l85_Deploy3P
+ObjectTemplate.modifiedByUser "daveke"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/usatp_predator/sounds/mono/deploy_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_gbrif_sa80a2_l85_Zoom
+ObjectTemplate.modifiedByUser "daveke"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/zoom_generic.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1

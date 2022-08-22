@@ -1,0 +1,7 @@
+ObjectTemplate.active mec_250_bombdummy
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry mec_250_bomb
+ObjectTemplate.setCollisionMesh mec_250_bomb
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.mapMaterial 0 Airplane 32

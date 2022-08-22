@@ -1,0 +1,18 @@
+rem Lazily ripped off from AIX 2.0
+weaponTemplate.create ai_explosives_claymore
+weaponTemplate.indirect 0
+weaponTemplate.isThrown 1
+weaponTemplate.minRange 50.0
+weaponTemplate.maxRange 250.0
+weaponTemplate.optimalRangePercentage 30
+weaponTemplate.setFiringPose Standing
+weaponTemplate.setStrength Infantry    8.0
+weaponTemplate.setStrength LightArmour 0.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  0.0
+weaponTemplate.setStrength AirPlane    0.0
+weaponTemplate.setSoundSphereRadius    30.0
+weaponTemplate.setExplosionRadius 10.0
+weaponTemplate.allowedDeviation 3.5
+weaponTemplate.setFiresThroughTransparent 0

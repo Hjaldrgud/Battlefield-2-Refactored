@@ -1,0 +1,41 @@
+ObjectTemplate.create Kit MEInsurgent_AT
+ObjectTemplate.geometry MEInsurgent_Kits
+ObjectTemplate.geometry.kit 5
+ObjectTemplate.geometry.dropGeom 13
+include ../common/common_kits_at.tweak
+ObjectTemplate.addTemplate meinsurgent_hv_mask
+ObjectTemplate.addTemplate meinsurgent_hv_nvg	
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate RUPIS_Baghira
+rem ------------------3------------------
+ObjectTemplate.addTemplate RURIF_Bizon
+rem ------------------4------------------
+ObjectTemplate.addTemplate insgr_rpg
+rem ------------------5------------------
+
+rem ------------------6------------------
+ObjectTemplate.addTemplate nsrif_grapplinghook
+rem ------------------7------------------
+ObjectTemplate.addTemplate nightvisiongoggles
+rem ------------------8------------------
+ObjectTemplate.addTemplate gasmask
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockMEIAT
+ObjectTemplate.addTemplate UnlockMEIAT2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockMEIAT
+ObjectTemplate.addTemplate chsht_protecta
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockMEIAT2
+ObjectTemplate.addTemplate eurif_fnp90
+ObjectTemplate.replaceItem RURIF_Bizon
+ObjectTemplate.replaceItem chsht_protecta
+ObjectTemplate.unlockLevel 2

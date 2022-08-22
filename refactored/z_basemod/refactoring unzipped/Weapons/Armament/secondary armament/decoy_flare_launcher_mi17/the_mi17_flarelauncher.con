@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm the_mi17_flarelauncher
+
+include the_mi17_flarelauncher.tweak
+

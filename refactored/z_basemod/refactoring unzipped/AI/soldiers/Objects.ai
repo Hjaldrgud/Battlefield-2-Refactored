@@ -1,0 +1,75 @@
+rem *** Plugins ***
+aiTemplatePlugIn.create Unit soldier_ai_Unit
+aiTemplatePlugIn.equipmentTypeName Infantery
+aiTemplatePlugIn.setBattleStrength Infantry    4.0
+aiTemplatePlugIn.setBattleStrength LightArmour 2.0
+aiTemplatePlugIn.setBattleStrength HeavyArmour 1.0
+aiTemplatePlugIn.setBattleStrength NavalArmour 0.0
+aiTemplatePlugIn.setBattleStrength Helicopter   0.0
+aiTemplatePlugIn.setBattleStrength AirPlane         1.0
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 1
+aiTemplatePlugIn.cullDistance 100
+
+
+aiTemplatePlugIn.create Physical soldier_ai_Physical
+aiTemplatePlugIn.setStrType Infantry
+
+aiTemplatePlugIn.create Mobile soldier_ai_Mobile
+aiTemplatePlugIn.setPathfindingMap Infantry
+aiTemplatePlugIn.maxSpeed 5.0
+aiTemplatePlugIn.turnRadius 0.1
+aiTemplatePlugIn.setSoundSphereRadius 0.0 15.0
+aiTemplatePlugIn.setHearingProbability 0.01 0.1
+aiTemplatePlugIn.lodHeight 1.0
+
+aiTemplatePlugIn.create ControlInfo soldier_ai_Ctrl
+aiTemplatePlugIn.driveTurnControl           PIMouseLookX
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity        1.0
+aiTemplatePlugIn.pitchSensitivity           0.4363323
+aiTemplatePlugIn.rollSensitivity           -0.5235988
+aiTemplatePlugIn.yawSensitivity             1.0
+aiTemplatePlugIn.lookVerticalSensitivity    0.4363323
+aiTemplatePlugIn.lookHorizontalSensitivity -0.5235988
+aiTemplatePlugIn.proportionalConstant	   -7
+aiTemplatePlugIn.angleSpeedConstant	    0.4
+aiTemplatePlugIn.derivativeConstant	   -0.01
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   1.0
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+
+rem Armament plugin
+
+aiTemplatePlugIn.create Armament soldier_ai_Armament
+
+
+
+rem *** AITemplate ***
+aiTemplate.create soldier_ai
+aiTemplate.addPlugIn soldier_ai_Unit
+aiTemplate.addPlugIn soldier_ai_Physical
+aiTemplate.addPlugIn soldier_ai_Mobile
+aiTemplate.addPlugIn soldier_ai_Ctrl
+aiTemplate.addPlugIn soldier_ai_Armament
+aiTemplate.addType ITUnit
+aiTemplate.addType ITMobile
+aiTemplate.addType ITBiological
+aiTemplate.addType ITGround
+aiTemplate.addType ITsoldier_ai
+aiTemplate.degeneration 15
+aiTemplate.allowedTimeDiff 0.5
+aiTemplate.basicTemp 1
+aiTemplate.commonKnowledge 0

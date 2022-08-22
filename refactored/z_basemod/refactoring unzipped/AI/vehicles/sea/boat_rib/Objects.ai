@@ -1,0 +1,256 @@
+rem *** Plugins ***
+aiTemplatePlugIn.create Mobile boat_RibBoat_ai_Mobile
+aiTemplatePlugIn.setPathfindingMap Vehicle
+aiTemplatePlugIn.maxSpeed 25.0
+aiTemplatePlugIn.turnRadius 5.0
+aiTemplatePlugIn.coverSearchRadius 50.0
+
+aiTemplatePlugIn.create Physical boat_RibBoat_ai_Physical
+aiTemplatePlugIn.setStrType LightArmour
+
+aiTemplatePlugIn.create Cover boat_RibBoat_ai_Cover
+aiTemplatePlugIn.coverValue 2.0
+
+aiTemplatePlugIn.create Unit boat_RibBoat_ai_Unit
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 0
+aiTemplatePlugIn.equipmentTypeName LandingCraft
+aiTemplatePlugIn.setHasExposedSoldier 1
+
+aiTemplatePlugIn.create ControlInfo boat_RibBoat_ai_Ctrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+rem aiTemplatePlugIn.pitchSensitivity           0.021817
+rem aiTemplatePlugIn.rollSensitivity           -0.021817
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -0.50
+rem aiTemplatePlugIn.lookVerticalSensitivity    0.021817
+rem aiTemplatePlugIn.lookHorizontalSensitivity -0.021817
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 1.0
+aiTemplatePlugIn.rollScale                  1.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -110/-40/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 110/10/0
+
+rem *** AITemplate ***
+aiTemplate.create boat_RibBoat_ai
+aiTemplate.addType ITBiological
+aiTemplate.addType ITNaval
+aiTemplate.addType ITMobile
+aiTemplate.degeneration 10
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 6
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn boat_RibBoat_ai_Mobile
+aiTemplate.addPlugIn boat_RibBoat_ai_Physical
+aiTemplate.addPlugIn boat_RibBoat_ai_Cover
+aiTemplate.addPlugIn boat_RibBoat_ai_Ctrl
+aiTemplate.addPlugIn boat_RibBoat_ai_Unit
+
+
+rem ******************************************************************
+rem ******************************************************************
+
+rem *** Plugins ***
+
+aiTemplatePlugIn.create Unit boat_RibBoat_ai_PassengerUnit1
+aiTemplatePlugIn.equipmentTypeName LandingCraftFixed
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 1
+aiTemplatePlugIn.setHasExposedSoldier 1
+
+aiTemplatePlugIn.create ControlInfo boat_RibBoat_ai_PassengerCtrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+rem aiTemplatePlugIn.pitchSensitivity           0.021817
+rem aiTemplatePlugIn.rollSensitivity           -0.021817
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+rem aiTemplatePlugIn.lookVerticalSensitivity    0.021817
+rem aiTemplatePlugIn.lookHorizontalSensitivity -0.021817
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.proportionalConstant	   -7.0
+aiTemplatePlugIn.derivativeConstant	   -1.0
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -60/-50/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 60/10/0
+
+rem *** AITemplate ***
+aiTemplate.create boat_RibBoat_ai_Passenger1
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITNaval
+aiTemplate.degeneration 10
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 6
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn boat_RibBoat_ai_PassengerUnit1
+aiTemplate.addPlugIn boat_RibBoat_ai_PassengerCtrl
+
+aiTemplatePlugIn.create Unit boat_RibBoat_ai_PassengerUnit2
+aiTemplatePlugIn.equipmentTypeName LandingCraftFixed
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 1
+aiTemplatePlugIn.setHasExposedSoldier 1
+
+rem *** AITemplate ***
+aiTemplate.create boat_RibBoat_ai_Passenger2
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITNaval
+aiTemplate.degeneration 10
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 6
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn boat_RibBoat_ai_PassengerUnit2
+aiTemplate.addPlugIn boat_RibBoat_ai_PassengerCtrl
+
+
+
+
+
+aiTemplatePlugIn.create Unit boat_RibBoat_ai_PassengerUnit3
+aiTemplatePlugIn.equipmentTypeName LandingCraftFixed
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 1
+aiTemplatePlugIn.setHasExposedSoldier 1
+
+rem *** AITemplate ***
+aiTemplate.create boat_RibBoat_ai_Passenger3
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITNaval
+aiTemplate.degeneration 10
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 6
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn boat_RibBoat_ai_PassengerUnit3
+aiTemplate.addPlugIn boat_RibBoat_ai_PassengerCtrl
+
+
+
+
+aiTemplatePlugIn.create Unit boat_RibBoat_ai_PassengerUnit4
+aiTemplatePlugIn.equipmentTypeName LandingCraftFixed
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 1
+aiTemplatePlugIn.setHasExposedSoldier 1
+
+rem *** AITemplate ***
+aiTemplate.create boat_RibBoat_ai_Passenger4
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITNaval
+aiTemplate.degeneration 10
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 6
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn boat_RibBoat_ai_PassengerUnit4
+aiTemplate.addPlugIn boat_RibBoat_ai_PassengerCtrl
+
+
+
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Armament boat_RibBoat_ai_TopMgArms
+aiTemplatePlugIn.setIsAntiAircraft 1
+
+aiTemplatePlugIn.create Unit boat_RibBoat_ai_TopMgUnit
+aiTemplatePlugIn.equipmentTypeName LandingCraftFixed
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 1
+aiTemplatePlugIn.setHasExposedSoldier 1
+
+aiTemplatePlugIn.create ControlInfo boat_RibBoat_ai_TopMgCtrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+rem aiTemplatePlugIn.pitchSensitivity           0.021817
+rem aiTemplatePlugIn.rollSensitivity           -0.021817
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+rem aiTemplatePlugIn.lookVerticalSensitivity    0.021817
+rem aiTemplatePlugIn.lookHorizontalSensitivity -0.021817
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.proportionalConstant	   -7.0
+aiTemplatePlugIn.derivativeConstant	   -1.0
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg 0/-30/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 0/50/0
+
+
+rem *** AITemplate ***
+aiTemplate.create boat_RibBoat_ai_Gunner
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITNaval
+aiTemplate.degeneration 15
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 5
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn boat_RibBoat_ai_TopMgArms
+aiTemplate.addPlugIn boat_RibBoat_ai_TopMgUnit
+aiTemplate.addPlugIn boat_RibBoat_ai_TopMgCtrl
+
+rem ******************************************************************
+rem ******************************************************************

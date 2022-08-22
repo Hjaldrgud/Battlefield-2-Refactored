@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericProjectile rif_M16,FAMAS_projectile
+ObjectTemplate.minDamage 1
+ObjectTemplate.damage 30
+include ../common_Bullet_small_arms.tweak

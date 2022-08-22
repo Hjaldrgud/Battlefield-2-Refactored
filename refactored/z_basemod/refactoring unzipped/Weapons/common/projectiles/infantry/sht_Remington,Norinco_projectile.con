@@ -1,0 +1,6 @@
+ObjectTemplate.create GenericProjectile sht_Remington,Norinco_projectile
+ObjectTemplate.minDamage 8
+ObjectTemplate.damage 30
+ObjectTemplate.distToStartLoseDamage 30
+ObjectTemplate.distToMinDamage 100
+include ../common_Bullet_shotgun.tweak

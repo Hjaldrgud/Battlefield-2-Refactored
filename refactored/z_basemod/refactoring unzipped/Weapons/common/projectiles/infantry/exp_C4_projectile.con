@@ -1,0 +1,44 @@
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.create GenericProjectile exp_C4_projectile
+ObjectTemplate.setNetworkableInfo BasicInfo
+rem ---BeginComp:StickyCollisionComp ---
+ObjectTemplate.createComponent StickyCollisionComp
+ObjectTemplate.collision.bouncing 1
+ObjectTemplate.collision.maxStickAngle 180
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 80
+ObjectTemplate.detonation.explosionForce 17
+ObjectTemplate.detonation.explosionRadius 7
+ObjectTemplate.detonation.explosionDamage 1000
+ObjectTemplate.detonation.detonateOnWaterCollision 0
+ObjectTemplate.detonation.endEffectTemplate e_exp_large
+ObjectTemplate.detonation.useMMOnEndEffect 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.geometry c4_explosives
+ObjectTemplate.drag 15
+ObjectTemplate.gravityModifier 1.5
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 81
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/9999/0/0
+ObjectTemplate.material 81
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.localPredictOnClient 1
+ObjectTemplate.damage 0
+ObjectTemplate.visibleOn3dMap 1
+ObjectTemplate.3dMapIcon 9
+ObjectTemplate.canPickup 1

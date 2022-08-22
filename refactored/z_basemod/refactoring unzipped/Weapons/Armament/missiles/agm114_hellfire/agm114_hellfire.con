@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh agm114_hellfire
+CollisionManager.createTemplate agm114_hellfire
+
+ObjectTemplate.create GenericProjectile agm114_hellfire
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MEI-2:mei
+ObjectTemplate.collisionMesh agm114_hellfire
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry agm114_hellfire
+
+include agm114_hellfire.tweak

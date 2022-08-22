@@ -1,0 +1,210 @@
+rem *** Generated with Bf2Editor.exe [created: 2004/12/12 13:50]
+ObjectTemplate.activeSafe GenericFireArm uspis_92fs_silencer
+ObjectTemplate.creator FLI-1:fli
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.preCacheObject 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\USLMG_M249SAW.tga
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\USLMG_M249SAW_mini.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\USPIS_92FS_Silenser.tga
+ObjectTemplate.weaponHud.hudName KILLMESSAGE_WEAPON_beretta92
+ObjectTemplate.weaponHud.guiIndex 4
+ObjectTemplate.weaponHud.altGuiIndex 52
+ObjectTemplate.weaponHud.deviationFactor 5
+ObjectTemplate.weaponHud.maxVisualDeviation 23
+ObjectTemplate.weaponHud.minVisualDeviation 3
+ObjectTemplate.weaponHud.disableOnSprint 1
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags 8
+ObjectTemplate.ammo.magSize 15
+ObjectTemplate.ammo.reloadTime 3.2
+rem ---EndComp ---
+include ../../common/recoil/infantry/pis_AllPistols.tweak
+include ../../common/deviation/infantry/pis_AllPistols.tweak
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+include ../../common/zoom/infantry/pis_allpistols.tweak
+ObjectTemplate.geometry USPIS_92FS_silencer
+ObjectTemplate.setCollisionMesh uspis_92fs_silencer
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.mapMaterial 1 lambert1 0
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.aiTemplate ai_pistol_silencer
+ObjectTemplate.material 38
+rem -------------------------------------
+ObjectTemplate.addTemplate S_uspis_92fs_silencer_Fire1P
+ObjectTemplate.setPosition 0/0.0368838/0.245643
+ObjectTemplate.addTemplate S_uspis_92fs_silencer_Fire1P_Outdoor
+ObjectTemplate.setPosition 0/0.0365171/0.245324
+ObjectTemplate.addTemplate S_uspis_92fs_silencer_Fire3P
+ObjectTemplate.setPosition 0/0.0387022/0.247454
+ObjectTemplate.addTemplate S_uspis_92fs_silencer_BoltClick
+ObjectTemplate.setPosition 0/0.032593/-0.0417674
+ObjectTemplate.addTemplate S_uspis_92fs_silencer_TriggerClick
+ObjectTemplate.addTemplate S_uspis_92fs_silencer_SwitchFireRate
+ObjectTemplate.addTemplate S_uspis_92fs_silencer_Reload1P
+ObjectTemplate.setPosition 0/-0.0663167/-0.0589631
+ObjectTemplate.addTemplate S_uspis_92fs_silencer_Reload3P
+ObjectTemplate.setPosition 0/-0.0725516/-0.0591016
+ObjectTemplate.addTemplate S_uspis_92fs_silencer_Deploy1P
+ObjectTemplate.addTemplate S_uspis_92fs_silencer_Deploy3P
+ObjectTemplate.addTemplate S_uspis_92fs_silencer_Zoom
+ObjectTemplate.addTemplate silencer
+ObjectTemplate.setPosition 0/0.0112/0.026
+ObjectTemplate.addTemplate e_shellejection_9mm
+ObjectTemplate.setPosition 0/0.0416955/0.0325331
+ObjectTemplate.addTemplate e_muzz_handgunSilenced
+ObjectTemplate.setPosition 0/0.0351/0.257179
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/USPIS_92FS/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/USPIS_92FS/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate pis_AllPistols_projectile
+ObjectTemplate.velocity 1000
+ObjectTemplate.itemIndex 2
+ObjectTemplate.delayToUse 0.75
+
+ObjectTemplate.activeSafe Sound S_uspis_92fs_silencer_Fire1P
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs_silencer/sounds/uspis_92fs_silencer_1p_fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.68
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.94/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0.0368838/0.245643
+
+ObjectTemplate.activeSafe Sound S_uspis_92fs_silencer_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs_silencer/sounds/uspis_92fs_silencer_1p_fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.68
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.94/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0.0365171/0.245324
+
+ObjectTemplate.activeSafe Sound S_uspis_92fs_silencer_Fire3P
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs_silencer/sounds/uspis_92fs_silencer_3p_fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 0.7
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.95/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0.0387022/0.247454
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 3
+ObjectTemplate.soundRadius 0.3
+
+ObjectTemplate.activeSafe Sound S_uspis_92fs_silencer_BoltClick
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/bolt_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.032593/-0.0417674
+
+ObjectTemplate.activeSafe Sound S_uspis_92fs_silencer_TriggerClick
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_uspis_92fs_silencer_SwitchFireRate
+ObjectTemplate.modifiedByUser mdo
+
+ObjectTemplate.activeSafe Sound S_uspis_92fs_silencer_Reload1P
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/reload_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.0663167/-0.0589631
+
+ObjectTemplate.activeSafe Sound S_uspis_92fs_silencer_Reload3P
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/reload_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.0725516/-0.0591016
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_uspis_92fs_silencer_Deploy1P
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_uspis_92fs_silencer_Deploy3P
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_uspis_92fs_silencer_Zoom
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/zoom_generic.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1

@@ -1,0 +1,39 @@
+ObjectTemplate.create Kit CH_Support
+ObjectTemplate.geometry CH_Kits
+ObjectTemplate.geometry.kit 1
+ObjectTemplate.geometry.dropGeom 14
+include ../common/common_kits_support.tweak
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate chpis_qsz92
+rem ------------------3------------------
+ObjectTemplate.addTemplate chlmg_type95
+rem ------------------4------------------
+ObjectTemplate.addTemplate USHGR_M67
+rem ------------------5------------------
+ObjectTemplate.addTemplate ammokit
+rem ------------------6------------------
+
+rem ------------------7------------------
+
+rem ------------------8------------------
+
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockCHSupport
+ObjectTemplate.addTemplate UnlockCHSupport2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockCHSupport
+ObjectTemplate.addTemplate RULMG_PKM
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockCHSupport2
+ObjectTemplate.addTemplate sasrif_mg36
+ObjectTemplate.replaceItem chlmg_type95
+ObjectTemplate.replaceItem RULMG_PKM
+ObjectTemplate.unlockLevel 2

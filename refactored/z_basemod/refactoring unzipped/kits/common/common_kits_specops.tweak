@@ -1,0 +1,28 @@
+ObjectTemplate.setNetworkableInfo KitInfo
+ObjectTemplate.kitType Specops
+ObjectTemplate.aiTemplate Specops
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.unlockIndex 4
+ObjectTemplate.cullRadiusScale 12.5
+ObjectTemplate.timeToLiveAftherDeath 60
+
+ObjectTemplate.createComponent AbilityHud
+ObjectTemplate.abilityHud.healingSound S_Heal
+ObjectTemplate.abilityHud.repairingSound S_Repair
+ObjectTemplate.abilityHud.ammoSound S_Resupply
+
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName 		"HUD_TEXT_MENU_SPAWN_KIT_SPECIALFORCES"
+ObjectTemplate.vehicleHud.miniMapIcon		"Ingame\Kits\Icons\kit_Specops_outline.tga"
+ObjectTemplate.vehicleHud.vehicleIcon		"Ingame\Kits\Icons\kit_Specops.tga"
+ObjectTemplate.vehicleHud.spottedIcon 		"Ingame\Player\Icons\Minimap\mini_Soldier.dds"
+ObjectTemplate.vehicleHud.pantingSound		S_SprintBreath
+ObjectTemplate.vehicleHud.injurySound		S_Injury
+ObjectTemplate.vehicleHud.vehicleType 		7
+
+ObjectTemplate.sprintStaminaDissipationFactor 0.2
+
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage	"infantry_spotted"
+rem ---EndComp ---

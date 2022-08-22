@@ -1,0 +1,45 @@
+ObjectTemplate.create Kit sas_Assault
+ObjectTemplate.geometry sas_kits
+ObjectTemplate.geometry.kit 5
+ObjectTemplate.geometry.dropGeom 15
+ObjectTemplate.dropHeadwear helmet
+ObjectTemplate.addTemplate sas_mask
+ObjectTemplate.addTemplate sas_nvg
+include ../common/common_kits_assault.tweak
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate USPIS_92FS
+rem ------------------3------------------
+ObjectTemplate.addTemplate sasrif_fn2000
+rem ------------------4------------------
+ObjectTemplate.addTemplate sasgr_fn2000
+rem ------------------5------------------
+ObjectTemplate.addTemplate nshgr_flashbang
+rem ------------------6------------------
+ObjectTemplate.addTemplate nsrif_grapplinghook
+rem ------------------7------------------
+ObjectTemplate.addTemplate nightvisiongoggles
+rem ------------------8------------------
+ObjectTemplate.addTemplate gasmask
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockSASAssault
+ObjectTemplate.addTemplate UnlockSASAssault2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockSASAssault
+ObjectTemplate.addTemplate usrif_G3A3
+ObjectTemplate.replaceItem sasrif_fn2000
+Objecttemplate.addTemplate ushgr_m67
+ObjectTemplate.replaceItem sasgr_fn2000
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockSASAssault2
+ObjectTemplate.addTemplate USRIF_fnscarh
+ObjectTemplate.replaceItem sasrif_fn2000
+ObjectTemplate.replaceItem usrif_G3A3
+ObjectTemplate.unlockLevel 2

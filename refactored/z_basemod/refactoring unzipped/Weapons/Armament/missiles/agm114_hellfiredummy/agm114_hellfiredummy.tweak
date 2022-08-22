@@ -1,0 +1,7 @@
+ObjectTemplate.active agm114_hellfiredummy
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry agm114_hellfire
+ObjectTemplate.setCollisionMesh agm114_hellfire
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.mapMaterial 0 Airplane 31

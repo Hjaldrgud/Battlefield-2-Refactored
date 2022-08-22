@@ -1,0 +1,12 @@
+weaponTemplate.create ai_explosives_c4
+weaponTemplate.indirect 0
+weaponTemplate.minRange 0.0
+weaponTemplate.maxRange 30.0
+weaponTemplate.optimalRangePercentage 1
+weaponTemplate.setStrength Infantry    0.0
+weaponTemplate.setStrength LightArmour 15.0
+weaponTemplate.setStrength HeavyArmour 15.0
+weaponTemplate.setStrength NavalArmour 5.0
+weaponTemplate.setStrength Helicopter  5.0
+weaponTemplate.setStrength AirPlane    5.0
+weaponTemplate.setSoundSphereRadius    30.0

@@ -1,0 +1,6 @@
+ObjectTemplate.create GenericProjectile pis_AllPistols_projectile
+ObjectTemplate.minDamage 8
+ObjectTemplate.damage 20
+ObjectTemplate.distToStartLoseDamage 100
+ObjectTemplate.distToMinDamage 200
+include ../common_Bullet_small_arms.tweak

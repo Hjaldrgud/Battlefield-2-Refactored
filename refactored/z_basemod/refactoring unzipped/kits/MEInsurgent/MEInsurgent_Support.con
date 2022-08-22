@@ -1,0 +1,41 @@
+ObjectTemplate.create Kit MEInsurgent_Support
+ObjectTemplate.geometry meinsurgent_kits
+ObjectTemplate.geometry.kit 1
+ObjectTemplate.geometry.dropGeom 14
+include ../common/common_kits_support.tweak
+ObjectTemplate.addTemplate meinsurgent_hv_mask
+ObjectTemplate.addTemplate meinsurgent_hv_nvg
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate RUPIS_Baghira
+rem ------------------3------------------
+ObjectTemplate.addTemplate RULMG_RPK74
+rem ------------------4------------------
+ObjectTemplate.addTemplate USHGR_M67
+rem ------------------5------------------
+ObjectTemplate.addTemplate ammokit
+rem ------------------6------------------
+ObjectTemplate.addTemplate sasrif_teargas
+rem ------------------7------------------
+ObjectTemplate.addTemplate nightvisiongoggles
+rem ------------------8------------------
+ObjectTemplate.addTemplate gasmask
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockMEISupport
+ObjectTemplate.addTemplate UnlockMEISupport2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockMEISupport
+ObjectTemplate.addTemplate RULMG_PKM
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockMEISupport2
+ObjectTemplate.addTemplate sasrif_mg36
+ObjectTemplate.replaceItem RULMG_RPK74
+ObjectTemplate.replaceItem RULMG_PKM
+ObjectTemplate.unlockLevel 2

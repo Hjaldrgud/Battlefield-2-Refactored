@@ -1,0 +1,7 @@
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.zoomDelay 0.083
+ObjectTemplate.zoom.zoomLod 1
+ObjectTemplate.zoom.addZoomFactor 0
+ObjectTemplate.zoom.addZoomFactor 0.6
+rem ---EndComp ---

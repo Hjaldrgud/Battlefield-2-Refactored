@@ -1,0 +1,16 @@
+ObjectTemplate.create GenericProjectile apc_lav25_projectile
+include ../common_Shell_25mm.tweak
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 42
+ObjectTemplate.detonation.explosionRadius 3.5
+ObjectTemplate.detonation.explosionForce 2.5
+ObjectTemplate.detonation.explosionDamage 40
+ObjectTemplate.detonation.endEffectTemplate e_exp_small
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+rem ---EndComp ---
+ObjectTemplate.gravityModifier 0.4
+ObjectTemplate.minDamage 1
+ObjectTemplate.damage 40
+include ../../tracers/vehicles/apc_all.tweak

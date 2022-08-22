@@ -1,0 +1,47 @@
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.create GenericProjectile ahe_rockets_z10
+include ../common_missiles.tweak
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 55
+ObjectTemplate.detonation.explosionRadius 3
+ObjectTemplate.detonation.explosionForce 10
+ObjectTemplate.detonation.explosionDamage 200
+ObjectTemplate.detonation.endEffectTemplate e_exp_small
+ObjectTemplate.detonation.useMMOnEndEffect 1
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+rem ---EndComp ---
+ObjectTemplate.geometry hydra_70
+ObjectTemplate.gravityModifier 0.1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 55
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ahe_rockets_z10_Looping
+ObjectTemplate.addTemplate e_dumbrocket_trail
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.material 55
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.tracerSizeModifier 0
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.damage 333
+
+ObjectTemplate.activeSafe Sound S_ahe_rockets_z10_Looping
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/rocket_engine_start_idle.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 6
