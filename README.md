@@ -1,6 +1,9 @@
 # Battlefield-2-Refractor Refactored
 I have refactored the most important/modded original game files of BF2 to make it easier to mod the game. Almost all the .tweak files for weapons, kits, soldiers, missiles, projectiles and vehicles has been reorganized into a more structured and easier-to-mod code. 
 
+[example video](https://www.youtube.com/watch?v=2x9gC90GA2s)
+
+
 <b>FUN FACT:</b>
 
 The game engines of Battlefield 1942 and Battlefield 2 are called respectively “Refractor” a “Refractor 2.0”. Hence my mod name.
