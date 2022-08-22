@@ -1,4 +1,4 @@
-# Battlefield-2-Refactored
+# Battlefield-2-Refractor Refactored
 I have refactored the most important/modded original game files of BF2 to make it easier to mod the game. Almost all the .tweak files for weapons, kits, soldiers, missiles, projectiles and vehicles has been reorganized into a more structured and easier-to-mod code. 
 
 <b>FUN FACT:</b>
