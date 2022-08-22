@@ -1,0 +1,17 @@
+weaponTemplate.create ai_explosives_handgrenade
+weaponTemplate.indirect 0
+weaponTemplate.isThrown 1
+weaponTemplate.minRange 15.0
+weaponTemplate.maxRange 55.0
+weaponTemplate.optimalRangePercentage 85
+weaponTemplate.setFiringPose Standing
+weaponTemplate.setStrength Infantry    2
+weaponTemplate.setStrength LightArmour 1
+weaponTemplate.setStrength HeavyArmour 1
+weaponTemplate.setStrength NavalArmour 0
+weaponTemplate.setStrength Helicopter  1
+weaponTemplate.setStrength AirPlane    1
+weaponTemplate.setSoundSphereRadius  120.0
+weaponTemplate.setExplosionRadius 10.0
+weaponTemplate.allowedDeviation 2.5
+weaponTemplate.setFiresThroughTransparent 0

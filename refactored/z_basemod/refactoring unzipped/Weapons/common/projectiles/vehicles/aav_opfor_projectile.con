@@ -1,0 +1,17 @@
+ObjectTemplate.create GenericProjectile aav_opfor_projectile
+include ../common_Shell_20mm_AAA.tweak
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 109
+ObjectTemplate.detonation.explosionRadius 3
+ObjectTemplate.detonation.explosionForce 3
+ObjectTemplate.detonation.explosionDamage 20
+ObjectTemplate.detonation.endEffectTemplate e_exp_AA_Small
+ObjectTemplate.detonation.useMMOnEndEffect 1
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+rem ---EndComp ---
+ObjectTemplate.gravityModifier 0.4
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.damage 7
+include ../../tracers/vehicles/aav_opfor.tweak 1

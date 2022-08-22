@@ -1,0 +1,17 @@
+ObjectTemplate.create GenericProjectile tnk_opfor_projectile
+include ../common_shell_tank.tweak
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 70
+ObjectTemplate.detonation.explosionRadius 5
+ObjectTemplate.detonation.explosionForce 15
+ObjectTemplate.detonation.explosionDamage 125
+ObjectTemplate.detonation.endEffectTemplate e_exp_medium
+ObjectTemplate.detonation.useMMOnEndEffect 1
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+rem ---EndComp ---
+ObjectTemplate.gravityModifier 0.4
+ObjectTemplate.minDamage 1
+ObjectTemplate.damage 500
+include ../../tracers/vehicles/tnk_opfor.tweak

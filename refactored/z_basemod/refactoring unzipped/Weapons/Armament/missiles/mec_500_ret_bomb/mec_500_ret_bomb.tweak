@@ -1,0 +1,70 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/5/2 12:12]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericProjectile mec_500_ret_bomb
+include ../common_missiles.tweak
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 56
+ObjectTemplate.detonation.explosionRadius 20
+ObjectTemplate.detonation.explosionForce 20
+ObjectTemplate.detonation.explosionDamage 350
+ObjectTemplate.detonation.endEffectTemplate e_exp_Xlarge
+ObjectTemplate.detonation.useMMOnEndEffect 1
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+rem ---EndComp ---
+rem ---BeginComp:DefaultRicochetComp ---
+ObjectTemplate.createComponent DefaultRicochetComp
+rem ---EndComp ---
+ObjectTemplate.geometry mec_500_ret_bomb
+ObjectTemplate.setCollisionMesh mec_500_ret_bomb
+ObjectTemplate.mapMaterial 0 metal 32
+ObjectTemplate.drag 50
+ObjectTemplate.mass 500
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 56
+rem -------------------------------------
+ObjectTemplate.addTemplate S_mec_500_ret_bomb_Looping
+ObjectTemplate.addTemplate mec_500_ret_bomb_Wing
+ObjectTemplate.setPosition 0/0/-2
+rem -------------------------------------
+ObjectTemplate.material 56
+ObjectTemplate.armingDelay 0.5
+ObjectTemplate.minDamage 1
+ObjectTemplate.damage 0
+
+ObjectTemplate.activeSafe Sound S_mec_500_ret_bomb_Looping
+ObjectTemplate.modifiedByUser mei
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/stationary/usart_lw155/sounds/artillery_projectile_01.wav,objects/weapons/stationary/usart_lw155/sounds/artillery_projectile_02.wav,objects/weapons/stationary/usart_lw155/sounds/artillery_projectile_03.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 0.8
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.93/1.1/
+ObjectTemplate.minDistance 8
+ObjectTemplate.halfVolumeDistance 10
+
+ObjectTemplate.create Wing mec_500_ret_bomb_Wing
+ObjectTemplate.modifiedByUser mei
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_mec_500_ret_bomb_Wing_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 4
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_mec_500_ret_bomb_Wing_RotationRpm
+ObjectTemplate.modifiedByUser mei
+

@@ -1,0 +1,2 @@
+ObjectTemplate.fire.roundsPerMinute 1800
+ObjectTemplate.fire.batchSize 2

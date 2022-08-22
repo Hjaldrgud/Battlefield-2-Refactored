@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject mk82_dumbbombdummy
+ObjectTemplate.createdInEditor 1
+
+include mk82_dumbbombdummy.tweak

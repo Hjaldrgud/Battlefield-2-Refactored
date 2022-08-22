@@ -1,0 +1,39 @@
+ObjectTemplate.create Kit CH_Engineer
+ObjectTemplate.geometry CH_Kits
+ObjectTemplate.geometry.kit 5
+ObjectTemplate.geometry.dropGeom 12
+include ../common/common_kits_engineer.tweak
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate chpis_qsz92
+rem ------------------3------------------
+ObjectTemplate.addTemplate chsht_Norinco982
+rem ------------------4------------------
+ObjectTemplate.addTemplate USHGR_M67
+rem ------------------5------------------
+ObjectTemplate.addTemplate at_mine
+rem ------------------6------------------
+ObjectTemplate.addTemplate wrench
+rem ------------------7------------------
+
+rem ------------------8------------------
+
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockChEngineer
+ObjectTemplate.addTemplate UnlockChEngineer2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockChEngineer
+ObjectTemplate.addTemplate ussht_Jackhammer
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockChEngineer2
+ObjectTemplate.addTemplate sasrif_mp7
+ObjectTemplate.replaceItem chsht_Norinco982
+ObjectTemplate.replaceItem ussht_Jackhammer
+ObjectTemplate.unlockLevel 2

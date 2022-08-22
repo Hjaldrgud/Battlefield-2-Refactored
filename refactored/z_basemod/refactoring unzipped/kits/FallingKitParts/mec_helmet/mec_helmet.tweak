@@ -1,0 +1,7 @@
+ObjectTemplate.creator MEI-1:mei
+ObjectTemplate.active mec_helmet
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.mass 10
+ObjectTemplate.timeToLive CRD_NONE/10.0/0/0
+ObjectTemplate.inertiaModifier 3/3/3
+ObjectTemplate.mapMaterial 0 Penetrable_Helmet 1010

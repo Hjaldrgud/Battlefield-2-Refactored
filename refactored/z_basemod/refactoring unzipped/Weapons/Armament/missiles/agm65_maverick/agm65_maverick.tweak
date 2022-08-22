@@ -1,0 +1,64 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/4/10 10:26]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericProjectile agm65_maverick
+include ../common_missiles.tweak
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 56
+ObjectTemplate.detonation.explosionRadius 7
+ObjectTemplate.detonation.explosionForce 20
+ObjectTemplate.detonation.explosionDamage 750
+ObjectTemplate.detonation.endEffectTemplate e_exp_large
+ObjectTemplate.detonation.useMMOnEndEffect 1
+rem ---EndComp ---
+rem ---BeginComp:SeekClosestTargetComp ---
+ObjectTemplate.createComponent SeekClosestTargetComp
+ObjectTemplate.seek.targetType TTLaser
+ObjectTemplate.seek.trackingDelay 0.2
+ObjectTemplate.seek.maxAngleLock 90
+ObjectTemplate.seek.maxDistLock 500
+ObjectTemplate.seek.directionBonus 0.5
+ObjectTemplate.seek.reLockTime 60
+rem ---EndComp ---
+rem ---BeginComp:DefaultFollowComp ---
+ObjectTemplate.createComponent DefaultFollowComp
+ObjectTemplate.follow.maxYaw 1.5
+ObjectTemplate.follow.maxPitch 1.5
+ObjectTemplate.follow.changePitch 0.2
+ObjectTemplate.follow.changeYaw 0.2
+ObjectTemplate.follow.minDist 10
+rem ---EndComp ---
+ObjectTemplate.geometry agm65_maverick
+ObjectTemplate.setCollisionMesh AGM65_Maverick
+ObjectTemplate.mapMaterial 0 metal 32
+ObjectTemplate.drag 0.1
+ObjectTemplate.mass 500
+ObjectTemplate.gravityModifier 0.1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 56
+rem -------------------------------------
+ObjectTemplate.addTemplate S_agm65_maverick_Looping
+ObjectTemplate.addTemplate e_missile_trail
+ObjectTemplate.setPosition 0/0/-1.35
+rem -------------------------------------
+ObjectTemplate.material 56
+ObjectTemplate.damage 0
+ObjectTemplate.acceleration 300
+ObjectTemplate.maxSpeed 175
+
+ObjectTemplate.activeSafe Sound S_agm65_maverick_Looping
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/rocket_engine_start_idle.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 0.9
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 6

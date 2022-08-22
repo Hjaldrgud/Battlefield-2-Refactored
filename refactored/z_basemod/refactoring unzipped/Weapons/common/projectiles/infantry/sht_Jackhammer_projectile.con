@@ -1,0 +1,6 @@
+ObjectTemplate.create GenericProjectile sht_Jackhammer_projectile
+ObjectTemplate.minDamage 8
+ObjectTemplate.damage 15
+ObjectTemplate.distToStartLoseDamage 40
+ObjectTemplate.distToMinDamage 100
+include ../common_Bullet_shotgun.tweak

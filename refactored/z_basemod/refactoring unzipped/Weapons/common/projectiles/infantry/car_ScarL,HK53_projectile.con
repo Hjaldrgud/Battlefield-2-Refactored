@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericProjectile car_ScarL,HK53_projectile
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.damage 27
+include ../common_Bullet_small_arms.tweak

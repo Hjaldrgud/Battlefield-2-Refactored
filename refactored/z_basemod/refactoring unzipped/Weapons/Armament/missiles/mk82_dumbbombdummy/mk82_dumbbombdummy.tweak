@@ -1,0 +1,12 @@
+rem *** Generated with Bf2Editor.exe [created: 2004/11/8 0:13]
+ObjectTemplate.activeSafe SimpleObject mk82_dumbbombdummy
+ObjectTemplate.modifiedByUser mei
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.geometry mk82_dumbbomb
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.setCollisionMesh mk82_dumbbomb
+ObjectTemplate.mapMaterial 0 Airplane 32

@@ -1,0 +1,12 @@
+GeometryTemplate.create BundledMesh kh29_kedge_tv
+
+ObjectTemplate.create GenericProjectile kh29_kedge_tv
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-3:dsu
+ObjectTemplate.collisionMesh Kh29_Kedge
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry kh29_kedge
+
+include kh29_kedge_tv.tweak

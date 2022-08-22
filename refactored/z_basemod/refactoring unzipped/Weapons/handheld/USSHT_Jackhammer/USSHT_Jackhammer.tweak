@@ -1,0 +1,213 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/3/4 16:5]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm ussht_jackhammer
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\USSHT_Jackhammer.tga
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\USSHT_Jackhammer_mini.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\USSHT_Jackhammer.tga
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_jackhammer"
+ObjectTemplate.weaponHud.guiIndex 9
+ObjectTemplate.weaponHud.altGuiIndex 9
+ObjectTemplate.weaponHud.maxVisualDeviation 30
+ObjectTemplate.weaponHud.minVisualDeviation 20
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 300
+ObjectTemplate.fire.addFireRate 2
+ObjectTemplate.fire.fireInCameraDof 1
+include ../../common/batchsize/sht_buckamount.tweak
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.magSize 7
+ObjectTemplate.ammo.nrOfMags 6
+ObjectTemplate.ammo.reloadTime 5
+rem ---EndComp ---
+include ../../common/recoil/infantry/sht_jackhammer.tweak
+include ../../common/deviation/infantry/sht_saiga12,jackhammer.tweak
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+include ../../common/zoom/infantry/sht_allshotguns.tweak
+ObjectTemplate.geometry USSHT_Jackhammer
+ObjectTemplate.setCollisionMesh ussht_jackhammer
+ObjectTemplate.mapMaterial 0 Collision_Material 68
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate ai_shotgun_standard
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ussht_jackhammer_Fire1P
+ObjectTemplate.setPosition 0/0.0565238/0.387711
+ObjectTemplate.addTemplate S_ussht_jackhammer_Fire1P_Outdoor
+ObjectTemplate.setPosition 0/0.0564487/0.386684
+ObjectTemplate.addTemplate S_ussht_jackhammer_Fire3P
+ObjectTemplate.setPosition 0.000882275/0.0558192/0.387316
+ObjectTemplate.addTemplate S_ussht_jackhammer_BoltClick
+ObjectTemplate.setPosition 0/0.0664289/0.0173731
+ObjectTemplate.addTemplate S_ussht_jackhammer_TriggerClick
+ObjectTemplate.setPosition 0/-0.0129963/0.0316787
+ObjectTemplate.addTemplate S_ussht_jackhammer_SwitchFireRate
+ObjectTemplate.setPosition 0/0.0178399/0.155259
+ObjectTemplate.addTemplate S_ussht_jackhammer_Reload1P
+ObjectTemplate.setPosition 0/0.0643097/0.143742
+ObjectTemplate.addTemplate S_ussht_jackhammer_Reload3P
+ObjectTemplate.setPosition 0/0.0633278/0.141973
+ObjectTemplate.addTemplate S_ussht_jackhammer_Deploy1P
+ObjectTemplate.setPosition 0/0.0539882/0.0323991
+ObjectTemplate.addTemplate S_ussht_jackhammer_Deploy3P
+ObjectTemplate.setPosition 0/0.0565441/0.0307211
+ObjectTemplate.addTemplate S_ussht_jackhammer_Zoom
+ObjectTemplate.setPosition 0/0.0525518/0.0646554
+ObjectTemplate.addTemplate e_muzz_shotgun
+ObjectTemplate.setPosition 0/0.0479556/0.389402
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/USSHT_Jackhammer/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/USSHT_Jackhammer/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate sht_Jackhammer_projectile
+ObjectTemplate.velocity 1000
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 1.33
+
+ObjectTemplate.activeSafe Sound S_ussht_jackhammer_Fire1P
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.soundFilename "objects/weapons/handheld/ussht_jackhammer/sounds/jackhammer_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.02/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0.0565238/0.387711
+
+ObjectTemplate.activeSafe Sound S_ussht_jackhammer_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.soundFilename "objects/weapons/handheld/ussht_jackhammer/sounds/jackhammer_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.02/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0.0564487/0.386684
+
+ObjectTemplate.activeSafe Sound S_ussht_jackhammer_Fire3P
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.soundFilename "objects/weapons/handheld/ussht_jackhammer/sounds/jackhammer_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.02/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.93/1/
+ObjectTemplate.position 0.000882275/0.0558192/0.387316
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe Sound S_ussht_jackhammer_BoltClick
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.soundFilename "objects/weapons/handheld/chrif_type95/sounds/type95_bolt_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.75
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.5
+ObjectTemplate.position 0/0.0664289/0.0173731
+
+ObjectTemplate.activeSafe Sound S_ussht_jackhammer_TriggerClick
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_ussht_jackhammer_SwitchFireRate
+ObjectTemplate.modifiedByUser fli
+
+ObjectTemplate.activeSafe Sound S_ussht_jackhammer_Reload1P
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.soundFilename "objects/weapons/handheld/ussht_jackhammer/sounds/reload_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.43
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0643097/0.143742
+
+ObjectTemplate.activeSafe Sound S_ussht_jackhammer_Reload3P
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.soundFilename "objects/weapons/handheld/ussht_jackhammer/sounds/reload_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.43
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0633278/0.141973
+ObjectTemplate.minDistance 0.7
+ObjectTemplate.halfVolumeDistance 1.4
+
+ObjectTemplate.activeSafe Sound S_ussht_jackhammer_Deploy1P
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.soundFilename "objects/weapons/handheld/ussht_jackhammer/sounds/deploy_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0539882/0.0323991
+
+ObjectTemplate.activeSafe Sound S_ussht_jackhammer_Deploy3P
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.soundFilename "objects/weapons/handheld/ussht_jackhammer/sounds/deploy_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0565441/0.0307211
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_ussht_jackhammer_Zoom
+ObjectTemplate.modifiedByUser fli
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/zoom_generic.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1

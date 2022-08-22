@@ -1,0 +1,6 @@
+ObjectTemplate.create GenericProjectile coax_blufor_projectile
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.damage 50
+include ../common_SmallArms.tweak
+include ../../tracers/stationary/hmg,coax_blufor.tweak 3
+ObjectTemplate.tracerConvergeDistance 50

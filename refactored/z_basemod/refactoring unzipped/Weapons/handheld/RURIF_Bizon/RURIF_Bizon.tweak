@@ -1,0 +1,208 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/4/5 15:44]
+GeometryTemplate.setMaterialReflectionScale 0 0 0 0.35
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm rurif_bizon
+ObjectTemplate.creator MBA-1:mba
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\RURIF_Bizon.tga
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\RURIF_Bizon_mini.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\RURIF_Bizon.tga
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_bizon"
+ObjectTemplate.weaponHud.guiIndex 4
+ObjectTemplate.weaponHud.altGuiIndex 52
+ObjectTemplate.weaponHud.deviationFactor 5
+ObjectTemplate.weaponHud.maxVisualDeviation 23
+ObjectTemplate.weaponHud.minVisualDeviation 3
+ObjectTemplate.weaponHud.disableOnSprint 1
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 900
+ObjectTemplate.fire.addFireRate 2
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.nrOfMags 3
+ObjectTemplate.ammo.magSize 45
+ObjectTemplate.ammo.reloadTime 4
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_WEAPON_HANDHELD_SUBMACHINEGUN_CONTROLS_toggleFireModes"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_WEAPON_HANDHELD_SUBMACHINEGUN_CONTROLS_toggleFireModes"
+rem ---EndComp ---
+include ../../common/recoil/infantry/smg_type85,bizon.tweak
+include ../../common/deviation/infantry/smg_type85,bizon,mp5.tweak
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+include ../../common/zoom/infantry/smg_bizon.tweak
+ObjectTemplate.geometry rurif_bizon
+ObjectTemplate.setCollisionMesh rurif_bizon
+ObjectTemplate.mapMaterial 0 Collision_material 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.aiTemplate ai_smg_standard
+rem -------------------------------------
+ObjectTemplate.addTemplate S_rurif_bizon_Fire1P
+ObjectTemplate.setPosition 0/0.0126018/0.345774
+ObjectTemplate.addTemplate S_rurif_bizon_Fire1P_Outdoor
+ObjectTemplate.setPosition 0/0.0110048/0.355382
+ObjectTemplate.addTemplate S_rurif_bizon_Fire3P
+ObjectTemplate.setPosition 0/0.0110222/0.356568
+ObjectTemplate.addTemplate S_rurif_bizon_BoltClick
+ObjectTemplate.addTemplate S_rurif_bizon_TriggerClick
+ObjectTemplate.addTemplate S_rurif_bizon_SwitchFireRate
+ObjectTemplate.addTemplate S_rurif_bizon_Reload1P
+ObjectTemplate.setPosition 0/0/0.114786
+ObjectTemplate.addTemplate S_rurif_bizon_Reload3P
+ObjectTemplate.setPosition 0/0/0.127694
+ObjectTemplate.addTemplate S_rurif_bizon_Deploy1P
+ObjectTemplate.addTemplate S_rurif_bizon_Deploy3P
+ObjectTemplate.addTemplate S_rurif_bizon_Zoom
+ObjectTemplate.addTemplate e_muzz_type95
+ObjectTemplate.setPosition 0/0.010569/0.388398
+ObjectTemplate.addTemplate e_shellejection_9mm
+ObjectTemplate.setPosition 0/0.0242631/0.08336
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/RURIF_Bizon/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/RURIF_Bizon/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate smg_AllSMGs_projectile
+ObjectTemplate.velocity 1000
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 0.666
+
+ObjectTemplate.activeSafe Sound S_rurif_bizon_Fire1P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/bizon_fire_1p_outdoor.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.05/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+
+
+ObjectTemplate.activeSafe Sound S_rurif_bizon_Fire3P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/bizon_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.05/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0.0110222/0.356568
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 3
+
+ObjectTemplate.activeSafe Sound S_rurif_bizon_BoltClick
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_gp30/sounds/gp30_bolt_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.75
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.5
+
+ObjectTemplate.activeSafe Sound S_rurif_bizon_TriggerClick
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_rurif_bizon_SwitchFireRate
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/bizon_switch_firerate.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.3
+
+ObjectTemplate.activeSafe Sound S_rurif_bizon_Reload1P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/bizon_reload_1p_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.78
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/0.114786
+
+ObjectTemplate.activeSafe Sound S_rurif_bizon_Reload3P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/bizon_reload_1p_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.78
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/0.127694
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_rurif_bizon_Deploy1P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/bizon_deploy_1p_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.75
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_rurif_bizon_Deploy3P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/bizon_deploy_1p_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.75
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_rurif_bizon_Zoom
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/zoom_generic.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1

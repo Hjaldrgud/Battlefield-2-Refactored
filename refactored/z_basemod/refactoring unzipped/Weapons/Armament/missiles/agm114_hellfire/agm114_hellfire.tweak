@@ -1,0 +1,64 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/3/29 18:47]
+GeometryTemplate.setSpecularStaticGloss 0 0 1 1.5
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericProjectile agm114_hellfire
+include ../common_missiles.tweak
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 70
+ObjectTemplate.detonation.explosionRadius 20
+ObjectTemplate.detonation.explosionForce 25
+ObjectTemplate.detonation.explosionDamage 400
+ObjectTemplate.detonation.endEffectTemplate e_exp_large
+ObjectTemplate.detonation.useMMOnEndEffect 1
+rem ---EndComp ---
+rem ---BeginComp:SeekClosestTargetComp ---
+ObjectTemplate.createComponent SeekClosestTargetComp
+ObjectTemplate.seek.targetType TTLaser
+ObjectTemplate.seek.trackingDelay 0.01
+ObjectTemplate.seek.maxAngleLock 360
+ObjectTemplate.seek.maxDistLock 1000
+ObjectTemplate.seek.reLockTime 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultFollowComp ---
+ObjectTemplate.createComponent DefaultFollowComp
+ObjectTemplate.follow.maxYaw 1.5
+ObjectTemplate.follow.maxPitch 1.5
+ObjectTemplate.follow.changePitch 0.2
+ObjectTemplate.follow.changeYaw 0.2
+ObjectTemplate.follow.minDist 10
+rem ---EndComp ---
+ObjectTemplate.geometry agm114_hellfire
+ObjectTemplate.setCollisionMesh agm114_hellfire
+ObjectTemplate.mapMaterial 0 metal 31
+ObjectTemplate.drag 0.1
+ObjectTemplate.mass 500
+ObjectTemplate.gravityModifier 0.1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 55
+rem -------------------------------------
+ObjectTemplate.addTemplate S_agm114_hellfire_Looping
+ObjectTemplate.addTemplate e_missile_trail
+ObjectTemplate.setPosition 0/0/-0.99
+rem -------------------------------------
+ObjectTemplate.material 55
+ObjectTemplate.damage 10000
+ObjectTemplate.acceleration 300
+ObjectTemplate.maxSpeed 125
+
+ObjectTemplate.activeSafe Sound S_agm114_hellfire_Looping
+ObjectTemplate.modifiedByUser pho
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/rocket_engine_start_idle.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 0.9
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 6
+

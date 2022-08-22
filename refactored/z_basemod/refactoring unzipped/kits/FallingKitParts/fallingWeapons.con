@@ -1,0 +1,10 @@
+rem ** Manually added, not needed to edit this in Bf2editor 
+ObjectTemplate.create Particle fallingWeapon
+ObjectTemplate.preCacheObject 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.timeToLive CRD_NONE/10.0/0/0
+ObjectTemplate.mass 10
+ObjectTemplate.inertiaModifier 3/3/3
+ObjectTemplate.otherCollisionLod 2

@@ -1,0 +1,36 @@
+GeometryTemplate.create SkinnedMesh sas_kits
+
+ObjectTemplate.create SimpleObject sas_kits
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAYE:jayev
+ObjectTemplate.geometry sas_kits
+
+ObjectTemplate.create SimpleObject K_bigshell4
+
+ObjectTemplate.create SimpleObject K_butpack
+
+ObjectTemplate.create SimpleObject K_frontpack15
+
+ObjectTemplate.create SimpleObject K_frontpack
+
+ObjectTemplate.create SimpleObject K_frontpack16
+
+ObjectTemplate.create SimpleObject K_frontpack17
+
+ObjectTemplate.create SimpleObject K_legpackb1
+
+ObjectTemplate.create SimpleObject K_canteen
+
+ObjectTemplate.create SimpleObject K_holster
+
+ObjectTemplate.create SimpleObject K_legpackb
+
+ObjectTemplate.create SimpleObject K_bigshell2
+
+ObjectTemplate.create SimpleObject K_bigshell1
+
+ObjectTemplate.create SimpleObject K_bigshell
+
+ObjectTemplate.create SimpleObject K_waterpack
+
+include sas_kits.tweak

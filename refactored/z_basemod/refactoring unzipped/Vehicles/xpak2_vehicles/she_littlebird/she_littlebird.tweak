@@ -1,0 +1,849 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/4/26 7:9]
+GeometryTemplate.setSubGeometryLodDistance 1 0 15
+GeometryTemplate.setSubGeometryLodDistance 1 1 30
+GeometryTemplate.setSubGeometryLodDistance 1 2 95
+GeometryTemplate.setMaterialReflectionScale 1 0 0 0.4
+GeometryTemplate.setMaterialReflectionScale 1 0 1 0
+GeometryTemplate.setMaterialReflectionScale 1 0 2 1.2
+GeometryTemplate.setMaterialReflectionScale 1 0 3 1
+GeometryTemplate.setMaterialReflectionScale 1 1 2 1
+GeometryTemplate.setMaterialReflectionScale 1 2 0 0
+GeometryTemplate.setMaterialReflectionScale 1 2 1 0
+GeometryTemplate.setSpecularStaticGloss 1 0 0 0
+GeometryTemplate.setSpecularStaticGloss 1 0 1 0
+GeometryTemplate.setSpecularStaticGloss 1 0 2 0
+GeometryTemplate.setSpecularStaticGloss 1 0 3 2.5
+GeometryTemplate.setSpecularStaticGloss 1 1 1 1.2
+GeometryTemplate.setSpecularStaticGloss 1 1 2 2.5
+GeometryTemplate.setSpecularStaticGloss 1 2 0 2
+GeometryTemplate.setSpecularStaticGloss 1 2 1 2.5
+GeometryTemplate.setSpecularStaticGloss 1 2 2 2.5
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe PlayerControlObject she_littlebird
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.cullRadiusScale 2.243
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 650
+ObjectTemplate.armor.hitPoints 650
+ObjectTemplate.armor.defaultMaterial 31
+ObjectTemplate.armor.hpLostWhileUpSideDown 350
+ObjectTemplate.armor.hpLostWhileInWater 400
+ObjectTemplate.armor.hpLostWhileInDeepWater 400
+ObjectTemplate.armor.hpLostWhileCriticalDamage 18
+ObjectTemplate.armor.waterDamageDelay 0.01
+ObjectTemplate.armor.waterLevel -0.5
+ObjectTemplate.armor.deepWaterLevel -0.5
+ObjectTemplate.armor.explosionForce 15
+ObjectTemplate.armor.explosionForceMod 8
+ObjectTemplate.armor.explosionForceMax 5000
+ObjectTemplate.armor.explosionDamage 400
+ObjectTemplate.armor.explosionRadius 15
+ObjectTemplate.armor.explosionMaterial 100
+ObjectTemplate.armor.wreckExplosionForce 7
+ObjectTemplate.armor.wreckExplosionDamage 200
+ObjectTemplate.armor.wreckExplosionRadius 5
+ObjectTemplate.armor.wreckExplosionMaterial 70
+ObjectTemplate.armor.wreckHitPoints 1000
+ObjectTemplate.armor.timeToStayAsWreck 10
+ObjectTemplate.armor.criticalDamage 101
+ObjectTemplate.armor.destroyOnSpectacularDeath 1
+ObjectTemplate.armor.addArmorEffect 0 e_vexp_heli_Generic 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffectSpectacular 0 e_vexp_heli_Generic_spec 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 50 e_dstate_heli_lightsmoke 0.82/0.86/-2.4 0/0/0
+ObjectTemplate.armor.addArmorEffect 25 e_dstate_heli_heavysmoke 0.82/0.86/-2.4 0/0/0
+ObjectTemplate.armor.addArmorEffect 10 e_dstate_heli_firesmoke 0.82/0.86/-2.4 0/0/0
+ObjectTemplate.armor.addArmorEffect -20 e_dstate_heli_wrecksmoke 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect -100 e_vexp_heli_generic_2nd 0/0/0 0/0/0
+rem ---EndComp ---
+rem ---BeginComp:Ability ---
+ObjectTemplate.createComponent Ability
+ObjectTemplate.Ability.radarRadius 70
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage heli_spotted
+rem ---EndComp ---
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_littlebird"
+ObjectTemplate.vehicleHud.typeIcon Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_chopper.tga
+ObjectTemplate.vehicleHud.miniMapIcon Ingame\Vehicles\Icons\Minimap\mini_attack_Heli.tga
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.vehicleIconPos 61/8
+ObjectTemplate.vehicleHud.vehicleType 2
+ObjectTemplate.vehicleHud.useSelectionIcons 0
+ObjectTemplate.vehicleHud.vehicleIcon Ingame\Vehicles\Icons\Hud\VehicleIcons\she_littlebird.tga
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.warningType 2
+ObjectTemplate.WarningHud.firstWarningSound HUD_Heatseeker_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Heatseeker_Lock_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserLockIcon.tga
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_VEHICLE_HELO_PILOT_CONTROLS_deployFlares"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_VEHICLE_HELO_PILOT_CONTROLS_deployFlares"
+ObjectTemplate.HelpHud.lowArmorHelpSoundKey "HUD_HELP_VEHICLE_HELO_LOWHEALTH_useFriendlyRepairStation"
+ObjectTemplate.HelpHud.lowArmorHelpStringKey "HUD_HELP_VEHICLE_HELO_LOWHEALTH_useFriendlyRepairStation"
+rem ---EndComp ---
+ObjectTemplate.geometry she_littlebird
+ObjectTemplate.setCollisionMesh she_littlebird
+ObjectTemplate.mapMaterial 0 HELO_ARMOR 31
+ObjectTemplate.mapMaterial 1 col_heliwindows 1006
+ObjectTemplate.mapMaterial 2 col_wreck 60
+ObjectTemplate.mapMaterial 3 landing_gear 106
+ObjectTemplate.drag 2
+ObjectTemplate.dragModifier 1/1/0.75
+ObjectTemplate.mass 3000
+ObjectTemplate.floaterMod 0.8
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate ahe_AttackHeli
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_littlebird_Ambient
+ObjectTemplate.addTemplate S_she_littlebird_AmbientDamaged
+ObjectTemplate.addTemplate she_littlebird_FlareLauncher
+ObjectTemplate.addTemplate she_littlebird_Rotorhead1
+ObjectTemplate.setPosition 0/-20/0
+ObjectTemplate.addTemplate she_littlebird_Camera
+ObjectTemplate.setPosition -0.356079/0.18296/0.883708
+ObjectTemplate.addTemplate she_littlebird_TailEngine
+ObjectTemplate.setPosition 0/0/-5
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate she_littlebird_WingL
+ObjectTemplate.setPosition -1/0/1
+ObjectTemplate.setRotation 0/0/-10
+ObjectTemplate.addTemplate she_littlebird_WingR
+ObjectTemplate.setPosition 1/0/1
+ObjectTemplate.setRotation 0/0/10
+ObjectTemplate.addTemplate she_littlebird_BodyWing
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate she_littlebird_Rudder
+ObjectTemplate.setPosition 0/0/-5
+ObjectTemplate.setRotation 0/0/90
+ObjectTemplate.addTemplate she_littlebird_EntryPoint
+ObjectTemplate.setPosition 0/-0.481644/2.60231
+ObjectTemplate.addTemplate she_littlebird_EntryPoint2
+ObjectTemplate.setPosition 0/1.40171/-0.806523
+ObjectTemplate.addTemplate HeatObject
+ObjectTemplate.setPosition 0/-0.352958/-0.891738
+ObjectTemplate.addTemplate she_littlebird_miniguns
+ObjectTemplate.setRotation 0/2/0
+ObjectTemplate.addTemplate she_littlebird_mainrotor
+ObjectTemplate.setPosition 0.00016/0.8/-1e-005
+ObjectTemplate.addTemplate she_littlebird_tailrotor
+ObjectTemplate.setPosition -0.34/0/-4.84874
+ObjectTemplate.setRotation 0/45/0
+ObjectTemplate.addTemplate she_littlebird_RotationalBundle_Pilot
+ObjectTemplate.addTemplate she_littlebird_leftspassenger
+ObjectTemplate.setPosition -1.25673/0.046993/0.0904472
+ObjectTemplate.setRotation -96.8225/6.83431e-009/-3.95343
+ObjectTemplate.addTemplate she_littlebird_rightpassenger
+ObjectTemplate.setPosition 1.24736/0.0403336/0.118948
+ObjectTemplate.setRotation 82.3171/-8.0795e-009/-1.9802
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.5/-0.5/2 0/0/0
+ObjectTemplate.altSoldierExitPosition 2.5/-0.5/2
+ObjectTemplate.regulateYawInput PIYaw
+ObjectTemplate.regulateYaw -0.2/0.2
+ObjectTemplate.regulateVerticalPosInput PIThrottle
+ObjectTemplate.regulateVerticalPos -0.5/2
+ObjectTemplate.maxVertRegAngle 35
+ObjectTemplate.noVertRegAngle 55
+ObjectTemplate.seatInformation she_littlebird -0.335567/0.167912/0.858344 1.411/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/xpak2_vehicles/she_littlebird/3p_Littlebird_animSys.inc
+ObjectTemplate.soundFilter heli
+ObjectTemplate.sprintFactor 0
+ObjectTemplate.vehicleCategory VCHelicopter
+ObjectTemplate.listenerObstruction 0.5
+ObjectTemplate.damagedAmbientSoundLimit 0.15
+ObjectTemplate.crewKitIndex 9
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.altSoldierExitPosition 2.5/-0.5/2
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_ah1z/sounds/helicopter_ambloop.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/effects/sounds/damagestates/fire_alarm.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe RotationalBundle SHE_LittleBird_MiniGun_R
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_SHE_LittleBird_MiniGun_R_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 0/0/1000
+ObjectTemplate.setAcceleration 0/0/1100
+ObjectTemplate.setDeAcceleration 0/0/300
+ObjectTemplate.setInputToRoll PIFire
+ObjectTemplate.setUseDeAcceleration 1
+
+ObjectTemplate.activeSafe Sound S_SHE_LittleBird_MiniGun_R_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe RotationalBundle SHE_LittleBird_MiniGun_L
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_SHE_LittleBird_MiniGun_L_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 0/0/1000
+ObjectTemplate.setAcceleration 0/0/1100
+ObjectTemplate.setDeAcceleration 0/0/300
+ObjectTemplate.setInputToRoll PIFire
+ObjectTemplate.setUseDeAcceleration 1
+
+ObjectTemplate.activeSafe Sound S_SHE_LittleBird_MiniGun_L_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring SHE_LittleBird_Damper0
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_SHE_LittleBird_Damper0_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 40
+ObjectTemplate.setDamping 7
+
+ObjectTemplate.activeSafe Sound S_SHE_LittleBird_Damper0_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring SHE_LittleBird_Damper1
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_SHE_LittleBird_Damper1_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 40
+ObjectTemplate.setDamping 7
+
+ObjectTemplate.activeSafe Sound S_SHE_LittleBird_Damper1_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring SHE_LittleBird_Damper2
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_SHE_LittleBird_Damper2_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 40
+ObjectTemplate.setDamping 7
+
+ObjectTemplate.activeSafe Sound S_SHE_LittleBird_Damper2_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring SHE_LittleBird_Damper3
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_SHE_LittleBird_Damper3_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 40
+ObjectTemplate.setDamping 7
+
+ObjectTemplate.activeSafe Sound S_SHE_LittleBird_Damper3_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create RotationalBundle she_littlebird_Rotorhead1
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_littlebird_Rotorhead1_RotationRpm
+ObjectTemplate.addTemplate she_littlebird_Rotorhead2
+ObjectTemplate.setPosition 0/20/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-5/-0.6
+ObjectTemplate.setMaxRotation 0/5/0.6
+ObjectTemplate.setMaxSpeed 0/50/50
+ObjectTemplate.setAcceleration 0/-1000/1000
+ObjectTemplate.setInputToPitch PIPitch
+ObjectTemplate.setInputToRoll PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_Rotorhead1_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create RotationalBundle she_littlebird_Rotorhead2
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_littlebird_Rotorhead2_RotationRpm
+ObjectTemplate.addTemplate she_littlebird_MainEngine
+ObjectTemplate.setRotation 0/-87/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-5/-0.6
+ObjectTemplate.setMaxRotation 0/5/0.6
+ObjectTemplate.setMaxSpeed 0/50/50
+ObjectTemplate.setAcceleration 0/1000/1000
+ObjectTemplate.setInputToPitch PIPitch
+ObjectTemplate.setInputToRoll PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_Rotorhead2_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Engine she_littlebird_MainEngine
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WindAffector ---
+ObjectTemplate.createComponent WindAffector
+ObjectTemplate.windType RadialDir
+ObjectTemplate.windIsDynamic 1
+ObjectTemplate.windDirection 0/0/-1
+ObjectTemplate.windSpeed 20
+ObjectTemplate.windBlowTime -1
+ObjectTemplate.windFalloff 30
+ObjectTemplate.windRadialFalloff 20
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_littlebird_MainEngine_RotationRpm
+ObjectTemplate.addTemplate S_she_littlebird_MainEngine_Idle
+ObjectTemplate.addTemplate S_she_littlebird_MainEngine_Rpm1
+ObjectTemplate.addTemplate S_she_littlebird_MainEngine_Rpm2
+ObjectTemplate.addTemplate S_she_littlebird_MainEngine_Load
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/150
+ObjectTemplate.setMaxSpeed 0/0/1
+ObjectTemplate.setAcceleration 0/0/20
+ObjectTemplate.setInputToRoll PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETHelicopter
+ObjectTemplate.setTorque 200
+ObjectTemplate.setDifferential 400
+ObjectTemplate.setGearUp 0.99
+ObjectTemplate.setGearDown 0.01
+ObjectTemplate.setGearChangeTime 0.1
+ObjectTemplate.noPropellerEffectAtSpeed 1
+ObjectTemplate.noPropellerEffectAtSpeed 1
+ObjectTemplate.horizontalSpeedMagnifier 2
+ObjectTemplate.horizontalDampAngle 0.1
+ObjectTemplate.horizontalDampAngleFactor 0.001
+ObjectTemplate.defaultAngleOfAttack 1
+ObjectTemplate.maxAngleOfAttack 12
+ObjectTemplate.attackSpeed 5
+ObjectTemplate.decreaseAngleToZeroVerticalVel 0.5
+ObjectTemplate.dampHorizontalVel 5
+ObjectTemplate.dampHorizontalVelFactor -0.7
+ObjectTemplate.canReverse 0
+ObjectTemplate.audio.transformationRelativeRoot 1
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_MainEngine_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_MainEngine_Idle
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/xpak2_vehicles/she_littlebird/sounds/scout_chopper_engine_start_idle_stop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1.15
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/3/0.513514/1.06/0/0.590734/1.06/0/0.795367/1.0888/0/
+ObjectTemplate.minDistance 10
+ObjectTemplate.halfVolumeDistance 25
+ObjectTemplate.soundRadius 3
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_MainEngine_Rpm1
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_ah1z/sounds/mono/jet_whine.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1.7
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/3/0.003861/0.590734/0/0.602317/0.932432/0/0.760618/1.26834/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/4/0.011583/0.040541/0/0.505791/1/0/0.602317/0.747104/0/0.988417/0.932432/0/
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 10
+ObjectTemplate.soundRadius 3
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_MainEngine_Rpm2
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_MainEngine_Load
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Camera she_littlebird_Camera
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_littlebird_Camera_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -90/-25/0
+ObjectTemplate.setMaxRotation 66/27/0
+ObjectTemplate.setPivotPosition 0/0/-0.2
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.CVMNose 1
+ObjectTemplate.nosePos 0/0/1.5
+ObjectTemplate.followStiffness 2
+ObjectTemplate.chaseDistance 30
+ObjectTemplate.chaseAngle 0.25
+ObjectTemplate.chaseOffset 0/2.5/6
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 1
+ObjectTemplate.insideStaticSunDirection 1/-1/0.2
+ObjectTemplate.insideStaticSunColor 0.45098/0.4/0.384314
+ObjectTemplate.insideStaticSunDamageColor 0.960784/0.121569/0.027451
+ObjectTemplate.insideDamageFrequency 8
+ObjectTemplate.insideDamageThreshold 0.1
+ObjectTemplate.insideStaticSunAmbientColor 0.572549/0.521569/0.403922
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_Camera_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Engine she_littlebird_TailEngine
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_littlebird_TailEngine_RotationRpm
+ObjectTemplate.addTemplate S_she_littlebird_TailEngine_Idle
+ObjectTemplate.addTemplate S_she_littlebird_TailEngine_Rpm1
+ObjectTemplate.addTemplate S_she_littlebird_TailEngine_Rpm2
+ObjectTemplate.addTemplate S_she_littlebird_TailEngine_Load
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-100
+ObjectTemplate.setMaxRotation 0/0/100
+ObjectTemplate.setMaxSpeed 0/0/500
+ObjectTemplate.setAcceleration 0/0/2000
+ObjectTemplate.setInputToRoll PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETHelicopter
+ObjectTemplate.setTorque 40
+ObjectTemplate.setDifferential 30
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.noPropellerEffectAtSpeed 2.5
+ObjectTemplate.noPropellerEffectAtSpeed 2.5
+ObjectTemplate.decreaseAngleToZero 1
+ObjectTemplate.pureRotational 1
+ObjectTemplate.spinWhenNoEngineInAir 0.4
+ObjectTemplate.noEffectAtPerpSpeed 60
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_TailEngine_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_TailEngine_Idle
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/usthe_uh60/sounds/uh60_tail_start_idle_stop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 9
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_TailEngine_Rpm1
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_TailEngine_Rpm2
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_TailEngine_Load
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Wing she_littlebird_WingL
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_littlebird_WingL_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0.75
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_WingL_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Wing she_littlebird_WingR
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_littlebird_WingR_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0.75
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_WingR_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Wing she_littlebird_BodyWing
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_littlebird_BodyWing_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_BodyWing_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Wing she_littlebird_Rudder
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_littlebird_Rudder_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_Rudder_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create EntryPoint she_littlebird_EntryPoint
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 3.5
+
+ObjectTemplate.create EntryPoint she_littlebird_EntryPoint2
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 3.5
+
+ObjectTemplate.create GenericFireArm she_littlebird_miniguns
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\icon_Predator.tga
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_minigun"
+ObjectTemplate.weaponHud.guiIndex 27
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.addShowOnCamMode 2
+ObjectTemplate.weaponHud.showClips 0
+ObjectTemplate.weaponHud.displaySelectOnActivation 1
+ObjectTemplate.weaponHud.overheatSound S_Weapon_Vehicle_Overheat
+rem ---EndComp ---
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent MultiFireComp
+ObjectTemplate.fire.fireStartDelay CRD_NONE/0.4/0/0
+ObjectTemplate.fire.addBarrelName she_littlebird_minigun_barrel
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags 1
+ObjectTemplate.ammo.magSize 900
+ObjectTemplate.ammo.reloadTime 5
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+include ../../../weapons/common/recoil/vehicles/she_all.tweak
+include ../../../weapons/common/deviation/vehicles/she_littlebird,wz11.tweak
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+include ../../../Weapons/common/zoom/aaa_default.tweak
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate gat_m134_ai
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_littlebird_miniguns_Fire1P
+ObjectTemplate.addTemplate S_she_littlebird_miniguns_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_she_littlebird_miniguns_Fire3P
+ObjectTemplate.addTemplate S_she_littlebird_miniguns_BoltClick
+ObjectTemplate.addTemplate S_she_littlebird_miniguns_TriggerClick
+ObjectTemplate.addTemplate S_she_littlebird_miniguns_SwitchFireRate
+ObjectTemplate.addTemplate S_she_littlebird_miniguns_Reload1P
+ObjectTemplate.addTemplate S_she_littlebird_miniguns_Reload3P
+ObjectTemplate.addTemplate S_she_littlebird_miniguns_Deploy1P
+ObjectTemplate.addTemplate S_she_littlebird_miniguns_Deploy3P
+ObjectTemplate.addTemplate S_she_littlebird_miniguns_Zoom
+ObjectTemplate.addTemplate she_littlebird_minigun_barrel
+ObjectTemplate.setPosition 0.90709/-0.86266/0.87083
+ObjectTemplate.setRotation 0/-1.5/0
+ObjectTemplate.addTemplate she_littlebird_minigun_barrel
+ObjectTemplate.setPosition -0.90709/-0.86266/0.87083
+ObjectTemplate.setRotation 0/-1.5/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate she_littlebird_projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 500
+ObjectTemplate.heatAddWhenFire 0.01
+ObjectTemplate.coolDownPerSec 0.4
+ObjectTemplate.overheatPenalty 3
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_miniguns_Fire1P
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/stationary/hmg_m134/sounds/mono/minigun_fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.99/1.015/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.95/1/
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_miniguns_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_miniguns_Fire3P
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/stationary/hmg_m134/sounds/mono/minigun_fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.99/1.015/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.95/1/
+ObjectTemplate.minDistance 5.5
+ObjectTemplate.halfVolumeDistance 11
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_miniguns_BoltClick
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_miniguns_TriggerClick
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_miniguns_SwitchFireRate
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_miniguns_Reload1P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_miniguns_Reload3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_miniguns_Deploy1P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_miniguns_Deploy3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_miniguns_Zoom
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create RotationalBundle she_littlebird_minigun_barrel
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_littlebird_minigun_barrel_RotationRpm
+ObjectTemplate.addTemplate e_muzz_minigun
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_minigun_barrel_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create RotationalBundle she_littlebird_RotationalBundle_Pilot
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:Ik ---
+ObjectTemplate.createComponent Ik
+ObjectTemplate.ik.positionLeft -0.433537/-0.208317/1.07293
+ObjectTemplate.ik.rotationLeft -56.5807/-14.954/-84.0864
+ObjectTemplate.ik.poleVectorLeft -0.0620852/-0.0532608/0
+ObjectTemplate.ik.positionRight -0.297673/-0.207342/1.06191
+ObjectTemplate.ik.rotationRight -126.429/28.8084/86.8166
+ObjectTemplate.ik.poleVectorRight 0.0318807/-0.0151769/0
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_littlebird_RotationalBundle_Pilot_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_RotationalBundle_Pilot_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create PlayerControlObject she_littlebird_leftspassenger
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_littlebird"
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.useChildHud 1
+ObjectTemplate.vehicleHud.vehicleIconPos 36/4
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate air_th_UH60_Passenger1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_littlebird_leftspassenger_Ambient
+ObjectTemplate.addTemplate S_she_littlebird_leftspassenger_AmbientDamaged
+ObjectTemplate.addTemplate she_littlebird_EntryPoint_leftpassenger
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0/0 0/0/0
+ObjectTemplate.altSoldierExitPosition -2/0/-1
+ObjectTemplate.seatInformation she_littlebird_leftspassenger 0/0/0 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Common/Animations/3p_passenger_A_animSys.inc
+ObjectTemplate.altSoldierExitPosition -2/0/-1
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.isOpenVehicle 1
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_leftspassenger_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_leftspassenger_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create EntryPoint she_littlebird_EntryPoint_leftpassenger
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 3
+
+ObjectTemplate.create PlayerControlObject she_littlebird_rightpassenger
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_littlebird"
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.useChildHud 1
+ObjectTemplate.vehicleHud.vehicleIconPos 36/24
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate air_th_UH60_Passenger2
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_littlebird_rightpassenger_Ambient
+ObjectTemplate.addTemplate S_she_littlebird_rightpassenger_AmbientDamaged
+ObjectTemplate.addTemplate she_littlebird_EntryPoint_rightpassenger
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 2/0/0 0/0/0
+ObjectTemplate.altSoldierExitPosition 2/0/-1
+ObjectTemplate.seatInformation she_littlebird_rightpassenger 0/0/0 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Common/Animations/3p_passenger_A_animSys.inc
+ObjectTemplate.altSoldierExitPosition 2/0/-1
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.isOpenVehicle 1
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_rightpassenger_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_rightpassenger_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create EntryPoint she_littlebird_EntryPoint_rightpassenger
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 3
+

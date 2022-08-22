@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm xpak_bmp3_SmokeLauncher
+
+include xpak_bmp3_SmokeLauncher.tweak
+

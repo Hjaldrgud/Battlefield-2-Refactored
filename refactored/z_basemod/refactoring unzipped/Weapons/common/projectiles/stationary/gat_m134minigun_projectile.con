@@ -1,0 +1,12 @@
+ObjectTemplate.create GenericProjectile gat_m134minigun_projectile
+include ../common_Bullet_minigun.tweak
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 40
+ObjectTemplate.detonation.explosionRadius 1.5
+ObjectTemplate.detonation.explosionForce 0
+ObjectTemplate.detonation.explosionDamage 200
+rem ---EndComp ---
+ObjectTemplate.minDamage 1
+ObjectTemplate.damage 60
+include ../../tracers/stationary/gat_m134minigun.tweak 3

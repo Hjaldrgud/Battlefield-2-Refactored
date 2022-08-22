@@ -1,0 +1,251 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/4/13 13:54]
+GeometryTemplate.setSubGeometryLodDistance 1 0 15
+GeometryTemplate.setSubGeometryLodDistance 1 1 30
+GeometryTemplate.setSubGeometryLodDistance 1 2 95
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe PlayerControlObject ars_d30
+ObjectTemplate.creator PHO-1:pho
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.cullRadiusScale 2.476
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 1000
+ObjectTemplate.armor.hitPoints 1000
+ObjectTemplate.armor.defaultMaterial 98
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.explosionForce 7
+ObjectTemplate.armor.explosionDamage 200
+ObjectTemplate.armor.explosionRadius 6
+ObjectTemplate.armor.explosionMaterial 56
+ObjectTemplate.armor.wreckExplosionForce 1
+ObjectTemplate.armor.wreckExplosionDamage 0
+ObjectTemplate.armor.wreckExplosionRadius 10
+ObjectTemplate.armor.wreckExplosionMaterial 70
+ObjectTemplate.armor.wreckHitPoints 1000
+ObjectTemplate.armor.timeToStayAsWreck 500
+ObjectTemplate.armor.canBeRepairedWhenWreck 1
+ObjectTemplate.armor.hideChildrenOnSpectacularDeath 1
+ObjectTemplate.armor.canBeDestroyed 0
+ObjectTemplate.armor.addArmorEffect 50 e_dstate_static_lightsmoke 0/0.381593/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 25 e_dstate_static_heavysmoke 0/0.409266/0.361433 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_vexp_D30 0/0.345194/0.227812 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_vexp_armoredcar_spec 0/1.27/1.77 0/0/0
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.destroyedMessage artillery_destroyed
+ObjectTemplate.Radio.repairedMessage artillery_repaired
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.closeToHelpStringKeyFriendly "HUD_HELP_WORLD_PLAYER_ARTILLERY_friendly"
+ObjectTemplate.HelpHud.closeToHelpSoundKeyFriendly "HUD_HELP_WORLD_PLAYER_ARTILLERY_friendly"
+ObjectTemplate.HelpHud.closeToHelpStringKeyEnemy "HUD_HELP_WORLD_PLAYER_ARTILLERY_enemy"
+ObjectTemplate.HelpHud.closeToHelpSoundKeyEnemy "HUD_HELP_WORLD_PLAYER_ARTILLERY_enemy"
+ObjectTemplate.HelpHud.closeToDistance 20
+rem ---EndComp ---
+rem ---BeginComp:StrategicObject ---
+ObjectTemplate.createComponent StrategicObject
+ObjectTemplate.StrategicObject.strategicObjectName mecart
+ObjectTemplate.StrategicObject.destroyedIcon Ingame\Minimap\Icons\AirDef_broken.tga
+ObjectTemplate.StrategicObject.intactIcon Ingame\Minimap\Icons\AirDef.tga
+ObjectTemplate.StrategicObject.isOnePiece 1
+ObjectTemplate.StrategicObject.3dMapIcon 1
+rem ---EndComp ---
+ObjectTemplate.geometry ARS_D30
+ObjectTemplate.setCollisionMesh ARS_D30
+ObjectTemplate.mapMaterial 0 Lightarmourvehicle 51
+ObjectTemplate.mapMaterial 1 wreck 51
+ObjectTemplate.mapMaterial 2 rubber 51
+ObjectTemplate.mass 6000
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ars_d30_Ambient
+ObjectTemplate.addTemplate S_ars_d30_AmbientDamaged
+ObjectTemplate.addTemplate ArtilleryControlObjectMEC
+ObjectTemplate.addTemplate LaserTarget_vehicle
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_ars_d30_Ambient
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe Sound S_ars_d30_AmbientDamaged
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe RotationalBundle ARS_D30_Sadle
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ARS_D30_Sadle_RotationRpm
+ObjectTemplate.addTemplate HorizontalTurnObject
+rem -------------------------------------
+ObjectTemplate.setMinRotation -180/0/0
+ObjectTemplate.setMaxRotation 180/0/0
+ObjectTemplate.setMaxSpeed 60/0/0
+ObjectTemplate.setAcceleration 300/0/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+
+ObjectTemplate.activeSafe Sound S_ARS_D30_Sadle_RotationRpm
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/vehicles/land/rutnk_t90/sounds/engine/mono/engine_idle_03.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1.4
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.1/3/0/2/0.003/0.814/0.1/0.464/1.734/0.1/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/2/0/0/0/0.198/1/0/
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 5
+
+ObjectTemplate.activeSafe RotationalBundle ARS_D30_BarrelBase
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ARS_D30_BarrelBase_RotationRpm
+ObjectTemplate.addTemplate VerticalTurnObject
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-90/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/300/0
+ObjectTemplate.setInputToPitch PIMouseLookY
+
+ObjectTemplate.activeSafe Sound S_ARS_D30_BarrelBase_RotationRpm
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/vehicles/land/ustnk_m1a2/sounds/genericturretmovement.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.1/3/0/2/0.005/0.858/0.1/0.269/1.572/0.1/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/2/0.003/0/0/0.449/0.99/0/
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe GenericFireArm ARS_D30_Barrel
+ObjectTemplate.modifiedByUser nfe
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_d30"
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 30
+ObjectTemplate.fire.fireStartDelay CRD_NORMAL/1/1/0
+ObjectTemplate.fire.addFireRate 1
+ObjectTemplate.fire.burstSize 5
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.magSize -1
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+rem ---BeginComp:WeaponBasedRecoilComp ---
+ObjectTemplate.createComponent WeaponBasedRecoilComp
+ObjectTemplate.recoil.recoilSize 30
+ObjectTemplate.recoil.recoilSpeed 20
+ObjectTemplate.recoil.recoilSpeedGB 2
+rem ---EndComp ---
+rem ---BeginComp:TargetDeviationComp ---
+ObjectTemplate.createComponent TargetDeviationComp
+ObjectTemplate.deviation.radius 20
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:SimpleTargetComp ---
+ObjectTemplate.createComponent SimpleTargetComp
+ObjectTemplate.target.targetSystem TSParabellic
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_ARS_D30_Barrel_Fire1P
+ObjectTemplate.addTemplate S_ARS_D30_Barrel_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_ARS_D30_Barrel_Fire3P
+ObjectTemplate.setPosition 0.0425781/0.0794845/4.73465
+ObjectTemplate.addTemplate S_ARS_D30_Barrel_BoltClick
+ObjectTemplate.addTemplate S_ARS_D30_Barrel_TriggerClick
+ObjectTemplate.addTemplate S_ARS_D30_Barrel_SwitchFireRate
+ObjectTemplate.addTemplate S_ARS_D30_Barrel_Reload1P
+ObjectTemplate.addTemplate S_ARS_D30_Barrel_Reload3P
+ObjectTemplate.addTemplate S_ARS_D30_Barrel_Deploy1P
+ObjectTemplate.addTemplate S_ARS_D30_Barrel_Deploy3P
+ObjectTemplate.addTemplate S_ARS_D30_Barrel_Zoom
+ObjectTemplate.addTemplate e_muzz_artillery
+ObjectTemplate.setPosition 0.0343972/0.083041/4.76143
+ObjectTemplate.addTemplate geb_tank
+ObjectTemplate.setPosition 0/-0.112929/6.27835
+rem -------------------------------------
+ObjectTemplate.projectileTemplate art_opfor
+ObjectTemplate.velocity 450
+
+
+ObjectTemplate.activeSafe Sound S_ARS_D30_Barrel_Fire1P
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe Sound S_ARS_D30_Barrel_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe Sound S_ARS_D30_Barrel_Fire3P
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/weapons/stationary/ars_d30/sounds/d30_artillery_fire.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.1/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.95/1/
+ObjectTemplate.position 0.0425781/0.0794845/4.73465
+ObjectTemplate.minDistance 17
+ObjectTemplate.halfVolumeDistance 30
+ObjectTemplate.soundRadius 5
+
+ObjectTemplate.activeSafe Sound S_ARS_D30_Barrel_BoltClick
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe Sound S_ARS_D30_Barrel_TriggerClick
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe Sound S_ARS_D30_Barrel_SwitchFireRate
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe Sound S_ARS_D30_Barrel_Reload1P
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe Sound S_ARS_D30_Barrel_Reload3P
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe Sound S_ARS_D30_Barrel_Deploy1P
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe Sound S_ARS_D30_Barrel_Deploy3P
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe Sound S_ARS_D30_Barrel_Zoom
+ObjectTemplate.modifiedByUser nfe
+
+

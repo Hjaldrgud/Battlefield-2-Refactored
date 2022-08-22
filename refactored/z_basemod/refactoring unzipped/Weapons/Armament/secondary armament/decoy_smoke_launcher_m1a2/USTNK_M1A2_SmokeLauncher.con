@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm USTNK_M1A2_SmokeLauncher
+
+include USTNK_M1A2_SmokeLauncher.tweak
+

@@ -1,0 +1,48 @@
+ObjectTemplate.create Kit EU_Assault
+ObjectTemplate.geometry eu_kits
+ObjectTemplate.geometry.kit 5	
+ObjectTemplate.geometry.dropGeom 15
+ObjectTemplate.dropHeadwear helmet
+include ../common/common_kits_assault.tweak
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate USPIS_92FS
+rem ------------------3------------------
+ObjectTemplate.addTemplate gbrif_sa80a2_l85
+rem ------------------4------------------
+ObjectTemplate.addTemplate gbgr_sa80a2_l85
+rem ------------------5------------------
+ObjectTemplate.addTemplate hgr_smoke
+rem ------------------6------------------
+
+rem ------------------7------------------
+
+rem ------------------8------------------
+
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockEUAssault
+ObjectTemplate.addTemplate UnlockEUAssault2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockEUAssault
+ObjectTemplate.addTemplate usrif_G3A3
+ObjectTemplate.replaceItem gbrif_sa80a2_l85
+Objecttemplate.addTemplate ushgr_m67
+ObjectTemplate.replaceItem gbgr_sa80a2_l85
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockEUAssault2
+ObjectTemplate.addTemplate sasrif_fn2000
+ObjectTemplate.replaceItem gbrif_sa80a2_l85
+ObjectTemplate.replaceItem usrif_G3A3
+Objecttemplate.addTemplate sasgr_fn2000
+ObjectTemplate.replaceItem gbgr_sa80a2_l85
+ObjectTemplate.replaceItem ushgr_m67
+ObjectTemplate.addTemplate nshgr_flashbang
+Objecttemplate.replaceItem ushgr_smoke
+ObjectTemplate.unlockLevel 2

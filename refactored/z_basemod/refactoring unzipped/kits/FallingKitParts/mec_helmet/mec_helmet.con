@@ -1,0 +1,12 @@
+GeometryTemplate.create BundledMesh mec_helmet
+
+ObjectTemplate.create Particle mec_helmet
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MEI-1:mei
+ObjectTemplate.collisionMesh MEC_Helmet
+ObjectTemplate.mapMaterial 0 Human_bodyarmour 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry mec_helmet
+
+include mec_helmet.tweak

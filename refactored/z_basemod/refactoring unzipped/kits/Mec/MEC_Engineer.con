@@ -1,0 +1,39 @@
+ObjectTemplate.create Kit MEC_Engineer
+ObjectTemplate.geometry MEC_Kits
+ObjectTemplate.geometry.kit 3
+ObjectTemplate.geometry.dropGeom 12
+include ../common/common_kits_engineer.tweak
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate RUPIS_Baghira
+rem ------------------3------------------
+ObjectTemplate.addTemplate RUSHT_saiga12
+rem ------------------4------------------
+ObjectTemplate.addTemplate USHGR_M67
+rem ------------------5------------------
+ObjectTemplate.addTemplate at_mine
+rem ------------------6------------------
+ObjectTemplate.addTemplate wrench
+rem ------------------7------------------
+
+rem ------------------8------------------
+
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockMECEngineer
+ObjectTemplate.addTemplate UnlockMECEngineer2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockMECEngineer
+ObjectTemplate.addTemplate ussht_Jackhammer
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockMECEngineer2
+ObjectTemplate.addTemplate sasrif_mp7
+ObjectTemplate.replaceItem RUSHT_saiga12
+ObjectTemplate.replaceItem ussht_Jackhammer
+ObjectTemplate.unlockLevel 2

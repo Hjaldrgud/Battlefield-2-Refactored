@@ -1,0 +1,12 @@
+fileManager.mountArchive mods/xpack/Objects_client.zip Objects
+fileManager.mountArchive mods/xpack/Common_client.zip Common
+fileManager.mountArchive mods/xpack/Menu_client.zip Menu
+rem fileManager.mountArchive mods/xpack/Shaders_client.zip Shaders
+fileManager.mountArchive mods/xpack/Fonts_client.zip Fonts
+
+fileManager.mountArchive mods/bf2/Objects_client.zip Objects
+fileManager.mountArchive mods/bf2/Common_client.zip Common
+fileManager.mountArchive mods/bf2/Menu_client.zip Menu
+fileManager.mountArchive mods/bf2/Fonts_client.zip Fonts
+fileManager.mountArchive mods/bf2/Shaders_client.zip Shaders
+fileManager.mountArchive mods/bf2/Booster_client.zip Objects

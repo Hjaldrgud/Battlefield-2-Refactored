@@ -1,0 +1,805 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/4/25 7:22]
+GeometryTemplate.setSubGeometryLodDistance 1 0 15
+GeometryTemplate.setSubGeometryLodDistance 1 1 30
+GeometryTemplate.setSubGeometryLodDistance 1 2 95
+GeometryTemplate.setMaterialReflectionScale 1 0 0 0.4
+GeometryTemplate.setMaterialReflectionScale 1 0 1 0
+GeometryTemplate.setMaterialReflectionScale 1 0 2 1.2
+GeometryTemplate.setMaterialReflectionScale 1 0 3 1
+GeometryTemplate.setMaterialReflectionScale 1 1 2 1
+GeometryTemplate.setMaterialReflectionScale 1 2 0 0
+GeometryTemplate.setMaterialReflectionScale 1 2 1 0
+GeometryTemplate.setSpecularStaticGloss 1 0 0 0
+GeometryTemplate.setSpecularStaticGloss 1 0 1 0
+GeometryTemplate.setSpecularStaticGloss 1 0 2 0
+GeometryTemplate.setSpecularStaticGloss 1 0 3 2.5
+GeometryTemplate.setSpecularStaticGloss 1 1 1 1.2
+GeometryTemplate.setSpecularStaticGloss 1 1 2 2.5
+GeometryTemplate.setSpecularStaticGloss 1 2 0 2
+GeometryTemplate.setSpecularStaticGloss 1 2 1 2.5
+GeometryTemplate.setSpecularStaticGloss 1 2 2 2.5
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe PlayerControlObject she_ec635
+ObjectTemplate.creator KHE-2:khe
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.cullRadiusScale 1.579
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 650
+ObjectTemplate.armor.hitPoints 650
+ObjectTemplate.armor.defaultMaterial 31
+ObjectTemplate.armor.hpLostWhileUpSideDown 350
+ObjectTemplate.armor.hpLostWhileInWater 400
+ObjectTemplate.armor.hpLostWhileInDeepWater 400
+ObjectTemplate.armor.hpLostWhileCriticalDamage 18
+ObjectTemplate.armor.waterDamageDelay 0.01
+ObjectTemplate.armor.waterLevel -0.5
+ObjectTemplate.armor.deepWaterLevel -0.5
+ObjectTemplate.armor.explosionForce 15
+ObjectTemplate.armor.explosionForceMod 8
+ObjectTemplate.armor.explosionForceMax 5000
+ObjectTemplate.armor.explosionDamage 400
+ObjectTemplate.armor.explosionRadius 15
+ObjectTemplate.armor.explosionMaterial 100
+ObjectTemplate.armor.wreckExplosionForce 7
+ObjectTemplate.armor.wreckExplosionDamage 200
+ObjectTemplate.armor.wreckExplosionRadius 5
+ObjectTemplate.armor.wreckExplosionMaterial 70
+ObjectTemplate.armor.wreckHitPoints 1000
+ObjectTemplate.armor.timeToStayAsWreck 10
+ObjectTemplate.armor.criticalDamage 101
+ObjectTemplate.armor.destroyOnSpectacularDeath 1
+ObjectTemplate.armor.addArmorEffect 0 e_vexp_heli_Generic 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffectSpectacular 0 e_vexp_havoc 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffectSpectacular 0 e_vexp_heli_Generic_spec 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 50 e_dstate_heli_lightsmoke 0.82/0.86/-2.4 0/0/0
+ObjectTemplate.armor.addArmorEffect 25 e_dstate_heli_heavysmoke 0.82/0.86/-2.4 0/0/0
+ObjectTemplate.armor.addArmorEffect 10 e_dstate_heli_firesmoke 0.82/0.86/-2.4 0/0/0
+ObjectTemplate.armor.addArmorEffect -20 e_dstate_heli_wrecksmoke 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect -100 e_vexp_heli_generic_2nd 0/0/0 0/0/0
+rem ---EndComp ---
+rem ---BeginComp:Ability ---
+ObjectTemplate.createComponent Ability
+ObjectTemplate.Ability.radarRadius 70
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage heli_spotted
+rem ---EndComp ---
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_ec635"
+ObjectTemplate.vehicleHud.typeIcon Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_chopper.tga
+ObjectTemplate.vehicleHud.miniMapIcon Ingame\Vehicles\Icons\Minimap\mini_attack_Heli.tga
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.vehicleIconPos 61/18
+ObjectTemplate.vehicleHud.vehicleType 2
+ObjectTemplate.vehicleHud.useSelectionIcons 0
+ObjectTemplate.vehicleHud.vehicleIcon Ingame\Vehicles\Icons\Hud\VehicleIcons\she_ec635.tga
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.warningType 2
+ObjectTemplate.WarningHud.firstWarningSound HUD_Heatseeker_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Heatseeker_Lock_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserLockIcon.tga
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_VEHICLE_HELO_PILOT_CONTROLS_deployFlares"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_VEHICLE_HELO_PILOT_CONTROLS_deployFlares"
+ObjectTemplate.HelpHud.lowArmorHelpSoundKey "HUD_HELP_VEHICLE_HELO_LOWHEALTH_useFriendlyRepairStation"
+ObjectTemplate.HelpHud.lowArmorHelpStringKey "HUD_HELP_VEHICLE_HELO_LOWHEALTH_useFriendlyRepairStation"
+rem ---EndComp ---
+ObjectTemplate.geometry she_ec635
+ObjectTemplate.setCollisionMesh she_ec635
+ObjectTemplate.mapMaterial 0 col_body 31
+ObjectTemplate.mapMaterial 1 col_glass 1006
+ObjectTemplate.mapMaterial 2 col_wreck 60
+ObjectTemplate.mapMaterial 3 helicopter_landing_rail 106
+ObjectTemplate.mapMaterial 4 col_dampers 106
+ObjectTemplate.drag 2
+ObjectTemplate.dragModifier 1/1/0.75
+ObjectTemplate.mass 3000
+ObjectTemplate.floaterMod 0.8
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate ahe_AttackHeli
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_ec635_Ambient
+ObjectTemplate.addTemplate S_she_ec635_AmbientDamaged
+ObjectTemplate.addTemplate she_ec635_Camera
+ObjectTemplate.setPosition 0.398863/0.782355/2.18962
+ObjectTemplate.addTemplate she_ec635_EntryPoint
+ObjectTemplate.setPosition 7.94196e-005/-0.270381/0.88138
+ObjectTemplate.addTemplate she_ec635_WingL
+ObjectTemplate.setPosition -1/0/1
+ObjectTemplate.setRotation 0/0/-10
+ObjectTemplate.addTemplate she_ec635_WingR
+ObjectTemplate.setPosition 1/0/1
+ObjectTemplate.setRotation 0/0/10
+ObjectTemplate.addTemplate she_ec635_Rudder
+ObjectTemplate.setPosition 0/0/-6.5
+ObjectTemplate.setRotation 0/0/90
+ObjectTemplate.addTemplate she_ec635_BodyWing
+ObjectTemplate.setRotation 0/0/90
+ObjectTemplate.addTemplate she_ec635_TailEngine
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate she_ec635_Rotorhead1
+ObjectTemplate.setPosition 0/-20/0
+ObjectTemplate.addTemplate she_ec635_Cannons
+ObjectTemplate.setRotation 0/1/0
+ObjectTemplate.addTemplate HeatObject
+ObjectTemplate.addTemplate she_ec635_FlareLauncher
+ObjectTemplate.addTemplate she_ec635_mainrotor
+ObjectTemplate.setPosition 0/1.59474/0.89166
+ObjectTemplate.setRotation -129.3/-2.5/-3.1
+ObjectTemplate.addTemplate she_ec635_tailrotor
+ObjectTemplate.setPosition 0/0.941243/-5.37948
+ObjectTemplate.addTemplate HeatObject
+ObjectTemplate.setPosition 0/0.914601/0.701387
+ObjectTemplate.addTemplate she_ec635_RotationalBundle_Pilot
+ObjectTemplate.addTemplate she_ec635_leftpassenger
+ObjectTemplate.setPosition -1.52828/0.637997/0.468512
+ObjectTemplate.setRotation -92.9459/-14.9904/-3.97412
+ObjectTemplate.addTemplate she_ec635_rightpassenger
+ObjectTemplate.setPosition 1.56406/0.638425/0.540894
+ObjectTemplate.setRotation 83.1054/-13.839/-0.114688
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -3/0.5/1.5 0/0/0
+ObjectTemplate.altSoldierExitPosition 3/0.5/1
+ObjectTemplate.regulateYawInput PIYaw
+ObjectTemplate.regulateYaw -0.2/0.2
+ObjectTemplate.regulateVerticalPosInput PIThrottle
+ObjectTemplate.regulateVerticalPos -0.5/2
+ObjectTemplate.maxVertRegAngle 35
+ObjectTemplate.noVertRegAngle 55
+ObjectTemplate.seatInformation she_ec635 0.3744/0.750768/2.62475 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Common/Animations/3p_aircraftPilot_A_animSys.inc
+ObjectTemplate.soundFilter heli
+ObjectTemplate.sprintFactor 0
+ObjectTemplate.vehicleCategory VCHelicopter
+ObjectTemplate.listenerObstruction 0.5
+ObjectTemplate.damagedAmbientSoundLimit 0.15
+ObjectTemplate.crewKitIndex 9
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.altSoldierExitPosition 3/0.5/1
+
+ObjectTemplate.activeSafe Sound S_she_ec635_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_ah1z/sounds/helicopter_ambloop.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_she_ec635_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/effects/sounds/damagestates/fire_alarm.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Spring SHE_EC635_Damper1
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_SHE_EC635_Damper1_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 6
+
+ObjectTemplate.activeSafe Sound S_SHE_EC635_Damper1_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring SHE_EC635_Damper2
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_SHE_EC635_Damper2_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 6
+
+ObjectTemplate.activeSafe Sound S_SHE_EC635_Damper2_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring SHE_EC635_Damper3
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_SHE_EC635_Damper3_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 6
+
+ObjectTemplate.activeSafe Sound S_SHE_EC635_Damper3_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring SHE_EC635_Damper0
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_SHE_EC635_Damper0_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 6
+
+ObjectTemplate.activeSafe Sound S_SHE_EC635_Damper0_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Camera she_ec635_Camera
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_ec635_Camera_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -60/-40/0
+ObjectTemplate.setMaxRotation 65/15/0
+ObjectTemplate.setPivotPosition 0/0/-0.2
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.CVMNose 1
+ObjectTemplate.nosePos 0/0/1.6
+ObjectTemplate.followStiffness 2
+ObjectTemplate.chaseDistance 30
+ObjectTemplate.chaseAngle 0.25
+ObjectTemplate.chaseOffset 0/2.5/6
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 1
+ObjectTemplate.insideStaticSunDirection 1/-1/0.2
+ObjectTemplate.insideStaticSunColor 0.45098/0.4/0.384314
+ObjectTemplate.insideStaticSunDamageColor 0.960784/0.121569/0.027451
+ObjectTemplate.insideDamageFrequency 8
+ObjectTemplate.insideDamageThreshold 0.1
+ObjectTemplate.insideStaticSunAmbientColor 0.572549/0.521569/0.403922
+
+ObjectTemplate.activeSafe Sound S_she_ec635_Camera_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create EntryPoint she_ec635_EntryPoint
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 4
+
+ObjectTemplate.create Wing she_ec635_WingL
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_ec635_WingL_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setFlapLift 0.5
+
+ObjectTemplate.activeSafe Sound S_she_ec635_WingL_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Wing she_ec635_WingR
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_ec635_WingR_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setFlapLift 0.5
+
+ObjectTemplate.activeSafe Sound S_she_ec635_WingR_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Wing she_ec635_Rudder
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_ec635_Rudder_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 5
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_she_ec635_Rudder_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Wing she_ec635_BodyWing
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_ec635_BodyWing_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 5
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_she_ec635_BodyWing_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Engine she_ec635_TailEngine
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_ec635_TailEngine_RotationRpm
+ObjectTemplate.addTemplate S_she_ec635_TailEngine_Idle
+ObjectTemplate.addTemplate S_she_ec635_TailEngine_Rpm1
+ObjectTemplate.addTemplate S_she_ec635_TailEngine_Rpm2
+ObjectTemplate.addTemplate S_she_ec635_TailEngine_Load
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-100
+ObjectTemplate.setMaxRotation 0/0/100
+ObjectTemplate.setMaxSpeed 0/0/500
+ObjectTemplate.setAcceleration 0/0/2000
+ObjectTemplate.setInputToRoll PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETHelicopter
+ObjectTemplate.setTorque 50
+ObjectTemplate.setDifferential 30
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.noPropellerEffectAtSpeed 2.5
+ObjectTemplate.noPropellerEffectAtSpeed 2.5
+ObjectTemplate.decreaseAngleToZero 1
+ObjectTemplate.pureRotational 1
+ObjectTemplate.spinWhenNoEngineInAir 0.4
+ObjectTemplate.noEffectAtPerpSpeed 60
+
+ObjectTemplate.activeSafe Sound S_she_ec635_TailEngine_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_ec635_TailEngine_Idle
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/usthe_uh60/sounds/uh60_tail_start_idle_stop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 9
+
+ObjectTemplate.activeSafe Sound S_she_ec635_TailEngine_Rpm1
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_ec635_TailEngine_Rpm2
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_ec635_TailEngine_Load
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create RotationalBundle she_ec635_Rotorhead1
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_ec635_Rotorhead1_RotationRpm
+ObjectTemplate.addTemplate she_ec635_Rotorhead2
+ObjectTemplate.setPosition 0/20/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-6/-0.75
+ObjectTemplate.setMaxRotation 0/6/0.75
+ObjectTemplate.setMaxSpeed 0/50/50
+ObjectTemplate.setAcceleration 0/-1000/1000
+ObjectTemplate.setInputToPitch PIPitch
+ObjectTemplate.setInputToRoll PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_she_ec635_Rotorhead1_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create RotationalBundle she_ec635_Rotorhead2
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_ec635_Rotorhead2_RotationRpm
+ObjectTemplate.addTemplate she_ec635_MainEngine
+ObjectTemplate.setRotation 0/-86/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-6/-0.75
+ObjectTemplate.setMaxRotation 0/6/0.75
+ObjectTemplate.setMaxSpeed 0/50/50
+ObjectTemplate.setAcceleration 0/1000/1000
+ObjectTemplate.setInputToPitch PIPitch
+ObjectTemplate.setInputToRoll PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_she_ec635_Rotorhead2_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Engine she_ec635_MainEngine
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WindAffector ---
+ObjectTemplate.createComponent WindAffector
+ObjectTemplate.windType RadialDir
+ObjectTemplate.windIsDynamic 1
+ObjectTemplate.windDirection 0/0/-1
+ObjectTemplate.windSpeed 20
+ObjectTemplate.windBlowTime -1
+ObjectTemplate.windFalloff 30
+ObjectTemplate.windRadialFalloff 20
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_ec635_MainEngine_RotationRpm
+ObjectTemplate.addTemplate S_she_ec635_MainEngine_Idle
+ObjectTemplate.addTemplate S_she_ec635_MainEngine_Rpm1
+ObjectTemplate.addTemplate S_she_ec635_MainEngine_Rpm2
+ObjectTemplate.addTemplate S_she_ec635_MainEngine_Load
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/150
+ObjectTemplate.setMaxSpeed 0/0/1
+ObjectTemplate.setAcceleration 0/0/20
+ObjectTemplate.setInputToRoll PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETHelicopter
+ObjectTemplate.setTorque 200
+ObjectTemplate.setDifferential 400
+ObjectTemplate.setGearUp 0.99
+ObjectTemplate.setGearDown 0.01
+ObjectTemplate.setGearChangeTime 0.1
+ObjectTemplate.noPropellerEffectAtSpeed 1
+ObjectTemplate.noPropellerEffectAtSpeed 1
+ObjectTemplate.horizontalSpeedMagnifier 2.1
+ObjectTemplate.horizontalDampAngle 0.1
+ObjectTemplate.horizontalDampAngleFactor 0.001
+ObjectTemplate.defaultAngleOfAttack 1.5
+ObjectTemplate.maxAngleOfAttack 11
+ObjectTemplate.attackSpeed 5
+ObjectTemplate.decreaseAngleToZeroVerticalVel 0.5
+ObjectTemplate.dampHorizontalVel 5
+ObjectTemplate.dampHorizontalVelFactor -0.7
+ObjectTemplate.canReverse 0
+ObjectTemplate.audio.transformationRelativeRoot 1
+
+ObjectTemplate.activeSafe Sound S_she_ec635_MainEngine_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_ec635_MainEngine_Idle
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/xpak2_vehicles/she_littlebird/sounds/scout_chopper_engine_start_idle_stop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 0.95
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/3/0.513514/1.06/0/0.590734/1.06/0/0.795367/1.0888/0/
+ObjectTemplate.minDistance 12
+ObjectTemplate.halfVolumeDistance 27
+ObjectTemplate.soundRadius 3
+
+ObjectTemplate.activeSafe Sound S_she_ec635_MainEngine_Rpm1
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_ah1z/sounds/mono/jet_whine.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1.7
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/3/0.003861/0.590734/0/0.602317/0.932432/0/0.760618/1.26834/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/4/0.011583/0.040541/0/0.505791/1/0/0.602317/0.747104/0/0.988417/0.932432/0/
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 10
+ObjectTemplate.soundRadius 3
+
+ObjectTemplate.activeSafe Sound S_she_ec635_MainEngine_Rpm2
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_ec635_MainEngine_Load
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create GenericFireArm she_ec635_Cannons
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\icon_Predator.tga
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_ec635"
+ObjectTemplate.weaponHud.guiIndex 42
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.addShowOnCamMode 2
+ObjectTemplate.weaponHud.showClips 0
+ObjectTemplate.weaponHud.displaySelectOnActivation 1
+ObjectTemplate.weaponHud.overheatSound S_Weapon_Vehicle_Overheat
+rem ---EndComp ---
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent MultiFireComp
+ObjectTemplate.fire.addBarrelName she_ec635_Cannons_barrel
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags 1
+ObjectTemplate.ammo.magSize 900
+ObjectTemplate.ammo.reloadTime 5
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+include ../../../weapons/common/recoil/vehicles/she_all.tweak
+include ../../../weapons/common/deviation/vehicles/she_ec635.tweak
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+include ../../../Weapons/common/zoom/aaa_default.tweak
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_ec635_Cannons_Fire1P
+ObjectTemplate.addTemplate S_she_ec635_Cannons_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_she_ec635_Cannons_Fire3P
+ObjectTemplate.addTemplate S_she_ec635_Cannons_BoltClick
+ObjectTemplate.addTemplate S_she_ec635_Cannons_TriggerClick
+ObjectTemplate.addTemplate S_she_ec635_Cannons_SwitchFireRate
+ObjectTemplate.addTemplate S_she_ec635_Cannons_Reload1P
+ObjectTemplate.addTemplate S_she_ec635_Cannons_Reload3P
+ObjectTemplate.addTemplate S_she_ec635_Cannons_Deploy1P
+ObjectTemplate.addTemplate S_she_ec635_Cannons_Deploy3P
+ObjectTemplate.addTemplate S_she_ec635_Cannons_Zoom
+ObjectTemplate.addTemplate she_ec635_Cannons_barrel
+ObjectTemplate.setPosition 1.47473/-0.52925/1.62731
+ObjectTemplate.setRotation 0/-2/0
+ObjectTemplate.addTemplate she_ec635_Cannons_barrel
+ObjectTemplate.setPosition -1.478/-0.53303/1.62315
+ObjectTemplate.setRotation 0/-2/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate she_littlebird_projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 500
+ObjectTemplate.heatAddWhenFire 0.01
+ObjectTemplate.coolDownPerSec 0.4
+ObjectTemplate.overheatPenalty 3
+
+ObjectTemplate.activeSafe Sound S_she_ec635_Cannons_Fire1P
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/xpak2_vehicles/she_ec635/sounds/dual_cannon_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.985/1.04/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.95/1/
+
+ObjectTemplate.activeSafe Sound S_she_ec635_Cannons_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_ec635_Cannons_Fire3P
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/xpak2_vehicles/she_ec635/sounds/dual_cannon_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.985/1.04/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.95/1/
+ObjectTemplate.minDistance 10
+ObjectTemplate.halfVolumeDistance 17
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_she_ec635_Cannons_BoltClick
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_ec635_Cannons_TriggerClick
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/land/ustnk_m1a2/sounds/vehicle_weapon_trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.41
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0.3
+
+ObjectTemplate.activeSafe Sound S_she_ec635_Cannons_SwitchFireRate
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_ec635_Cannons_Reload1P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_ec635_Cannons_Reload3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_ec635_Cannons_Deploy1P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_ec635_Cannons_Deploy3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_ec635_Cannons_Zoom
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create RotationalBundle she_ec635_Cannons_barrel
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_ec635_Cannons_barrel_RotationRpm
+ObjectTemplate.addTemplate e_muzz_25mm
+ObjectTemplate.addTemplate e_shellejection_25mm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_she_ec635_Cannons_barrel_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create RotationalBundle she_ec635_RotationalBundle_Pilot
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:Ik ---
+ObjectTemplate.createComponent Ik
+ObjectTemplate.ik.positionLeft 0.363091/0.355037/2.59007
+ObjectTemplate.ik.rotationLeft -82.4553/0/-80.745
+ObjectTemplate.ik.positionRight 0.422423/0.360115/2.55016
+ObjectTemplate.ik.rotationRight -96.4621/14.9347/94.3183
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_ec635_RotationalBundle_Pilot_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_she_ec635_RotationalBundle_Pilot_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create PlayerControlObject she_ec635_leftpassenger
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_ec635"
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.useChildHud 1
+ObjectTemplate.vehicleHud.vehicleIconPos 36/4
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate air_th_UH60_Passenger1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_ec635_leftpassenger_Ambient
+ObjectTemplate.addTemplate S_she_ec635_leftpassenger_AmbientDamaged
+ObjectTemplate.addTemplate she_ec635_EntryPoint_leftpassenger
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0/0 0/0/0
+ObjectTemplate.altSoldierExitPosition -2/0/-1
+ObjectTemplate.seatInformation she_ec635_leftpassenger 0/0/0 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Common/Animations/3p_passenger_A_animSys.inc
+ObjectTemplate.altSoldierExitPosition -2/0/-1
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.isOpenVehicle 1
+
+ObjectTemplate.activeSafe Sound S_she_ec635_leftpassenger_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_ec635_leftpassenger_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create EntryPoint she_ec635_EntryPoint_leftpassenger
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 3
+
+ObjectTemplate.create PlayerControlObject she_ec635_rightpassenger
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_ec635"
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.useChildHud 1
+ObjectTemplate.vehicleHud.vehicleIconPos 36/24
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate air_th_UH60_Passenger2
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_ec635_rightpassenger_Ambient
+ObjectTemplate.addTemplate S_she_ec635_rightpassenger_AmbientDamaged
+ObjectTemplate.addTemplate she_ec635_EntryPoint_rightpassenger
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 2/0/0 0/0/0
+ObjectTemplate.altSoldierExitPosition 2/0/-1
+ObjectTemplate.seatInformation she_ec635_rightpassenger 0/0/0 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Common/Animations/3p_passenger_A_animSys.inc
+ObjectTemplate.altSoldierExitPosition 2/0/-1
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.isOpenVehicle 1
+
+ObjectTemplate.activeSafe Sound S_she_ec635_rightpassenger_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_ec635_rightpassenger_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create EntryPoint she_ec635_EntryPoint_rightpassenger
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 3
+

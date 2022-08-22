@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject kh29_kedgedummy
+ObjectTemplate.createdInEditor 1
+
+include kh29_kedgedummy.tweak

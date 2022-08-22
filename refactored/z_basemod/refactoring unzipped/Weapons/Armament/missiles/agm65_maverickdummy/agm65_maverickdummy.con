@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject agm65_maverickDummy
+ObjectTemplate.createdInEditor 1
+
+include agm65_maverickdummy.tweak

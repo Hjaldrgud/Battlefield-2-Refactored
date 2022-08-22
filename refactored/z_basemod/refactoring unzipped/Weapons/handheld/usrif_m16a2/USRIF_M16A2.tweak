@@ -1,0 +1,211 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/2/14 17:21]
+GeometryTemplate.setMaterialReflectionScale 0 0 0 0.35
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 8
+ObjectTemplate.activeSafe GenericFireArm usrif_m16a2
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\USRIF_M16a2.tga
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\USRIF_M16a2_mini.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\USRIF_M16a2.tga
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_m16a2"
+ObjectTemplate.weaponHud.guiIndex 4
+ObjectTemplate.weaponHud.altGuiIndex 52
+ObjectTemplate.weaponHud.deviationFactor 5
+ObjectTemplate.weaponHud.maxVisualDeviation 20
+ObjectTemplate.weaponHud.minVisualDeviation 2
+ObjectTemplate.weaponHud.disableOnSprint 1
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 900
+ObjectTemplate.fire.addFireRate 1
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.reloadTime 4.375
+rem ---EndComp ---
+include ../../common/recoil/infantry/rif_m16.tweak
+include ../../common/deviation/infantry/rif_m16.tweak
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+include ../../common/zoom/infantry/rif_m16,g3,ak101,gp30.tweak
+ObjectTemplate.geometry USRIF_M16a2
+ObjectTemplate.setCollisionMesh usrif_m16a2
+ObjectTemplate.mapMaterial 0 Collision_Material 68
+ObjectTemplate.mapMaterial 1 lambert1 68
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate ai_rifle_standard
+rem -------------------------------------
+ObjectTemplate.addTemplate S_usrif_m16a2_Fire1P
+ObjectTemplate.setPosition -0.00377481/0.0559168/0.572084
+ObjectTemplate.addTemplate S_usrif_m16a2_Fire1P_Outdoor
+ObjectTemplate.setPosition -0.00376136/0.0525192/0.569888
+ObjectTemplate.addTemplate S_usrif_m16a2_Fire3P
+ObjectTemplate.setPosition -0.00508671/0.055329/0.574091
+ObjectTemplate.addTemplate S_usrif_m16a2_BoltClick
+ObjectTemplate.setPosition 0/0.0665222/-0.103969
+ObjectTemplate.addTemplate S_usrif_m16a2_TriggerClick
+ObjectTemplate.setPosition 0/0/-0.0555011
+ObjectTemplate.addTemplate S_usrif_m16a2_SwitchFireRate
+ObjectTemplate.setPosition 0/0.037827/-0.0735783
+ObjectTemplate.addTemplate S_usrif_m16a2_Reload1P
+ObjectTemplate.setPosition 0/-0.0295804/0.000190318
+ObjectTemplate.addTemplate S_usrif_m16a2_Reload3P
+ObjectTemplate.setPosition 0/-0.0338404/-0.00553012
+ObjectTemplate.addTemplate S_usrif_m16a2_Deploy1P
+ObjectTemplate.setPosition 0/0.0642393/-0.105465
+ObjectTemplate.addTemplate S_usrif_m16a2_Deploy3P
+ObjectTemplate.setPosition 0/0.0490185/-0.0687447
+ObjectTemplate.addTemplate S_usrif_m16a2_Zoom
+ObjectTemplate.setPosition 0/0.0466002/-0.106539
+ObjectTemplate.addTemplate e_muzz_m4
+ObjectTemplate.setPosition -0.00513785/0.0539762/0.595038
+ObjectTemplate.addTemplate e_shellejection_556
+ObjectTemplate.setPosition 0/0.053/0
+ObjectTemplate.setRotation -10/0/0
+rem -------------------------------------
+ObjectTemplate.animationSystem1P objects/weapons/handheld/usrif_m16a2/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P objects/weapons/handheld/usrif_m16a2/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate rif_M16,FAMAS_projectile
+ObjectTemplate.velocity 1000
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 1.166
+
+ObjectTemplate.activeSafe Sound S_usrif_m16a2_Fire1P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m203/sounds/m16_fire_1p_outdoor.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.04/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+
+ObjectTemplate.activeSafe Sound S_usrif_m16a2_Fire3P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m203/sounds/m16_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.04/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position -0.00508671/0.055329/0.574091
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_usrif_m16a2_BoltClick
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_boltclick.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.75
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0665222/-0.103969
+
+ObjectTemplate.activeSafe Sound S_usrif_m16a2_TriggerClick
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_usrif_m16a2_SwitchFireRate
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_fire_rate_switch.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.037827/-0.0735783
+
+ObjectTemplate.activeSafe Sound S_usrif_m16a2_Reload1P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/stereo/m4_reload.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.62
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.0295804/0.000190318
+
+ObjectTemplate.activeSafe Sound S_usrif_m16a2_Reload3P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_reload_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.68
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.0338404/-0.00553012
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_usrif_m16a2_Deploy1P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.42
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0642393/-0.105465
+
+ObjectTemplate.activeSafe Sound S_usrif_m16a2_Deploy3P
+ObjectTemplate.modifiedByUser jsa
+ObjectTemplate.soundFilename "objects/weapons/handheld/usrif_m4/sounds/mono/m4_deploy.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.42
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0490185/-0.0687447
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_usrif_m16a2_Zoom
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/zoom_generic.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1

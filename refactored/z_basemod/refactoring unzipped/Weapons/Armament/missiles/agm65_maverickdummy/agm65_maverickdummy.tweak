@@ -1,0 +1,7 @@
+ObjectTemplate.active agm65_maverickdummy
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry agm65_maverick
+ObjectTemplate.setCollisionMesh agm65_maverick
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.mapMaterial 0 Airplane 32

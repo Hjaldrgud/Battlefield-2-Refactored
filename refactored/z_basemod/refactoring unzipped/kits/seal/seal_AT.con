@@ -1,0 +1,41 @@
+ObjectTemplate.create Kit seal_AT
+ObjectTemplate.geometry seal_Kits
+ObjectTemplate.geometry.kit 3
+ObjectTemplate.geometry.dropGeom 13
+include ../common/common_kits_at.tweak
+ObjectTemplate.addTemplate seal_hv_mask
+ObjectTemplate.addTemplate seal_hv_nvg
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate USPIS_92FS
+rem ------------------3------------------
+ObjectTemplate.addTemplate USRIF_MP5_A3
+rem ------------------4------------------
+ObjectTemplate.addTemplate USATP_Predator
+rem ------------------5------------------
+
+rem ------------------6------------------
+ObjectTemplate.addTemplate nsrif_grapplinghook
+rem ------------------7------------------
+ObjectTemplate.addTemplate nightvisiongoggles
+rem ------------------8------------------
+ObjectTemplate.addTemplate gasmask
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockSEALAT
+ObjectTemplate.addTemplate UnlockSEALAT2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockSEALAT
+ObjectTemplate.addTemplate chsht_protecta
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockSEALAT2
+ObjectTemplate.addTemplate eurif_fnp90
+ObjectTemplate.replaceItem USRIF_MP5_A3
+ObjectTemplate.replaceItem chsht_protecta
+ObjectTemplate.unlockLevel 2

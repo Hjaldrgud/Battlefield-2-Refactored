@@ -1,0 +1,11 @@
+ObjectTemplate.create GenericProjectile air_jet_f_blufor_projectile
+include ../common_Shell_20mm.tweak
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 87
+ObjectTemplate.detonation.explosionRadius 4
+ObjectTemplate.detonation.explosionForce 2.5
+ObjectTemplate.detonation.explosionDamage 100
+rem ---EndComp ---
+ObjectTemplate.damage 100
+include ../../tracers/vehicles/air_jet_f_blufor.tweak 1

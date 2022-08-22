@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm APC_BTR90_SmokeLauncher
+
+include APC_BTR90_SmokeLauncher.tweak
+

@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm ahe_havoc_FlareLauncher
+
+include ahe_havoc_FlareLauncher.tweak
+

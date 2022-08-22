@@ -1,0 +1,39 @@
+ObjectTemplate.create Kit CH_AT
+ObjectTemplate.geometry CH_Kits
+ObjectTemplate.geometry.kit 3
+ObjectTemplate.geometry.dropGeom 13
+include ../common/common_kits_at.tweak
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate chpis_qsz92
+rem ------------------3------------------
+ObjectTemplate.addTemplate chrif_type85
+rem ------------------4------------------
+ObjectTemplate.addTemplate CHAT_ERYX
+rem ------------------5------------------
+
+rem ------------------6------------------
+
+rem ------------------7------------------
+
+rem ------------------8------------------
+
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockChAT
+ObjectTemplate.addTemplate UnlockChAT2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockChAT
+ObjectTemplate.addTemplate chsht_protecta
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockChAT2
+ObjectTemplate.addTemplate eurif_fnp90
+ObjectTemplate.replaceItem chrif_type85
+ObjectTemplate.replaceItem chsht_protecta
+ObjectTemplate.unlockLevel 2

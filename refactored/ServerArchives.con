@@ -1,0 +1,59 @@
+rem ------------- mutators ---------------------
+
+rem AI mutators
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_ai_weapon_ranges_increased.zip									Objects	
+
+rem Kit mutators
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_kits_bf1942_balance_FOR_sas_uses_british_AND_weapon_variety.zip 	Objects
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_kits_bf1942_balance.zip 											Objects
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_kits_sas_uses_british.zip 										Objects
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_kits_weapon_variety.zip 											Objects
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_equipment_smoke_grenade_buff.zip				    				Objects
+
+rem Hand grenade mutators
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_equipment_grenade_amount_halved.zip 								Objects
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_equipment_grenade_explosion_radius_reduced.zip 					Objects
+
+rem Vehicle mutators
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_vehicle_realistic_firerates.zip 									Objects
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_vehicles_tank_rebalance.zip 										Objects
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_vehicle_artillery_rebalance.zip 									Objects
+
+rem M95 mutators
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_kits_m95_is_last_unlock.zip 										Objects
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_weapon_m95_triple_damage.zip 									Objects
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_weapon_m95_double_damage.zip 									Objects
+
+rem Handheld weapon mutators 
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_weapon_accuracy_double_recoil.zip 								Objects
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_weapon_accuracy_halved_deviation.zip 							Objects
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_weapon_realistic_weapons.zip 									Objects
+
+rem Infantry mutators
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_infantry_movement_speed_buff.zip 								Objects
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_infantry_health_regen.zip 										Objects
+
+rem Damage mutators
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_weapon_150%_bullet_damage_balance_patch.zip						Objects
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_weapon_150%_bullet_damage.zip 									Objects
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_equipment_C4_doble_damage.zip									Objects
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_weapon_explosions_150%_area.zip 									Objects
+rem fileManager.mountArchive mods/refactored/x_mutators/CS_damagemultipliers_headshots_deadly.zip 							Common
+
+rem Zoom mutators
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_weapon_zoom_realistic_scopes.zip 								Objects
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_weapon_zoom_standardised_iron_sights_for_stationaries.zip 		Objects
+rem fileManager.mountArchive mods/refactored/x_mutators/OS_weapon_zoom_standardised_iron_sights.zip 						Objects
+
+rem ------------- baseline mod ---------------------
+
+fileManager.mountArchive mods/refactored/z_basemod/Objects_server_refactored.zip 										Objects
+
+rem ------------- baseline gamefiles ---------------------
+fileManager.mountArchive mods/xpack/Objects_server.zip 																	Objects
+fileManager.mountArchive mods/xpack/Menu_server.zip 																	Menu
+fileManager.mountArchive mods/xpack/Common_server.zip 																	Common
+
+fileManager.mountArchive mods/bf2/Objects_server.zip 																	Objects
+fileManager.mountArchive mods/bf2/Menu_server.zip 																		Menu
+fileManager.mountArchive mods/bf2/Common_server.zip 																	Common

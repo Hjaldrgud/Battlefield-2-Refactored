@@ -1,0 +1,41 @@
+ObjectTemplate.create Kit sas_Engineer
+ObjectTemplate.geometry sas_kits
+ObjectTemplate.geometry.kit 2
+ObjectTemplate.geometry.dropGeom 12
+include ../common/common_kits_engineer.tweak
+ObjectTemplate.addTemplate sas_mask
+ObjectTemplate.addTemplate sas_nvg
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate USPIS_92FS
+rem ------------------3------------------
+ObjectTemplate.addTemplate sasrif_mp7
+rem ------------------4------------------
+ObjectTemplate.addTemplate USHGR_M67
+rem ------------------5------------------
+ObjectTemplate.addTemplate at_mine
+rem ------------------6------------------
+ObjectTemplate.addTemplate wrench
+rem ------------------7------------------
+ObjectTemplate.addTemplate nightvisiongoggles
+rem ------------------8------------------
+ObjectTemplate.addTemplate gasmask
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockSASEngineer
+ObjectTemplate.addTemplate UnlockSASEngineer2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockSASEngineer
+ObjectTemplate.addTemplate ussht_Jackhammer
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockSASEngineer2
+ObjectTemplate.addTemplate usrif_remington11-87
+ObjectTemplate.replaceItem sasrif_mp7
+ObjectTemplate.replaceItem ussht_Jackhammer
+ObjectTemplate.unlockLevel 2

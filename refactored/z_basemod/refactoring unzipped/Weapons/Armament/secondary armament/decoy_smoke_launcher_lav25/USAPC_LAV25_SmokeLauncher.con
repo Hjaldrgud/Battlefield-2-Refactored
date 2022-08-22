@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm USAPC_LAV25_SmokeLauncher
+
+include USAPC_LAV25_SmokeLauncher.tweak
+

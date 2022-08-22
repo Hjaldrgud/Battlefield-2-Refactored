@@ -1,0 +1,205 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/4/5 15:44]
+GeometryTemplate.setMaterialReflectionScale 0 0 0 0.35
+GeometryTemplate.setMaterialReflectionScale 0 0 1 2
+GeometryTemplate.setMaterialReflectionScale 1 0 0 2
+GeometryTemplate.setMaterialReflectionScale 1 1 0 2
+GeometryTemplate.setSpecularStaticGloss 0 0 0 0.15
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm rurif_dragunov
+ObjectTemplate.creator MBA-1:mba
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\RURIF_Dragunov.tga
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\RURIF_Dragunov_mini.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\RURIF_Dragunov.tga
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_dragunov"
+ObjectTemplate.weaponHud.guiIndex 0
+ObjectTemplate.weaponHud.altGuiIndex 52
+ObjectTemplate.weaponHud.maxVisualDeviation 50
+ObjectTemplate.weaponHud.minVisualDeviation 5
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.magSize 10
+ObjectTemplate.ammo.nrOfMags 7
+ObjectTemplate.ammo.reloadTime 4
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+include ../../common/recoil/infantry/sni_svd.tweak
+include ../../common/deviation/infantry/sni_type88,svd.tweak
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+include ../../common/zoom/infantry/sni_svd.tweak
+ObjectTemplate.geometry rurif_dragunov
+ObjectTemplate.setCollisionMesh rurif_dragunov
+ObjectTemplate.mapMaterial 0 Collision_Material 68
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate ai_sniper_standard
+rem -------------------------------------
+ObjectTemplate.addTemplate S_rurif_dragunov_Fire1P
+ObjectTemplate.setPosition 0/0.00869279/0.432095
+ObjectTemplate.addTemplate S_rurif_dragunov_Fire1P_Outdoor
+ObjectTemplate.setPosition 0/0.00877658/0.431594
+ObjectTemplate.addTemplate S_rurif_dragunov_Fire3P
+ObjectTemplate.setPosition 0/-1.97887e-005/0.67157
+ObjectTemplate.addTemplate S_rurif_dragunov_BoltClick
+ObjectTemplate.addTemplate S_rurif_dragunov_TriggerClick
+ObjectTemplate.setPosition 0/-0.0419104/-0.169042
+ObjectTemplate.addTemplate S_rurif_dragunov_SwitchFireRate
+ObjectTemplate.addTemplate S_rurif_dragunov_Reload1P
+ObjectTemplate.setPosition 0/-0.00366077/-0.0369914
+ObjectTemplate.addTemplate S_rurif_dragunov_Reload3P
+ObjectTemplate.setPosition 0/0/-0.0382311
+ObjectTemplate.addTemplate S_rurif_dragunov_Deploy1P
+ObjectTemplate.setPosition 0/0/-0.0447858
+ObjectTemplate.addTemplate S_rurif_dragunov_Deploy3P
+ObjectTemplate.setPosition 0/0/-0.0497777
+ObjectTemplate.addTemplate S_rurif_dragunov_Zoom
+ObjectTemplate.setPosition 0/0.0197366/-0.149191
+ObjectTemplate.addTemplate e_shellejection_556
+ObjectTemplate.setPosition 0/0.0175554/-0.0216403
+ObjectTemplate.addTemplate e_muzz_g36
+ObjectTemplate.setPosition 0/0.01/0.737454
+ObjectTemplate.setRotation 0/0/45
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/RURIF_Dragunov/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/RURIF_Dragunov/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate sni_SVD,Type88_projectile
+ObjectTemplate.velocity 1000
+ObjectTemplate.itemIndex 3
+ObjectTemplate.delayToUse 1
+
+rem -------------------------------------
+ObjectTemplate.activeSafe Sound S_rurif_dragunov_Fire1P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_dragunov/sounds/dragunov_fire_1p_outdoor.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0.00877658/0.431594
+
+
+ObjectTemplate.activeSafe Sound S_rurif_dragunov_Fire3P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_dragunov/sounds/dragunov_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/-1.97887e-005/0.67157
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 10
+
+ObjectTemplate.activeSafe Sound S_rurif_dragunov_BoltClick
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_gp30/sounds/gp30_bolt_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_rurif_dragunov_TriggerClick
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/uspis_92fs/sounds/mono/trigger_click.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.0419104/-0.169042
+
+ObjectTemplate.activeSafe Sound S_rurif_dragunov_SwitchFireRate
+ObjectTemplate.modifiedByUser dsu
+
+ObjectTemplate.activeSafe Sound S_rurif_dragunov_Reload1P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_dragunov/sounds/dragunov_reload_1p3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.75
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/-0.00366077/-0.0369914
+
+ObjectTemplate.activeSafe Sound S_rurif_dragunov_Reload3P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_dragunov/sounds/dragunov_reload_1p3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.75
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/-0.0382311
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_rurif_dragunov_Deploy1P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_dragunov/sounds/dragunov_deploy_1p3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/-0.0447858
+
+ObjectTemplate.activeSafe Sound S_rurif_dragunov_Deploy3P
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_dragunov/sounds/dragunov_deploy_1p3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/-0.0497777
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_rurif_dragunov_Zoom
+ObjectTemplate.modifiedByUser dsu
+ObjectTemplate.soundFilename "objects/weapons/handheld/rurif_bizon/sounds/zoom_generic.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0.0197366/-0.149191

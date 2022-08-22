@@ -1,0 +1,18 @@
+rem *** Put non level specific initializations here ***
+
+rem *** Load multiplayer free camera here
+run Common/FreeCamera/Object.con
+
+gameLogic.setDefaultNumberOfTickets 1 250
+gameLogic.setDefaultNumberOfTickets 2 250
+gameLogic.supplyDropHeight 50
+gameLogic.supplyDropNumSecsToLive 300
+
+rem this disables the annoying tutorial voice
+gameLogic.enableVoHelp 0
+
+rem Various settings. Change to your liking
+game.lockfps 0
+rem renderer.vsync 1
+renderer.drawfps 1
+GeneralSettings.setAutoReload 1

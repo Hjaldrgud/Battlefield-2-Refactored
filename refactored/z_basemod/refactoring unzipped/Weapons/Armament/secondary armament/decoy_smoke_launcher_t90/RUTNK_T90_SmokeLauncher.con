@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm RUTNK_T90_SmokeLauncher
+
+include RUTNK_T90_SmokeLauncher.tweak
+

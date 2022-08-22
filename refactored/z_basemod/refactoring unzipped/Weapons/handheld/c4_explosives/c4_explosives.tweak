@@ -1,0 +1,165 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/3/23 15:53]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm c4_explosives
+ObjectTemplate.creator FUL-1:ful
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\C4_Explosives.tga
+ObjectTemplate.weaponHud.specialAbilityIcon Ingame\Weapons\Icons\Hud\SpecialKitIcons\c4.tga
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_c4"
+ObjectTemplate.weaponHud.guiIndex 0
+ObjectTemplate.weaponHud.altGuiIndex 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+rem ---EndComp ---
+rem ---BeginComp:ExplosivesFireComp ---
+ObjectTemplate.createComponent ExplosivesFireComp
+ObjectTemplate.fire.fireLaunchDelay 0.05
+ObjectTemplate.fire.altFireInput PIAltFire
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.projectileStartPosition 0.1/-0.15/0
+ObjectTemplate.fire.maxProjectilesInWorld 5
+ObjectTemplate.fire.detonatorObject c4_detonator
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.nrOfMags 5
+ObjectTemplate.ammo.reloadTime 0.5
+ObjectTemplate.ammo.minimumTimeUntilReload 0.1
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.instantReloadOnEnable 1
+ObjectTemplate.ammo.toggleWhenNoAmmo 1
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_WEAPON_HANDHELD_C4_CONTROLS_switchToDetonator"
+ObjectTemplate.HelpHud.helpSoundKey "c4_explosives"
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.sound.noisy 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+ObjectTemplate.geometry c4_explosives
+ObjectTemplate.setCollisionMesh c4_explosives
+ObjectTemplate.mapMaterial 0 collisionmaterial 81
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate ai_explosives_c4
+rem -------------------------------------
+ObjectTemplate.addTemplate S_c4_explosives_Fire1P
+ObjectTemplate.addTemplate S_c4_explosives_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_c4_explosives_Fire3P
+ObjectTemplate.addTemplate S_c4_explosives_BoltClick
+ObjectTemplate.addTemplate S_c4_explosives_TriggerClick
+ObjectTemplate.addTemplate S_c4_explosives_SwitchFireRate
+ObjectTemplate.addTemplate S_c4_explosives_Reload1P
+ObjectTemplate.addTemplate S_c4_explosives_Reload3P
+ObjectTemplate.addTemplate S_c4_explosives_Deploy1P
+ObjectTemplate.addTemplate S_c4_explosives_Deploy3P
+ObjectTemplate.addTemplate S_c4_explosives_Zoom
+ObjectTemplate.addTemplate c4_detonator
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/C4_Explosives/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/C4_Explosives/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate exp_C4_projectile
+ObjectTemplate.keepProjectiles 3
+ObjectTemplate.velocity 7
+ObjectTemplate.itemIndex 5
+
+ObjectTemplate.activeSafe Sound S_c4_explosives_Fire1P
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/weapons/handheld/medikit/sounds/throw.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_c4_explosives_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe Sound S_c4_explosives_Fire3P
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/weapons/handheld/medikit/sounds/throw.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe Sound S_c4_explosives_BoltClick
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe Sound S_c4_explosives_TriggerClick
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe Sound S_c4_explosives_SwitchFireRate
+ObjectTemplate.modifiedByUser nfe
+
+ObjectTemplate.activeSafe Sound S_c4_explosives_Reload1P
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/weapons/handheld/c4_explosives/sounds/c4_deploy_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_c4_explosives_Reload3P
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/weapons/handheld/c4_explosives/sounds/c4_deploy_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_c4_explosives_Deploy1P
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/weapons/handheld/c4_explosives/sounds/c4_deploy_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_c4_explosives_Deploy3P
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/weapons/handheld/c4_explosives/sounds/c4_deploy_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_c4_explosives_Zoom
+ObjectTemplate.modifiedByUser nfe
+

@@ -1,0 +1,7 @@
+ObjectTemplate.active aa11_archerDummy
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry aa11_archer
+ObjectTemplate.setCollisionMesh aa11_archer
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.mapMaterial 0 Airplane 32

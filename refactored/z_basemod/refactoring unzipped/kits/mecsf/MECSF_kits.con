@@ -1,0 +1,28 @@
+GeometryTemplate.create SkinnedMesh mecsf_kits
+
+ObjectTemplate.create SimpleObject mecsf_kits
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAY:jayev
+ObjectTemplate.geometry mecsf_kits
+
+ObjectTemplate.create SimpleObject Mec_Kit_Assault_gun
+
+ObjectTemplate.create SimpleObject Mec_Kit_Assault_akmag
+
+ObjectTemplate.create SimpleObject Mec_Kit_Assault_camelbak
+
+ObjectTemplate.create SimpleObject Mec_Kit_Assault_gp1
+
+ObjectTemplate.create SimpleObject Mec_Kit_Assault_gp2
+
+ObjectTemplate.create SimpleObject Mec_Kit_Assault_gp3
+
+ObjectTemplate.create SimpleObject Mec_Kit_Assault_gp4
+
+ObjectTemplate.create SimpleObject Mec_Kit_Assault_hipbag
+
+ObjectTemplate.create SimpleObject Mec_Kit_Assault_pouch2
+
+ObjectTemplate.create SimpleObject Mec_Kit_Assault_pouch1
+
+include mecsf_kits.tweak

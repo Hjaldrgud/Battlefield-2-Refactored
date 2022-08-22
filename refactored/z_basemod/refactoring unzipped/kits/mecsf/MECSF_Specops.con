@@ -1,0 +1,41 @@
+ObjectTemplate.create Kit MECSF_Specops
+ObjectTemplate.geometry MECSF_Kits
+ObjectTemplate.geometry.kit 2
+ObjectTemplate.geometry.dropGeom 10
+include ../common/common_kits_specops.tweak
+ObjectTemplate.addTemplate mecsf_lt_mask
+ObjectTemplate.addTemplate mecsf_lt_nvg
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate RUPIS_Baghira_silencer 
+rem ------------------3------------------
+ObjectTemplate.addTemplate rurrif_ak74u
+rem ------------------4------------------
+ObjectTemplate.addTemplate USHGR_M67
+rem ------------------5------------------
+ObjectTemplate.addTemplate c4_explosives
+rem ------------------6------------------
+ObjectTemplate.addTemplate nsrif_crossbow 
+rem ------------------7------------------
+ObjectTemplate.addTemplate nightvisiongoggles
+rem ------------------8------------------
+ObjectTemplate.addTemplate gasmask
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockMECSFSpecops
+ObjectTemplate.addTemplate UnlockMECSFSpecops2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockMECSFSpecops
+ObjectTemplate.addTemplate usrif_g36c
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockMECSFSpecops2
+ObjectTemplate.addTemplate usrif_fnscarl
+ObjectTemplate.replaceItem rurrif_ak74u
+ObjectTemplate.replaceItem usrif_g36c
+ObjectTemplate.unlockLevel 2

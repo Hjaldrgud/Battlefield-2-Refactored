@@ -1,0 +1,15 @@
+rem *** coaxial Browning Machine Gun ***
+weaponTemplate.create aas_manpads_missile_ai
+weaponTemplate.indirect 0
+weaponTemplate.minRange 10.0
+weaponTemplate.maxRange 250.0
+weaponTemplate.weaponActivate PINone
+weaponTemplate.weaponFire PIAltFire
+weaponTemplate.setStrength Infantry     0.0
+weaponTemplate.setStrength LightArmour  0.0
+weaponTemplate.setStrength HeavyArmour  0.0
+weaponTemplate.setStrength NavalArmour  0.0
+weaponTemplate.setStrength Helicopter  20.0
+weaponTemplate.setStrength AirPlane    15.0
+weaponTemplate.allowedDeviation 5.0
+weaponTemplate.setFiresThroughTransparent 0

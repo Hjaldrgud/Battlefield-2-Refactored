@@ -1,0 +1,12 @@
+GeometryTemplate.create BundledMesh sa19_grison
+
+ObjectTemplate.create GenericProjectile sa19_grison
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MLU-1:mlu
+ObjectTemplate.collisionMesh SA19_Grison
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry sa19_grison
+
+include sa19_grison.tweak

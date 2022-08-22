@@ -1,0 +1,13 @@
+ObjectTemplate.create GenericProjectile air_jet_f_su30mkk_projectile
+include ../common_Shell_20mm.tweak
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 87
+ObjectTemplate.detonation.explosionRadius 4
+ObjectTemplate.detonation.explosionForce 2.5
+ObjectTemplate.detonation.explosionDamage 100
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+rem ---EndComp ---
+ObjectTemplate.damage 100
+include ../../tracers/vehicles/air_jet_f_opfor.tweak 1

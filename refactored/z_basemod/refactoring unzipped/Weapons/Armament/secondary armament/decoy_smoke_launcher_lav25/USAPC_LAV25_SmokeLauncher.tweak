@@ -1,0 +1,101 @@
+ObjectTemplate.activeSafe GenericFireArm USAPC_LAV25_SmokeLauncher
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent MultiFireComp
+ObjectTemplate.fire.roundsPerMinute 1800
+ObjectTemplate.fire.fireInput PIFlareFire
+ObjectTemplate.fire.addFireRate 1
+ObjectTemplate.fire.burstSize 2
+ObjectTemplate.fire.addBarrelName usapc_lav25_SmokeLauncher_Barrel
+rem ---EndComp ---
+include ../common_smokelauncher.tweak
+rem -------------------------------------
+ObjectTemplate.addTemplate S_USAPC_LAV25_SmokeLauncher_Fire1P
+ObjectTemplate.addTemplate S_USAPC_LAV25_SmokeLauncher_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_USAPC_LAV25_SmokeLauncher_Fire3P
+ObjectTemplate.addTemplate S_USAPC_LAV25_SmokeLauncher_BoltClick
+ObjectTemplate.addTemplate S_USAPC_LAV25_SmokeLauncher_TriggerClick
+ObjectTemplate.addTemplate S_USAPC_LAV25_SmokeLauncher_SwitchFireRate
+ObjectTemplate.addTemplate S_USAPC_LAV25_SmokeLauncher_Reload1P
+ObjectTemplate.addTemplate S_USAPC_LAV25_SmokeLauncher_Reload3P
+ObjectTemplate.addTemplate S_USAPC_LAV25_SmokeLauncher_Deploy1P
+ObjectTemplate.addTemplate S_USAPC_LAV25_SmokeLauncher_Deploy3P
+ObjectTemplate.addTemplate S_USAPC_LAV25_SmokeLauncher_Zoom
+ObjectTemplate.addTemplate usapc_lav25_SmokeLauncher_Barrel
+ObjectTemplate.setPosition 0.75383/0.37835/0.89718
+ObjectTemplate.setRotation 40/-20/0
+ObjectTemplate.addTemplate usapc_lav25_SmokeLauncher_Barrel
+ObjectTemplate.setPosition -0.75383/0.37835/0.89718
+ObjectTemplate.setRotation -40/-20/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Smokeflare
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 12
+
+ObjectTemplate.activeSafe Sound S_USAPC_LAV25_SmokeLauncher_Fire1P
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/smokeflare/sounds/smoke_fire.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_USAPC_LAV25_SmokeLauncher_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.activeSafe Sound S_USAPC_LAV25_SmokeLauncher_Fire3P
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.activeSafe Sound S_USAPC_LAV25_SmokeLauncher_BoltClick
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.activeSafe Sound S_USAPC_LAV25_SmokeLauncher_TriggerClick
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/out_of_flares.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_USAPC_LAV25_SmokeLauncher_SwitchFireRate
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.activeSafe Sound S_USAPC_LAV25_SmokeLauncher_Reload1P
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/smokeflare/sounds/smoke_reload.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_USAPC_LAV25_SmokeLauncher_Reload3P
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.activeSafe Sound S_USAPC_LAV25_SmokeLauncher_Deploy1P
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.activeSafe Sound S_USAPC_LAV25_SmokeLauncher_Deploy3P
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.activeSafe Sound S_USAPC_LAV25_SmokeLauncher_Zoom
+ObjectTemplate.modifiedByUser ljo
+
+ObjectTemplate.create Bundle usapc_lav25_SmokeLauncher_Barrel
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0

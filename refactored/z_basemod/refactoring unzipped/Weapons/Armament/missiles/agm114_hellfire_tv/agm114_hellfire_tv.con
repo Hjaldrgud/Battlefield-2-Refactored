@@ -1,0 +1,12 @@
+GeometryTemplate.create BundledMesh agm114_hellfire_tv
+
+ObjectTemplate.create GenericProjectile agm114_hellfire_tv
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator PHO-1:pho
+ObjectTemplate.collisionMesh AGM114_Hellfire
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry agm114_hellfire
+
+include agm114_hellfire_tv.tweak

@@ -1,0 +1,30 @@
+
+rem *** Add gun ***
+weaponTemplate.create aav_AutoCannon
+weaponTemplate.indirect 0
+weaponTemplate.minRange 2.0
+weaponTemplate.maxRange 300.0
+weaponTemplate.setStrength Infantry    8.0
+weaponTemplate.setStrength LightArmour 5.0
+weaponTemplate.setStrength HeavyArmour 2.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter 10.0
+weaponTemplate.setStrength AirPlane    5.0
+weaponTemplate.allowedDeviation 3.0
+weaponTemplate.setFiresThroughTransparent 0
+
+
+rem *** Add gun ***
+weaponTemplate.create aav_SAM
+weaponTemplate.indirect 0
+weaponTemplate.minRange 2.0
+weaponTemplate.maxRange 300.0
+weaponTemplate.setStrength Infantry    0.0
+weaponTemplate.setStrength LightArmour 0.0
+weaponTemplate.setStrength HeavyArmour 0.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter 15.0
+weaponTemplate.setStrength AirPlane   10.0
+weaponTemplate.allowedDeviation 3.0
+weaponTemplate.setFiresThroughTransparent 0
+

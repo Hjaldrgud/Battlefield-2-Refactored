@@ -1,0 +1,6 @@
+Refactoring most of the things.
+	-Due to this, some rockets increases time to live from 10 to 12 seconds because I'm lazy. This should minimal impact
+	-Miniguns can penetrate since they are supposed to be regular bullets simulated by a AoE detonation
+
+Tank and sniper projectiles get basicnetworkable info. This should increase hit registration.
+

@@ -1,0 +1,5 @@
+ObjectTemplate.create GenericProjectile lmg_PKM_projectile
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.damage 45
+include ../common_Bullet_small_arms.tweak
+include ../../tracers/infantry/lmg_PKM.tweak 3

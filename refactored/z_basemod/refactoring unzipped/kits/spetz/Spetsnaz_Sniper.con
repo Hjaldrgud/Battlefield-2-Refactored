@@ -1,0 +1,39 @@
+ObjectTemplate.create Kit Spetsnaz_Sniper
+ObjectTemplate.geometry Spetz_Kits
+ObjectTemplate.addTemplate spets_hv_maska
+ObjectTemplate.addTemplate spets_hv_nvga
+include ../common/common_kits_sniper.tweak
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate RUPIS_Baghira_silencer
+rem ------------------3------------------
+ObjectTemplate.addTemplate rurif_Dragunov
+rem ------------------4------------------
+ObjectTemplate.addTemplate USHGR_M67
+rem ------------------5------------------
+ObjectTemplate.addTemplate USMIN_Claymore
+rem ------------------6------------------
+ObjectTemplate.addTemplate nsrif_crossbow 
+rem ------------------7------------------
+ObjectTemplate.addTemplate nightvisiongoggles
+rem ------------------8------------------
+ObjectTemplate.addTemplate gasmask
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockSpetsSniper
+ObjectTemplate.addTemplate UnlockSpetsSniper2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockSpetsSniper
+ObjectTemplate.addTemplate ussni_m95_barret
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockSpetsSniper2
+ObjectTemplate.addTemplate gbrif_l96a1
+ObjectTemplate.replaceItem rurif_Dragunov
+ObjectTemplate.replaceItem ussni_m95_barret
+ObjectTemplate.unlockLevel 2

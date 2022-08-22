@@ -1,0 +1,119 @@
+ObjectTemplate.activeSafe GenericFireArm she_littlebird_FlareLauncher
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent MultiFireComp
+ObjectTemplate.fire.roundsPerMinute 1800
+ObjectTemplate.fire.fireInput PIFlareFire
+ObjectTemplate.fire.addFireRate 1
+ObjectTemplate.fire.burstSize 6
+ObjectTemplate.fire.addBarrelName she_littlebird_Flare_barrel
+rem ---EndComp ---
+include ../common_flare_heli.tweak
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_littlebird_FlareLauncher_Fire1P
+ObjectTemplate.addTemplate S_she_littlebird_FlareLauncher_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_she_littlebird_FlareLauncher_Fire3P
+ObjectTemplate.addTemplate S_she_littlebird_FlareLauncher_BoltClick
+ObjectTemplate.addTemplate S_she_littlebird_FlareLauncher_TriggerClick
+ObjectTemplate.addTemplate S_she_littlebird_FlareLauncher_SwitchFireRate
+ObjectTemplate.addTemplate S_she_littlebird_FlareLauncher_Reload1P
+ObjectTemplate.addTemplate S_she_littlebird_FlareLauncher_Reload3P
+ObjectTemplate.addTemplate S_she_littlebird_FlareLauncher_Deploy1P
+ObjectTemplate.addTemplate S_she_littlebird_FlareLauncher_Deploy3P
+ObjectTemplate.addTemplate S_she_littlebird_FlareLauncher_Zoom
+ObjectTemplate.addTemplate she_littlebird_Flare_barrel
+ObjectTemplate.setPosition 1.4/0.351/0.197
+ObjectTemplate.setRotation 30/0/0
+ObjectTemplate.addTemplate she_littlebird_Flare_barrel
+ObjectTemplate.setPosition 1.376/0.357/0.119
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate she_littlebird_Flare_barrel
+ObjectTemplate.setPosition 1.39462/0.326352/0.00334335
+ObjectTemplate.setRotation 150/0/0
+ObjectTemplate.addTemplate she_littlebird_Flare_barrel
+ObjectTemplate.setPosition -1.41755/0.345282/0.166174
+ObjectTemplate.setRotation -30/0/0
+ObjectTemplate.addTemplate she_littlebird_Flare_barrel
+ObjectTemplate.setPosition -1.342/0.35/0.137
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate she_littlebird_Flare_barrel
+ObjectTemplate.setPosition -1.266/0.301/0
+ObjectTemplate.setRotation -150/0/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate flare_ahe_projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 10
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_FlareLauncher_Fire1P
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/flare_launcher_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.65
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_FlareLauncher_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_FlareLauncher_Fire3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_FlareLauncher_BoltClick
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_FlareLauncher_TriggerClick
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/out_of_flares.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_FlareLauncher_SwitchFireRate
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_FlareLauncher_Reload1P
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/weapons/armament/decoy_flare_launcher/sounds/flare_reload.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 0
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_FlareLauncher_Reload3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_FlareLauncher_Deploy1P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_FlareLauncher_Deploy3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_FlareLauncher_Zoom
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create RotationalBundle she_littlebird_Flare_barrel
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_she_littlebird_Flare_barrel_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_she_littlebird_Flare_barrel_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"

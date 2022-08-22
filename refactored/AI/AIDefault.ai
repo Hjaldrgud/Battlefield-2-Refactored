@@ -1,0 +1,31 @@
+echo *****************************************************************************************
+echo AIDefault.ai ****************************************************************************
+echo *****************************************************************************************
+
+aiSettings.setNSides 2
+aiSettings.setAutoSpawnBots 1
+
+aiSettings.setMaxNBots 64
+aiSettings.maxBotsIncludeHumans 1
+aiSettings.setBotSkill 0.4
+
+rem To spawn more than 15 bots in SP, use the following lines instead of the three lines above.
+rem Note that this is totaly unsupported, it will affect your system's performance 
+rem and may even crash your game. That being said, you will most likely be able to run a lot
+rem more bots than 15 on your system. 
+
+rem Example for 32 bot game with expert bots
+
+rem aiSettings.overrideMenuSettings 1
+rem aiSettings.setMaxNBots 32
+rem aiSettings.maxBotsIncludeHumans 0
+rem aiSettings.setBotSkill 1.0
+
+run BotNames.ai
+
+aiSettings.setInformationGridDimension 32
+
+
+run AIPathFinding.ai
+
+rem EOF

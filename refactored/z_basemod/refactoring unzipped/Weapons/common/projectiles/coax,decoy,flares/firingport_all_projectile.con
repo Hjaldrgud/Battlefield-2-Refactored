@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericProjectile firingport_all_projectile
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.damage 25
+include ../common_SmallArms.tweak

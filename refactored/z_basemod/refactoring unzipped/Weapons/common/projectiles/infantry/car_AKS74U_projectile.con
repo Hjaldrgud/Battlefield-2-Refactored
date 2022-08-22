@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericProjectile car_AKS74U_projectile
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.damage 29
+include ../common_Bullet_small_arms.tweak

@@ -1,0 +1,11 @@
+ObjectTemplate.create GenericProjectile flare_ahe_projectile_z8,z10
+ObjectTemplate.setNetworkableInfo BasicInfo
+include ../common_SmallArms.tweak
+rem -------------------------------------
+ObjectTemplate.addTemplate e_flare_decoy
+ObjectTemplate.addTemplate HeatObject_flare
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/7/0/0
+include ../../tracers/stationary/flare_ahe.tweak
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.damage 0

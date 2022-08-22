@@ -1,0 +1,12 @@
+weaponTemplate.create ai_explosives_atmine
+weaponTemplate.indirect 1
+weaponTemplate.minRange 0.0
+weaponTemplate.maxRange 72.0
+weaponTemplate.optimalRangePercentage 35
+weaponTemplate.setFiringPose Crouching
+weaponTemplate.setStrength Infantry    0.0
+weaponTemplate.setStrength LightArmour 10.0
+weaponTemplate.setStrength HeavyArmour 10.0
+weaponTemplate.setStrength NavalArmour 0.0
+weaponTemplate.setStrength Helicopter  0.0
+weaponTemplate.setStrength AirPlane    0.0

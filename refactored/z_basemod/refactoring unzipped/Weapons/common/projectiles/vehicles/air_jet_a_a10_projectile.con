@@ -1,0 +1,13 @@
+ObjectTemplate.create GenericProjectile air_jet_a_a10_projectile
+include ../common_Shell_30mm.tweak
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 113
+ObjectTemplate.detonation.explosionRadius 3
+ObjectTemplate.detonation.explosionForce 2.5
+ObjectTemplate.detonation.explosionDamage 100
+ObjectTemplate.detonation.endEffectTemplate e_exp_small
+rem ---EndComp ---
+ObjectTemplate.minDamage 1
+ObjectTemplate.damage 60
+include ../../tracers/vehicles/ahe_ah1z,hind,z10.tweak 1

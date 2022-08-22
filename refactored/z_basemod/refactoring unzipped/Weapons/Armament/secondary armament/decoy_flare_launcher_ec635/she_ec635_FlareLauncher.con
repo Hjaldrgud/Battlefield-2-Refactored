@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm she_ec635_FlareLauncher
+
+include she_ec635_FlareLauncher.tweak
+

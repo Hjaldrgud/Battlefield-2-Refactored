@@ -1,0 +1,14 @@
+ObjectTemplate.create GenericProjectile she_littlebird_projectile
+include ../common_Bullet_50caliberExplosives.tweak
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 40
+ObjectTemplate.detonation.explosionRadius 3
+ObjectTemplate.detonation.explosionForce 0
+ObjectTemplate.detonation.explosionDamage 75
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 0
+rem ---EndComp ---
+ObjectTemplate.minDamage 1
+ObjectTemplate.damage 100
+include ../../tracers/vehicles/she_all.tweak 1

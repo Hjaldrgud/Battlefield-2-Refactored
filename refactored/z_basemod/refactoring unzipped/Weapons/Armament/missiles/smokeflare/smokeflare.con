@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericProjectile Smokeflare
+ObjectTemplate.createdInEditor 1
+
+include Smokeflare.tweak

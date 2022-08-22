@@ -1,0 +1,44 @@
+ObjectTemplate.create Camera SoldierCamera
+ObjectTemplate.saveInSeparateFile 1
+
+include SoldierCamera.tweak
+
+ObjectTemplate.create SpawnPoint SquadLeaderSpawnPoint
+ObjectTemplate.PreCacheObject 1
+ObjectTemplate.setScatterSpawnPositions 1
+
+rem *******************************************************
+rem *** TODO: Temporary tweak variables for soldier physics
+rem *******************************************************
+
+rem *** Adjust the soldier's speed. All stances are affected (crouch, etc)
+Vars.Set phy-soldier-speed-factor 1.0
+
+rem *** Adjust the soldier's jump height.
+Vars.Set phy-soldier-jump-factor 1.0
+
+rem *** Adjust soldier's acceleration/deceleration. 
+rem *** Higher means quicker acceleration/deceleration 
+Vars.Set phy-soldier-acceleration 0.2
+Vars.Set phy-soldier-deceleration 0.4
+
+rem *** Allow soldier to move a bit while in air.
+rem *** 0 = no player controlled movement while in air.
+Vars.Set phy-soldier-air-movement-factor 0.05
+
+rem *** number of seconds the player must wait to fire weapon after jumping...
+Vars.Set fire-delay-after-jump 0.7
+rem *** number of seconds the player must wait to go prone after jumping...
+Vars.Set prone-delay-after-jump 0.7
+rem *** number of seconds the player must wait to jump after being prone...
+Vars.Set jump-delay-after-prone 0.8
+rem *** number of seconds the player must wait to stand after going prone...
+Vars.Set stand-delay-from-prone 0.8
+rem *** number of seconds the player must wait to go prone after standing...
+Vars.Set prone-delay-from-stand 0.8
+rem *** number of seconds the player must wait cbefore sprint meter starts recharging again after jumping...
+Vars.Set sprint-recharge-delay-after-jump 0.7
+
+Vars.Set camera-movement-speed-on-prone 0.15
+Vars.Set camera-movement-speed-on-crouch 0.2
+Vars.Set camera-movement-speed-on-stand 0.15

@@ -1,0 +1,41 @@
+ObjectTemplate.create Kit seal_Support
+ObjectTemplate.geometry seal_Kits
+ObjectTemplate.geometry.kit 4
+ObjectTemplate.geometry.dropGeom 14
+include ../common/common_kits_support.tweak
+ObjectTemplate.addTemplate seal_hv_mask
+ObjectTemplate.addTemplate seal_hv_nvg
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate USPIS_92FS
+rem ------------------3------------------
+ObjectTemplate.addTemplate USLMG_M249SAW
+rem ------------------4------------------
+ObjectTemplate.addTemplate USHGR_M67
+rem ------------------5------------------
+ObjectTemplate.addTemplate ammokit
+rem ------------------6------------------
+ObjectTemplate.addTemplate sasrif_teargas
+rem ------------------7------------------
+ObjectTemplate.addTemplate nightvisiongoggles
+rem ------------------8------------------
+ObjectTemplate.addTemplate gasmask
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockSEALSupport
+ObjectTemplate.addTemplate UnlockSEALSupport2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockSEALSupport
+ObjectTemplate.addTemplate RULMG_PKM
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockSEALSupport2
+ObjectTemplate.addTemplate sasrif_mg36
+ObjectTemplate.replaceItem USLMG_M249SAW
+ObjectTemplate.replaceItem RULMG_PKM
+ObjectTemplate.unlockLevel 2

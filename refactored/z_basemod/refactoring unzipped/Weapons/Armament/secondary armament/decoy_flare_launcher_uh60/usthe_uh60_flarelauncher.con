@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm usthe_uh60_flarelauncher
+
+include usthe_uh60_flarelauncher.tweak
+

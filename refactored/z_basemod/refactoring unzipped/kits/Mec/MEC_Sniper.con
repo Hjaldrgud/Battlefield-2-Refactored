@@ -1,0 +1,38 @@
+ObjectTemplate.create Kit MEC_Sniper
+ObjectTemplate.geometry MEC_Kits
+ObjectTemplate.dropHeadwear mec_helmet
+include ../common/common_kits_sniper.tweak
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate RUPIS_Baghira_silencer 
+rem ------------------3------------------
+ObjectTemplate.addTemplate rurif_Dragunov
+rem ------------------4------------------
+ObjectTemplate.addTemplate USHGR_M67
+rem ------------------5------------------
+ObjectTemplate.addTemplate USMIN_Claymore
+rem ------------------6------------------
+
+rem ------------------7------------------
+
+rem ------------------8------------------
+
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockMECSniper
+ObjectTemplate.addTemplate UnlockMECSniper2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockMECSniper
+ObjectTemplate.addTemplate ussni_m95_barret
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockMECSniper2
+ObjectTemplate.addTemplate gbrif_l96a1
+ObjectTemplate.replaceItem rurif_Dragunov
+ObjectTemplate.replaceItem ussni_m95_barret
+ObjectTemplate.unlockLevel 2

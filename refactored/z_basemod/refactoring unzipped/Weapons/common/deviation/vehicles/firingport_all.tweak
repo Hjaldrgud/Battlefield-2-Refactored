@@ -1,0 +1,5 @@
+rem ---BeginComp:SimpleDeviationComp ---
+ObjectTemplate.createComponent SimpleDeviationComp
+ObjectTemplate.deviation.setFireDev 0.2 0.25 1
+ObjectTemplate.deviation.minDev 0.15
+rem ---EndComp ---

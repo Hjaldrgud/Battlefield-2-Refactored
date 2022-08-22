@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm che_wz11_FlareLauncher
+
+include che_wz11_FlareLauncher.tweak
+

@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject aim9m_sidewinderDummy
+ObjectTemplate.createdInEditor 1
+
+include aim9m_sidewinderDummy.tweak

@@ -1,0 +1,5 @@
+ObjectTemplate.create GenericProjectile sni_L96,M24_projectile
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.minDamage 1
+ObjectTemplate.damage 95
+include ../common_Bullet_small_arms.tweak

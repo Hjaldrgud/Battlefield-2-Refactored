@@ -1,0 +1,8 @@
+GeometryTemplate.create SkinnedMesh mecsf_soldier
+
+ObjectTemplate.create Soldier mecsf_soldier
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JAY:jayev
+ObjectTemplate.geometry mecsf_soldier
+
+include mecsf_soldier.tweak

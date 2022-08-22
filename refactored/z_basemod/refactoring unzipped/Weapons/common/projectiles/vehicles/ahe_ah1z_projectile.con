@@ -1,0 +1,13 @@
+ObjectTemplate.create GenericProjectile ahe_ah1z_projectile
+include ../common_Shell_20mm.tweak
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 87
+ObjectTemplate.detonation.explosionRadius 3
+ObjectTemplate.detonation.explosionForce 2.5
+ObjectTemplate.detonation.explosionDamage 75
+ObjectTemplate.detonation.endEffectTemplate e_exp_small
+rem ---EndComp ---
+ObjectTemplate.minDamage 1
+ObjectTemplate.damage 20
+include ../../tracers/vehicles/ahe_ah1z,hind,z10.tweak 1

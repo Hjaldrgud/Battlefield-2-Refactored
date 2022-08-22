@@ -1,0 +1,37 @@
+ObjectTemplate.create Kit CH_Sniper
+ObjectTemplate.geometry CH_Kits
+include ../common/common_kits_sniper.tweak
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate chpis_qsz92_silencer
+rem ------------------3------------------
+ObjectTemplate.addTemplate chsni_type88
+rem ------------------4------------------
+ObjectTemplate.addTemplate USHGR_M67
+rem ------------------5------------------
+ObjectTemplate.addTemplate USMIN_Claymore
+rem ------------------6------------------
+
+rem ------------------7------------------
+
+rem ------------------8------------------
+
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockCHSniper
+ObjectTemplate.addTemplate UnlockCHSniper2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockCHSniper
+ObjectTemplate.addTemplate ussni_m95_barret
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockCHSniper2
+ObjectTemplate.addTemplate gbrif_l96a1
+ObjectTemplate.replaceItem chsni_type88
+ObjectTemplate.replaceItem ussni_m95_barret
+ObjectTemplate.unlockLevel 2

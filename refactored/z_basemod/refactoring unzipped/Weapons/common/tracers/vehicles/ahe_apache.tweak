@@ -1,0 +1,6 @@
+ObjectTemplate.tracerScaler 10
+ObjectTemplate.maxTracerScaler 20
+ObjectTemplate.minTracerScaler 1
+ObjectTemplate.tracerSizeModifier 0.5
+ObjectTemplate.tracerTemplate p_tracer_tank
+ObjectTemplate.tracerInterval v_arg1

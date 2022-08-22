@@ -1,0 +1,41 @@
+ObjectTemplate.create Kit sas_Specops
+ObjectTemplate.geometry sas_kits
+ObjectTemplate.geometry.kit 0
+ObjectTemplate.geometry.dropGeom 10
+include ../common/common_kits_specops.tweak
+ObjectTemplate.addTemplate sas_mask
+ObjectTemplate.addTemplate sas_nvg
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate USPIS_92FS_silencer
+rem ------------------3------------------
+ObjectTemplate.addTemplate sasrif_g36k
+rem ------------------4------------------
+ObjectTemplate.addTemplate USHGR_M67
+rem ------------------5------------------
+ObjectTemplate.addTemplate c4_explosives
+rem ------------------6------------------
+ObjectTemplate.addTemplate nsrif_crossbow
+rem ------------------7------------------
+ObjectTemplate.addTemplate nightvisiongoggles
+rem ------------------8------------------
+ObjectTemplate.addTemplate gasmask
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockSASSpecops
+ObjectTemplate.addTemplate UnlockSASSpecops2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockSASSpecops
+ObjectTemplate.addTemplate usrif_g36c
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockSASSpecops2
+ObjectTemplate.addTemplate usrif_fnscarl
+ObjectTemplate.replaceItem sasrif_g36k
+ObjectTemplate.replaceItem usrif_g36c
+ObjectTemplate.unlockLevel 2

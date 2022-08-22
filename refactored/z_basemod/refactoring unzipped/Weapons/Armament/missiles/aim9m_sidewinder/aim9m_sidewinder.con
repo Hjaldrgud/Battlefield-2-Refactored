@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh aim9m_sidewinder
+CollisionManager.createTemplate aim9m_sidewinder
+
+ObjectTemplate.create GenericProjectile aim9m_sidewinder
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator MEI-2:mei
+ObjectTemplate.collisionMesh aim9m_sidewinder
+ObjectTemplate.mapMaterial 0 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry aim9m_sidewinder
+
+include aim9m_sidewinder.tweak

@@ -1,0 +1,12 @@
+rem ---BeginComp:SoldierDeviationComp ---
+ObjectTemplate.createComponent SoldierDeviationComp
+ObjectTemplate.deviation.setFireDev 3.5 2 0.5
+ObjectTemplate.deviation.minDev 5
+ObjectTemplate.deviation.setTurnDev 0 0 0 0
+ObjectTemplate.deviation.setSpeedDev 3 1.5 1.5 1
+ObjectTemplate.deviation.setMiscDev 2.5 5 0.2
+ObjectTemplate.deviation.devModStand 2
+ObjectTemplate.deviation.devModCrouch 1.5
+ObjectTemplate.deviation.devModLie 0.8
+ObjectTemplate.deviation.devModZoom 0.01
+rem ---EndComp ---

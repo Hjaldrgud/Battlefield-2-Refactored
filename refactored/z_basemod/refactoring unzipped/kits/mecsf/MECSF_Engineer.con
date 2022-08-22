@@ -1,0 +1,41 @@
+ObjectTemplate.create Kit MECSF_Engineer
+ObjectTemplate.geometry MECSF_Kits
+ObjectTemplate.geometry.kit 3
+ObjectTemplate.geometry.dropGeom 12
+include ../common/common_kits_engineer.tweak
+ObjectTemplate.addTemplate mecsf_hv_mask
+ObjectTemplate.addTemplate mecsf_hv_nvg
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate RUPIS_Baghira
+rem ------------------3------------------
+ObjectTemplate.addTemplate RUSHT_saiga12
+rem ------------------4------------------
+ObjectTemplate.addTemplate USHGR_M67
+rem ------------------5------------------
+ObjectTemplate.addTemplate at_mine
+rem ------------------6------------------
+ObjectTemplate.addTemplate wrench
+rem ------------------7------------------
+ObjectTemplate.addTemplate nightvisiongoggles
+rem ------------------8------------------
+ObjectTemplate.addTemplate gasmask
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockMECSFEngineer
+ObjectTemplate.addTemplate UnlockMECSFEngineer2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockMECSFEngineer
+ObjectTemplate.addTemplate ussht_Jackhammer
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockMECSFEngineer2
+ObjectTemplate.addTemplate sasrif_mp7
+ObjectTemplate.replaceItem RUSHT_saiga12
+ObjectTemplate.replaceItem ussht_Jackhammer
+ObjectTemplate.unlockLevel 2

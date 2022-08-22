@@ -1,0 +1,774 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/4/25 7:22]
+GeometryTemplate.setSubGeometryLodDistance 1 0 15
+GeometryTemplate.setSubGeometryLodDistance 1 1 30
+GeometryTemplate.setSubGeometryLodDistance 1 2 95
+GeometryTemplate.setMaterialReflectionScale 1 0 0 0.4
+GeometryTemplate.setMaterialReflectionScale 1 0 1 0
+GeometryTemplate.setMaterialReflectionScale 1 0 2 1.2
+GeometryTemplate.setMaterialReflectionScale 1 0 3 1
+GeometryTemplate.setMaterialReflectionScale 1 1 2 1
+GeometryTemplate.setMaterialReflectionScale 1 2 0 0
+GeometryTemplate.setMaterialReflectionScale 1 2 1 0
+GeometryTemplate.setSpecularStaticGloss 1 0 0 0
+GeometryTemplate.setSpecularStaticGloss 1 0 1 0
+GeometryTemplate.setSpecularStaticGloss 1 0 2 0
+GeometryTemplate.setSpecularStaticGloss 1 0 3 2.5
+GeometryTemplate.setSpecularStaticGloss 1 1 1 1.2
+GeometryTemplate.setSpecularStaticGloss 1 1 2 2.5
+GeometryTemplate.setSpecularStaticGloss 1 2 0 2
+GeometryTemplate.setSpecularStaticGloss 1 2 1 2.5
+GeometryTemplate.setSpecularStaticGloss 1 2 2 2.5
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe PlayerControlObject che_wz11
+ObjectTemplate.creator JEFFO:jeffev
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+ObjectTemplate.cullRadiusScale 1.761
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 650
+ObjectTemplate.armor.hitPoints 650
+ObjectTemplate.armor.defaultMaterial 31
+ObjectTemplate.armor.hpLostWhileUpSideDown 350
+ObjectTemplate.armor.hpLostWhileInWater 400
+ObjectTemplate.armor.hpLostWhileInDeepWater 400
+ObjectTemplate.armor.hpLostWhileCriticalDamage 18
+ObjectTemplate.armor.waterDamageDelay 0.01
+ObjectTemplate.armor.waterLevel -0.5
+ObjectTemplate.armor.deepWaterLevel -0.5
+ObjectTemplate.armor.explosionForce 15
+ObjectTemplate.armor.explosionForceMod 8
+ObjectTemplate.armor.explosionForceMax 5000
+ObjectTemplate.armor.explosionDamage 400
+ObjectTemplate.armor.explosionRadius 15
+ObjectTemplate.armor.explosionMaterial 100
+ObjectTemplate.armor.wreckExplosionForce 7
+ObjectTemplate.armor.wreckExplosionDamage 200
+ObjectTemplate.armor.wreckExplosionRadius 5
+ObjectTemplate.armor.wreckExplosionMaterial 70
+ObjectTemplate.armor.wreckHitPoints 1000
+ObjectTemplate.armor.timeToStayAsWreck 10
+ObjectTemplate.armor.criticalDamage 101
+ObjectTemplate.armor.destroyOnSpectacularDeath 1
+ObjectTemplate.armor.addArmorEffect 0 e_vexp_heli_Generic 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffectSpectacular 0 e_vexp_havoc 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffectSpectacular 0 e_vexp_heli_Generic_spec 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 50 e_dstate_heli_lightsmoke 0.82/0.86/-2.4 0/0/0
+ObjectTemplate.armor.addArmorEffect 25 e_dstate_heli_heavysmoke 0.82/0.86/-2.4 0/0/0
+ObjectTemplate.armor.addArmorEffect 10 e_dstate_heli_firesmoke 0.82/0.86/-2.4 0/0/0
+ObjectTemplate.armor.addArmorEffect -20 e_dstate_heli_wrecksmoke 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect -100 e_vexp_heli_generic_2nd 0/0/0 0/0/0
+rem ---EndComp ---
+rem ---BeginComp:Ability ---
+ObjectTemplate.createComponent Ability
+ObjectTemplate.Ability.radarRadius 70
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.spottedMessage heli_spotted
+rem ---EndComp ---
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_wz11"
+ObjectTemplate.vehicleHud.typeIcon Ingame\Vehicles\Icons\Hud\MenuIcons\menuIcon_chopper.tga
+ObjectTemplate.vehicleHud.miniMapIcon Ingame\Vehicles\Icons\Minimap\mini_attack_Heli.tga
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.vehicleIconPos 61/18
+ObjectTemplate.vehicleHud.vehicleType 2
+ObjectTemplate.vehicleHud.useSelectionIcons 0
+ObjectTemplate.vehicleHud.vehicleIcon Ingame\Vehicles\Icons\Hud\VehicleIcons\che_wz11.tga
+rem ---EndComp ---
+rem ---BeginComp:WarningHud ---
+ObjectTemplate.createComponent WarningHud
+ObjectTemplate.WarningHud.warningType 2
+ObjectTemplate.WarningHud.firstWarningSound HUD_Heatseeker_Track_Warning
+ObjectTemplate.WarningHud.secondWarningSound HUD_Heatseeker_Lock_Warning
+ObjectTemplate.WarningHud.warningIcon Ingame\GeneralIcons\Action_Icons\large_laserLockIcon.tga
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_VEHICLE_HELO_PILOT_CONTROLS_deployFlares"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_VEHICLE_HELO_PILOT_CONTROLS_deployFlares"
+ObjectTemplate.HelpHud.lowArmorHelpSoundKey "HUD_HELP_VEHICLE_HELO_LOWHEALTH_useFriendlyRepairStation"
+ObjectTemplate.HelpHud.lowArmorHelpStringKey "HUD_HELP_VEHICLE_HELO_LOWHEALTH_useFriendlyRepairStation"
+rem ---EndComp ---
+ObjectTemplate.geometry che_wz11
+ObjectTemplate.setCollisionMesh che_wz11
+ObjectTemplate.mapMaterial 0 armor 31
+ObjectTemplate.mapMaterial 1 glass 1006
+ObjectTemplate.mapMaterial 2 col_wreck 60
+ObjectTemplate.mapMaterial 3 landingrail 106
+ObjectTemplate.mapMaterial 4 col_body 31
+ObjectTemplate.mapMaterial 5 col_wreck 60
+ObjectTemplate.drag 2
+ObjectTemplate.dragModifier 1/1/0.75
+ObjectTemplate.mass 3000
+ObjectTemplate.floaterMod 0.8
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate ahe_AttackHeli
+rem -------------------------------------
+ObjectTemplate.addTemplate S_che_wz11_Ambient
+ObjectTemplate.addTemplate S_che_wz11_AmbientDamaged
+ObjectTemplate.addTemplate che_wz11_RotationalBundle_NewPilot
+ObjectTemplate.addTemplate che_wz11_Entry_Point
+ObjectTemplate.setPosition 0/0/0.293208
+ObjectTemplate.addTemplate che_wz11_Rotorhead_rotation_1
+ObjectTemplate.setPosition 0/-20/0
+ObjectTemplate.addTemplate che_wz11_TailEngine
+ObjectTemplate.setPosition 0/0/-6.5
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate che_wz11_Wing_Rudder
+ObjectTemplate.setPosition 0/0/-7
+ObjectTemplate.setRotation 0/0/90
+ObjectTemplate.addTemplate che_wz11_mainrotor
+ObjectTemplate.setPosition 9.06228e-006/1.62752/2.84858e-006
+ObjectTemplate.addTemplate che_wz11_rearrotor
+ObjectTemplate.setPosition 0.272929/0.385015/-6.117
+ObjectTemplate.addTemplate che_wz11_Camera
+ObjectTemplate.setPosition 0.40189/0.376662/1.88995
+ObjectTemplate.addTemplate che_wz11_Canons
+ObjectTemplate.addTemplate che_wz11_FlareLauncher
+ObjectTemplate.addTemplate HeatObject
+ObjectTemplate.setPosition 0/0.361954/0.0735022
+ObjectTemplate.addTemplate che_wz11_RotationalBundle_Pilot
+ObjectTemplate.addTemplate che_wz11_leftpassenger
+ObjectTemplate.setPosition -1.43151/0.250271/0.944833
+ObjectTemplate.setRotation -104.137/5.30111e-007/-3.29264
+ObjectTemplate.addTemplate che_wz11_rightpassenger
+ObjectTemplate.setPosition 1.40547/0.223277/1.05371
+ObjectTemplate.setRotation 74.2657/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.5/-0.5/2 0/0/0
+ObjectTemplate.altSoldierExitPosition 2.5/-0.5/2
+ObjectTemplate.regulateYawInput PIYaw
+ObjectTemplate.regulateYaw -0.2/0.2
+ObjectTemplate.regulateVerticalPosInput PIThrottle
+ObjectTemplate.regulateVerticalPos -0.5/2
+ObjectTemplate.maxVertRegAngle 35
+ObjectTemplate.noVertRegAngle 55
+ObjectTemplate.seatInformation che_wz11 0.368294/0.349923/2.16384 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Common/Animations/3p_aircraftPilot_A_animSys.inc
+ObjectTemplate.soundFilter heli
+ObjectTemplate.sprintFactor 0
+ObjectTemplate.vehicleCategory VCHelicopter
+ObjectTemplate.listenerObstruction 0.5
+ObjectTemplate.damagedAmbientSoundLimit 0.15
+ObjectTemplate.crewKitIndex 9
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.altSoldierExitPosition 2.5/-0.5/2
+
+ObjectTemplate.activeSafe Sound S_che_wz11_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_ah1z/sounds/helicopter_ambloop.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.5
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_che_wz11_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/effects/sounds/damagestates/fire_alarm.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Bundle CHE_WZ11_Gun
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Bundle CHE_WZ11_R_Barrel
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+
+ObjectTemplate.activeSafe Bundle CHE_WZ11_L_Barrel
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+
+ObjectTemplate.activeSafe Spring CHE_WZ11_Damper1
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_CHE_WZ11_Damper1_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 3
+
+ObjectTemplate.activeSafe Sound S_CHE_WZ11_Damper1_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring CHE_WZ11_Damper2
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_CHE_WZ11_Damper2_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 3
+
+ObjectTemplate.activeSafe Sound S_CHE_WZ11_Damper2_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring CHE_WZ11_Damper3
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_CHE_WZ11_Damper3_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 3
+
+ObjectTemplate.activeSafe Sound S_CHE_WZ11_Damper3_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Spring CHE_WZ11_Damper4
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_CHE_WZ11_Damper4_Rotation
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 3
+
+ObjectTemplate.activeSafe Sound S_CHE_WZ11_Damper4_Rotation
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create RotationalBundle che_wz11_RotationalBundle_NewPilot
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:Ik ---
+ObjectTemplate.createComponent Ik
+ObjectTemplate.ik.positionLeft 0.344958/-0.053143/2.18868
+ObjectTemplate.ik.rotationLeft -90.8276/0/-81.1946
+ObjectTemplate.ik.poleVectorLeft -0.105714/-2.6077e-008/0
+ObjectTemplate.ik.positionRight 0.435672/0/2.22494
+ObjectTemplate.ik.rotationRight -119.841/87.8997/98.2359
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_che_wz11_RotationalBundle_NewPilot_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_che_wz11_RotationalBundle_NewPilot_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create EntryPoint che_wz11_Entry_Point
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 4
+
+ObjectTemplate.create RotationalBundle che_wz11_Rotorhead_rotation_1
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_che_wz11_Rotorhead_rotation_1_RotationRpm
+ObjectTemplate.addTemplate che_wz11_Roterhead_rotation_2
+ObjectTemplate.setPosition 0/20/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-5.5/-0.75
+ObjectTemplate.setMaxRotation 0/5.5/0.75
+ObjectTemplate.setMaxSpeed 0/50/50
+ObjectTemplate.setAcceleration 0/-1000/1000
+ObjectTemplate.setInputToPitch PIPitch
+ObjectTemplate.setInputToRoll PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_che_wz11_Rotorhead_rotation_1_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create RotationalBundle che_wz11_Roterhead_rotation_2
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_che_wz11_Roterhead_rotation_2_RotationRpm
+ObjectTemplate.addTemplate che_wz11_MainEngine
+ObjectTemplate.setRotation 0/-86/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-5.5/-0.75
+ObjectTemplate.setMaxRotation 0/5.5/0.75
+ObjectTemplate.setMaxSpeed 0/50/50
+ObjectTemplate.setAcceleration 0/1000/1000
+ObjectTemplate.setInputToPitch PIPitch
+ObjectTemplate.setInputToRoll PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.activeSafe Sound S_che_wz11_Roterhead_rotation_2_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Engine che_wz11_MainEngine
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WindAffector ---
+ObjectTemplate.createComponent WindAffector
+ObjectTemplate.windType RadialDir
+ObjectTemplate.windIsDynamic 1
+ObjectTemplate.windDirection 0/0/-1
+ObjectTemplate.windSpeed 20
+ObjectTemplate.windBlowTime -1
+ObjectTemplate.windFalloff 30
+ObjectTemplate.windRadialFalloff 20
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_che_wz11_MainEngine_RotationRpm
+ObjectTemplate.addTemplate S_che_wz11_MainEngine_Idle
+ObjectTemplate.addTemplate S_che_wz11_MainEngine_Rpm1
+ObjectTemplate.addTemplate S_che_wz11_MainEngine_Rpm2
+ObjectTemplate.addTemplate S_che_wz11_MainEngine_Load
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/150
+ObjectTemplate.setMaxSpeed 0/0/1
+ObjectTemplate.setAcceleration 0/0/20
+ObjectTemplate.setInputToRoll PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETHelicopter
+ObjectTemplate.setTorque 200
+ObjectTemplate.setDifferential 400
+ObjectTemplate.setGearUp 0.99
+ObjectTemplate.setGearDown 0.01
+ObjectTemplate.setGearChangeTime 0.1
+ObjectTemplate.noPropellerEffectAtSpeed 1
+ObjectTemplate.noPropellerEffectAtSpeed 1
+ObjectTemplate.horizontalSpeedMagnifier 2.1
+ObjectTemplate.horizontalDampAngle 0.1
+ObjectTemplate.horizontalDampAngleFactor 0.001
+ObjectTemplate.defaultAngleOfAttack 1
+ObjectTemplate.maxAngleOfAttack 12
+ObjectTemplate.attackSpeed 5
+ObjectTemplate.decreaseAngleToZeroVerticalVel 0.5
+ObjectTemplate.dampHorizontalVel 5
+ObjectTemplate.dampHorizontalVelFactor -0.7
+ObjectTemplate.canReverse 0
+ObjectTemplate.audio.transformationRelativeRoot 1
+
+ObjectTemplate.activeSafe Sound S_che_wz11_MainEngine_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_che_wz11_MainEngine_Idle
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/xpak2_vehicles/she_littlebird/sounds/scout_chopper_engine_start_idle_stop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 0.95
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/1.5/0/3/0.513514/1.06/0/0.590734/1.06/0/0.795367/1.0888/0/
+ObjectTemplate.minDistance 10
+ObjectTemplate.halfVolumeDistance 25
+ObjectTemplate.soundRadius 3
+
+ObjectTemplate.activeSafe Sound S_che_wz11_MainEngine_Rpm1
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_che_wz11_MainEngine_Rpm2
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_che_wz11_MainEngine_Load
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Engine che_wz11_TailEngine
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_che_wz11_TailEngine_RotationRpm
+ObjectTemplate.addTemplate S_che_wz11_TailEngine_Idle
+ObjectTemplate.addTemplate S_che_wz11_TailEngine_Rpm1
+ObjectTemplate.addTemplate S_che_wz11_TailEngine_Rpm2
+ObjectTemplate.addTemplate S_che_wz11_TailEngine_Load
+ObjectTemplate.addTemplate S_che_wz11_Tail_Engine_RotationRpm
+ObjectTemplate.addTemplate S_che_wz11_Tail_Engine_Idle
+ObjectTemplate.addTemplate S_che_wz11_Tail_Engine_Rpm1
+ObjectTemplate.addTemplate S_che_wz11_Tail_Engine_Rpm2
+ObjectTemplate.addTemplate S_che_wz11_Tail_Engine_Load
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-100
+ObjectTemplate.setMaxRotation 0/0/100
+ObjectTemplate.setMaxSpeed 0/0/500
+ObjectTemplate.setAcceleration 0/0/2000
+ObjectTemplate.setInputToRoll PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETHelicopter
+ObjectTemplate.setTorque 50
+ObjectTemplate.setDifferential 30
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.noPropellerEffectAtSpeed 2.5
+ObjectTemplate.noPropellerEffectAtSpeed 2.5
+ObjectTemplate.decreaseAngleToZero 1
+ObjectTemplate.pureRotational 1
+ObjectTemplate.spinWhenNoEngineInAir 0.4
+ObjectTemplate.noEffectAtPerpSpeed 60
+
+ObjectTemplate.activeSafe Sound S_che_wz11_TailEngine_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_che_wz11_TailEngine_Idle
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/usthe_uh60/sounds/uh60_tail_start_idle_stop.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1.7
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 9
+
+ObjectTemplate.activeSafe Sound S_che_wz11_TailEngine_Rpm1
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_che_wz11_TailEngine_Rpm2
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_che_wz11_TailEngine_Load
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Wing che_wz11_Wing_Rudder
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_che_wz11_Wing_Rudder_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setFlapLift 0
+
+ObjectTemplate.activeSafe Sound S_che_wz11_Wing_Rudder_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create Camera che_wz11_Camera
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_che_wz11_Camera_RotationRpm
+rem -------------------------------------
+ObjectTemplate.setMinRotation -75/-25/0
+ObjectTemplate.setMaxRotation 75/10/0
+ObjectTemplate.setPivotPosition 0/0/-0.2
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw PIMouseLookX
+ObjectTemplate.setInputToPitch PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.CVMNose 1
+ObjectTemplate.cameraShakeStartSpeed 85
+ObjectTemplate.cameraShakeMaxSpeed 100
+ObjectTemplate.nosePos 0/0/1.5
+ObjectTemplate.followStiffness 2
+ObjectTemplate.chaseDistance 30
+ObjectTemplate.chaseAngle 0.25
+ObjectTemplate.chaseOffset 0/2.5/6
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.worldFOV 1.1
+ObjectTemplate.insideFOV 1.1
+ObjectTemplate.allowInsideDynamicLights 1
+ObjectTemplate.allowInsideStaticSun 1
+ObjectTemplate.insideStaticSunDirection 1/-1/0.2
+ObjectTemplate.insideStaticSunColor 0.45098/0.4/0.384314
+ObjectTemplate.insideStaticSunDamageColor 0.960784/0.121569/0.027451
+ObjectTemplate.insideDamageFrequency 8
+ObjectTemplate.insideDamageThreshold 0.1
+ObjectTemplate.insideStaticSunAmbientColor 0.572549/0.521569/0.403922
+
+ObjectTemplate.activeSafe Sound S_che_wz11_Camera_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create GenericFireArm che_wz11_Canons
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\icon_Predator.tga
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_wz11"
+ObjectTemplate.weaponHud.guiIndex 41
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.addShowOnCamMode 2
+ObjectTemplate.weaponHud.showClips 0
+ObjectTemplate.weaponHud.displaySelectOnActivation 1
+ObjectTemplate.weaponHud.overheatSound S_Weapon_Vehicle_Overheat
+rem ---EndComp ---
+rem ---BeginComp:MultiFireComp ---
+ObjectTemplate.createComponent MultiFireComp
+ObjectTemplate.fire.addBarrelName che_wz11_Cannons_barrel
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags 1
+ObjectTemplate.ammo.magSize 900
+ObjectTemplate.ammo.reloadTime 5
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+rem ---EndComp ---
+include ../../../weapons/common/recoil/vehicles/she_all.tweak
+include ../../../weapons/common/deviation/vehicles/she_littlebird,wz11.tweak
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+include ../../../Weapons/common/zoom/aaa_default.tweak
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_che_wz11_Canons_Fire1P
+ObjectTemplate.addTemplate S_che_wz11_Canons_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_che_wz11_Canons_Fire3P
+ObjectTemplate.addTemplate S_che_wz11_Canons_BoltClick
+ObjectTemplate.addTemplate S_che_wz11_Canons_TriggerClick
+ObjectTemplate.addTemplate S_che_wz11_Canons_SwitchFireRate
+ObjectTemplate.addTemplate S_che_wz11_Canons_Reload1P
+ObjectTemplate.addTemplate S_che_wz11_Canons_Reload3P
+ObjectTemplate.addTemplate S_che_wz11_Canons_Deploy1P
+ObjectTemplate.addTemplate S_che_wz11_Canons_Deploy3P
+ObjectTemplate.addTemplate S_che_wz11_Canons_Zoom
+ObjectTemplate.addTemplate che_wz11_Cannons_barrel
+ObjectTemplate.setPosition 1.34987/-1.06561/1.76792
+ObjectTemplate.addTemplate che_wz11_Cannons_barrel
+ObjectTemplate.setPosition -1.33176/-1.08146/1.77525
+rem -------------------------------------
+ObjectTemplate.projectileTemplate she_littlebird_projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 500
+ObjectTemplate.heatAddWhenFire 0.01
+ObjectTemplate.coolDownPerSec 0.4
+ObjectTemplate.overheatPenalty 3
+
+ObjectTemplate.activeSafe Sound S_che_wz11_Canons_Fire1P
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_ah1z/sounds/mono/auto_cannon_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.98/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.95/1/
+
+ObjectTemplate.activeSafe Sound S_che_wz11_Canons_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_che_wz11_Canons_Fire3P
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "objects/vehicles/air/ahe_ah1z/sounds/mono/cobra_auto_cannon_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.99/1.02/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 4
+ObjectTemplate.halfVolumeDistance 9
+
+ObjectTemplate.activeSafe Sound S_che_wz11_Canons_BoltClick
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_che_wz11_Canons_TriggerClick
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_che_wz11_Canons_SwitchFireRate
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_che_wz11_Canons_Reload1P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_che_wz11_Canons_Reload3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_che_wz11_Canons_Deploy1P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_che_wz11_Canons_Deploy3P
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_che_wz11_Canons_Zoom
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create RotationalBundle che_wz11_Cannons_barrel
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_che_wz11_Cannons_barrel_RotationRpm
+ObjectTemplate.addTemplate e_muzz_25mm
+ObjectTemplate.addTemplate e_shellejection_25mm
+ObjectTemplate.setPosition -1.50492e-005/-0.275567/-1.46914
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_che_wz11_Cannons_barrel_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create RotationalBundle che_wz11_RotationalBundle_Pilot
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:Ik ---
+ObjectTemplate.createComponent Ik
+ObjectTemplate.ik.positionLeft -0.573054/-0.176907/1.97357
+ObjectTemplate.ik.rotationLeft -154.625/-88.7518/9.60699
+ObjectTemplate.ik.positionRight -0.232776/-0.11234/2.01333
+ObjectTemplate.ik.rotationRight -177.113/78.1218/23.3169
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_che_wz11_RotationalBundle_Pilot_RotationRpm
+rem -------------------------------------
+
+ObjectTemplate.activeSafe Sound S_che_wz11_RotationalBundle_Pilot_RotationRpm
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create PlayerControlObject che_wz11_leftpassenger
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_wz11"
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.useChildHud 1
+ObjectTemplate.vehicleHud.vehicleIconPos 36/4
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate air_th_UH60_Passenger1
+rem -------------------------------------
+ObjectTemplate.addTemplate S_che_wz11_leftpassenger_Ambient
+ObjectTemplate.addTemplate S_che_wz11_leftpassenger_AmbientDamaged
+ObjectTemplate.addTemplate che_wz11_EntryPoint_leftpassenger
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0/0 0/0/0
+ObjectTemplate.altSoldierExitPosition -2/0/-1
+ObjectTemplate.seatInformation che_wz11_leftpassenger 0/0/0 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Common/Animations/3p_passenger_A_animSys.inc
+ObjectTemplate.altSoldierExitPosition -2/0/-1
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.isOpenVehicle 1
+
+ObjectTemplate.activeSafe Sound S_che_wz11_leftpassenger_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_che_wz11_leftpassenger_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create EntryPoint che_wz11_EntryPoint_leftpassenger
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 3
+
+ObjectTemplate.create PlayerControlObject che_wz11_rightpassenger
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.hudName "KILLMESSAGE_VEHICLE_wz11"
+ObjectTemplate.vehicleHud.miniMapIconLeaderSize Medium
+ObjectTemplate.vehicleHud.useChildHud 1
+ObjectTemplate.vehicleHud.vehicleIconPos 36/24
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.aiTemplate air_th_UH60_Passenger2
+rem -------------------------------------
+ObjectTemplate.addTemplate S_che_wz11_rightpassenger_Ambient
+ObjectTemplate.addTemplate S_che_wz11_rightpassenger_AmbientDamaged
+ObjectTemplate.addTemplate che_wz11_EntryPoint_rightpassenger
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 2/0/0 0/0/0
+ObjectTemplate.altSoldierExitPosition 2/0/1
+ObjectTemplate.seatInformation che_wz11_rightpassenger 0/0/0 0/0/0
+ObjectTemplate.seatAnimationSystem Objects/Vehicles/Common/Animations/3p_passenger_A_animSys.inc
+ObjectTemplate.altSoldierExitPosition 2/0/1
+ObjectTemplate.autoUseAbility 1
+ObjectTemplate.isOpenVehicle 1
+
+ObjectTemplate.activeSafe Sound S_che_wz11_rightpassenger_Ambient
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.activeSafe Sound S_che_wz11_rightpassenger_AmbientDamaged
+ObjectTemplate.modifiedByUser "armandoma"
+
+ObjectTemplate.create EntryPoint che_wz11_EntryPoint_rightpassenger
+ObjectTemplate.modifiedByUser "armandoma"
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setEntryRadius 3
+

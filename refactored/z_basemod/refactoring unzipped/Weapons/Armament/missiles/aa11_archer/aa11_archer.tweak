@@ -1,0 +1,65 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/4/10 10:26]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericProjectile aa11_archer
+include ../common_missiles.tweak
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 53
+ObjectTemplate.detonation.explosionRadius 4
+ObjectTemplate.detonation.explosionForce 10
+ObjectTemplate.detonation.explosionDamage 100
+ObjectTemplate.detonation.endEffectTemplate e_exp_air
+ObjectTemplate.detonation.useMMOnEndEffect 1
+rem ---EndComp ---
+rem ---BeginComp:SeekClosestTargetComp ---
+ObjectTemplate.createComponent SeekClosestTargetComp
+ObjectTemplate.seek.targetType TTHeat
+ObjectTemplate.seek.trackingDelay 0.05
+ObjectTemplate.seek.maxAngleLock 45
+ObjectTemplate.seek.maxDistLock 375
+ObjectTemplate.seek.directionBonus 0.8
+ObjectTemplate.seek.reLockTime 30
+rem ---EndComp ---
+rem ---BeginComp:DefaultFollowComp ---
+ObjectTemplate.createComponent DefaultFollowComp
+ObjectTemplate.follow.maxYaw 15
+ObjectTemplate.follow.maxPitch 15
+ObjectTemplate.follow.changePitch 1
+ObjectTemplate.follow.changeYaw 1
+ObjectTemplate.follow.minDist 10
+rem ---EndComp ---
+ObjectTemplate.geometry aa11_archer
+ObjectTemplate.setCollisionMesh aa11_archer
+ObjectTemplate.mapMaterial 0 metal 32
+ObjectTemplate.drag 1
+ObjectTemplate.mass 20
+ObjectTemplate.gravityModifier -2
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 53
+rem -------------------------------------
+ObjectTemplate.addTemplate S_aa11_archer_Looping
+ObjectTemplate.addTemplate e_missile_trail
+ObjectTemplate.setPosition 0/0/-1.48007
+rem -------------------------------------
+ObjectTemplate.material 53
+ObjectTemplate.damage 500
+ObjectTemplate.acceleration 300
+ObjectTemplate.maxSpeed 175
+
+ObjectTemplate.activeSafe Sound S_aa11_archer_Looping
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/rocket_engine_start_idle.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 6
+

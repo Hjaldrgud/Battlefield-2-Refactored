@@ -1,0 +1,41 @@
+ObjectTemplate.create Kit MEInsurgent_Engineer
+ObjectTemplate.geometry meinsurgent_kits
+ObjectTemplate.geometry.kit 3
+ObjectTemplate.geometry.dropGeom 12
+include ../common/common_kits_engineer.tweak
+ObjectTemplate.addTemplate meinsurgent_lt_mask
+ObjectTemplate.addTemplate meinsurgent_lt_nvg
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate RUPIS_Baghira
+rem ------------------3------------------
+ObjectTemplate.addTemplate RUSHT_saiga12
+rem ------------------4------------------
+ObjectTemplate.addTemplate USHGR_M67
+rem ------------------5------------------
+ObjectTemplate.addTemplate at_mine
+rem ------------------6------------------
+ObjectTemplate.addTemplate wrench
+rem ------------------7------------------
+ObjectTemplate.addTemplate nightvisiongoggles
+rem ------------------8------------------
+ObjectTemplate.addTemplate gasmask
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockMEIEngineer
+ObjectTemplate.addTemplate UnlockMEIEngineer2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockMEIEngineer
+ObjectTemplate.addTemplate ussht_Jackhammer
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockMEIEngineer2
+ObjectTemplate.addTemplate sasrif_mp7
+ObjectTemplate.replaceItem RUSHT_saiga12
+ObjectTemplate.replaceItem ussht_Jackhammer
+ObjectTemplate.unlockLevel 2

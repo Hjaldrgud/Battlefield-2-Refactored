@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm apc_wz551_SmokeLauncher
+
+include apc_wz551_SmokeLauncher.tweak
+

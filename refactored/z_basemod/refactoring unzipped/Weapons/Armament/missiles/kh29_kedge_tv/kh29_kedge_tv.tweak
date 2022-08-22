@@ -1,0 +1,64 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/4/10 10:26]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericProjectile kh29_kedge_tv
+include ../common_missiles.tweak
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 56
+ObjectTemplate.detonation.explosionRadius 20
+ObjectTemplate.detonation.explosionForce 25
+ObjectTemplate.detonation.explosionDamage 750
+ObjectTemplate.detonation.endEffectTemplate e_exp_Xlarge
+ObjectTemplate.detonation.useMMOnEndEffect 1
+rem ---EndComp ---
+rem ---BeginComp:SeekClosestTargetComp ---
+ObjectTemplate.createComponent SeekClosestTargetComp
+ObjectTemplate.seek.targetType TTUnique
+ObjectTemplate.seek.trackingDelay 0.01
+ObjectTemplate.seek.maxAngleLock 360
+ObjectTemplate.seek.maxDistLock 3000
+ObjectTemplate.seek.reLockTime 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultFollowComp ---
+ObjectTemplate.createComponent DefaultFollowComp
+ObjectTemplate.follow.maxYaw 1.5
+ObjectTemplate.follow.maxPitch 1.5
+ObjectTemplate.follow.changePitch 0.2
+ObjectTemplate.follow.changeYaw 0.2
+ObjectTemplate.follow.minDist 10
+rem ---EndComp ---
+ObjectTemplate.geometry kh29_kedge
+ObjectTemplate.setCollisionMesh kh29_kedge
+ObjectTemplate.mapMaterial 0 metal 32
+ObjectTemplate.drag 0.1
+ObjectTemplate.mass 500
+ObjectTemplate.gravityModifier 0.1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 56
+rem -------------------------------------
+ObjectTemplate.addTemplate S_kh29_kedge_tv_Looping
+ObjectTemplate.addTemplate e_missile_trail
+ObjectTemplate.setPosition 0/0/-2.0462
+rem -------------------------------------
+ObjectTemplate.material 56
+ObjectTemplate.damage 0
+ObjectTemplate.acceleration 300
+ObjectTemplate.maxSpeed 175
+
+ObjectTemplate.activeSafe Sound S_kh29_kedge_tv_Looping
+ObjectTemplate.modifiedByUser ljo
+ObjectTemplate.soundFilename "objects/weapons/armament/missiles/sounds/mono/rocket_engine_start_idle.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.85
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 6
+

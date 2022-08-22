@@ -1,0 +1,41 @@
+rem *** Generated with Bf2Editor.exe [created: 2004/10/24 17:15]
+ObjectTemplate.activeSafe GenericProjectile Smokeflare
+ObjectTemplate.creator LJO-1:ljo
+ObjectTemplate.modifiedByUser LJO
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.preCacheObject 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.material 38
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Smokeflare_Looping
+ObjectTemplate.addTemplate e_SmokeGrenade
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/20/0/0
+ObjectTemplate.material 38
+ObjectTemplate.tracerScaler 10
+ObjectTemplate.maxTracerScaler 50
+ObjectTemplate.tracerSizeModifier 5
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.damage 0
+
+ObjectTemplate.activeSafe Sound S_Smokeflare_Looping
+ObjectTemplate.modifiedByUser LJO
+

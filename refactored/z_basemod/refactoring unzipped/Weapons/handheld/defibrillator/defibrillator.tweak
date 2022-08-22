@@ -1,0 +1,208 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/1/4 12:10]
+ObjectTemplate.activeSafe GenericFireArm defibrillator
+ObjectTemplate.creator FLI-1:fli
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.castsDynamicShadow 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\Icons\Hud\icon_Defibrillator.tga
+ObjectTemplate.weaponHud.altWeaponIcon Ingame\Weapons\Icons\Hud\icon_Defibrillator_mini.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\Icons\Hud\Selection\Defibrillator.tga
+ObjectTemplate.weaponHud.specialAbilityIcon Ingame\Weapons\Icons\Hud\SpecialKitIcons\revive.tga
+ObjectTemplate.weaponHud.hudName "WEAPON_NAME_shockpaddles"
+ObjectTemplate.weaponHud.guiIndex 57
+ObjectTemplate.weaponHud.altGuiIndex 0
+ObjectTemplate.weaponHud.maxVisualDeviation 10
+ObjectTemplate.weaponHud.minVisualDeviation 10
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.showClips 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+rem ---EndComp ---
+rem ---BeginComp:Radio ---
+ObjectTemplate.createComponent Radio
+ObjectTemplate.Radio.failMessage recharging
+ObjectTemplate.Radio.useMessage AUTO_MOODGP_usingshockpaddles
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.fireLaunchDelay 0.3575
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInCameraDof 1
+rem ---EndComp ---
+rem ---BeginComp:ReplenishingAmmoComp ---
+ObjectTemplate.createComponent ReplenishingAmmoComp
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.instantReloadOnEnable 1
+ObjectTemplate.ammo.abilityCost 0.3
+ObjectTemplate.ammo.abilityMaterial 73
+ObjectTemplate.ammo.replenishingType RTHeal
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_WEAPON_HANDHELD_SHOCKPADDLES_CONTROLS_reviveTeamMates"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_WEAPON_HANDHELD_SHOCKPADDLES_CONTROLS_reviveTeamMates"
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.sound.noisy 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+ObjectTemplate.geometry defibrillator
+ObjectTemplate.setCollisionMesh defibrillator
+ObjectTemplate.mapMaterial 0 collisionmaterial 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.aiTemplate ai_equipment_defibrillator
+rem -------------------------------------
+ObjectTemplate.addTemplate S_defibrillator_Fire1P
+ObjectTemplate.addTemplate S_defibrillator_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_defibrillator_Fire3P
+ObjectTemplate.addTemplate S_defibrillator_BoltClick
+ObjectTemplate.addTemplate S_defibrillator_TriggerClick
+ObjectTemplate.addTemplate S_defibrillator_SwitchFireRate
+ObjectTemplate.addTemplate S_defibrillator_Reload1P
+ObjectTemplate.addTemplate S_defibrillator_Reload3P
+ObjectTemplate.addTemplate S_defibrillator_Deploy1P
+ObjectTemplate.addTemplate S_defibrillator_Deploy3P
+ObjectTemplate.addTemplate S_defibrillator_Zoom
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Handheld/defibrillator/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Handheld/defibrillator/AnimationSystem3p.inc
+ObjectTemplate.projectileTemplate defibrillator_Projectile
+ObjectTemplate.velocity 80
+ObjectTemplate.itemIndex 6
+ObjectTemplate.delayToUse 0.4
+
+ObjectTemplate.create GenericProjectile defibrillator_Projectile
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:ResurrectCollisionComp ---
+ObjectTemplate.createComponent ResurrectCollisionComp
+ObjectTemplate.collision.resurrectDamage 20000
+ObjectTemplate.collision.restoreHP 120
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.material 89
+rem -------------------------------------
+ObjectTemplate.addTemplate S_defibrillator_Projectile_Looping
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/0.035/0/0
+ObjectTemplate.material 89
+ObjectTemplate.damage 1000
+ObjectTemplate.damageMandownSoldiers 1
+
+ObjectTemplate.activeSafe Sound S_defibrillator_Fire1P
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/defibrillator/sounds/defibrillator_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.75
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/2/0/1/0/1/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_defibrillator_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/defibrillator/sounds/defibrillator_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.75
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/2/0/1/0/1/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_defibrillator_Fire3P
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/defibrillator/sounds/defibrillator_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.75
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/2/0/1/0/1/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 1
+ObjectTemplate.halfVolumeDistance 2
+
+ObjectTemplate.activeSafe Sound S_defibrillator_BoltClick
+ObjectTemplate.modifiedByUser mdo
+
+ObjectTemplate.activeSafe Sound S_defibrillator_TriggerClick
+ObjectTemplate.modifiedByUser mdo
+
+ObjectTemplate.activeSafe Sound S_defibrillator_SwitchFireRate
+ObjectTemplate.modifiedByUser mdo
+
+ObjectTemplate.activeSafe Sound S_defibrillator_Reload1P
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/defibrillator/sounds/reload_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_defibrillator_Reload3P
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/defibrillator/sounds/reload_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.8
+ObjectTemplate.halfVolumeDistance 1.6
+
+ObjectTemplate.activeSafe Sound S_defibrillator_Deploy1P
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/defibrillator/sounds/deploy_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.9
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_defibrillator_Deploy3P
+ObjectTemplate.modifiedByUser mdo
+ObjectTemplate.soundFilename "objects/weapons/handheld/defibrillator/sounds/deploy_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.4
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.8
+ObjectTemplate.halfVolumeDistance 1.6
+
+ObjectTemplate.activeSafe Sound S_defibrillator_Zoom
+ObjectTemplate.modifiedByUser mdo
+
+ObjectTemplate.activeSafe Sound S_defibrillator_Projectile_Looping
+ObjectTemplate.modifiedByUser mdo
+

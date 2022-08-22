@@ -1,0 +1,63 @@
+ObjectTemplate.create GenericProjectile art_blufor
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 44
+ObjectTemplate.detonation.explosionRadius 15
+ObjectTemplate.detonation.explosionForce 30
+ObjectTemplate.detonation.explosionDamage 900
+ObjectTemplate.detonation.detonateDistanceToTarget 5
+ObjectTemplate.detonation.endEffectTemplate e_exp_Xlarge
+ObjectTemplate.detonation.useMMOnEndEffect 1
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:FixedTargetComp ---
+ObjectTemplate.createComponent FixedTargetComp
+ObjectTemplate.seek.targetType TTUnique
+ObjectTemplate.seek.trackingDelay 0
+rem ---EndComp ---
+rem ---BeginComp:PreDestinedFollowComp ---
+ObjectTemplate.createComponent PreDestinedFollowComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.gravityModifier 5
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 44
+rem -------------------------------------
+ObjectTemplate.addTemplate S_USART_LW155_Barrel_Projectile_Looping
+ObjectTemplate.addTemplate e_artilleryshell_trail
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/60/0/0
+ObjectTemplate.material 44
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.minDamage 1
+ObjectTemplate.damage 3000
+
+ObjectTemplate.activeSafe Sound S_USART_LW155_Barrel_Projectile_Looping
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "objects/weapons/stationary/usart_lw155/sounds/artillery_projectile_01.wav,objects/weapons/stationary/usart_lw155/sounds/artillery_projectile_02.wav,objects/weapons/stationary/usart_lw155/sounds/artillery_projectile_03.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 0.7
+ObjectTemplate.reverbLevel 0
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.1/
+ObjectTemplate.minDistance 40
+ObjectTemplate.halfVolumeDistance 70

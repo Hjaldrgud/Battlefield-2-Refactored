@@ -1,0 +1,42 @@
+ObjectTemplate.create Kit seal_Medic
+ObjectTemplate.geometry seal_kits
+ObjectTemplate.geometry.kit 1
+ObjectTemplate.geometry.dropGeom 11
+ObjectTemplate.dropHeadwear helmet
+ObjectTemplate.addTemplate seal_lt_mask
+ObjectTemplate.addTemplate seal_lt_nvg
+include ../common/common_kits_medic.tweak
+
+rem --------------equipment--------------
+rem ------------------1------------------
+ObjectTemplate.addTemplate kni_knife
+rem ------------------2------------------
+ObjectTemplate.addTemplate USPIS_92FS
+rem ------------------3------------------
+ObjectTemplate.addTemplate usrif_m16a2
+rem ------------------4------------------
+ObjectTemplate.addTemplate USHGR_M67
+rem ------------------5------------------
+ObjectTemplate.addTemplate medikit
+rem ------------------6------------------
+ObjectTemplate.addTemplate defibrillator
+rem ------------------7------------------
+ObjectTemplate.addTemplate nightvisiongoggles
+rem ------------------8------------------
+ObjectTemplate.addTemplate gasmask
+rem ------------------9------------------
+ObjectTemplate.addTemplate ParachuteLauncher
+rem ---------------unlocks---------------
+ObjectTemplate.addTemplate UnlockSEALMedic
+ObjectTemplate.addTemplate UnlockSEALMedic2
+rem -------------------------------------
+
+ObjectTemplate.create ItemContainer UnlockSEALMedic
+ObjectTemplate.addTemplate usrif_sa80
+ObjectTemplate.unlockLevel 1
+
+ObjectTemplate.create ItemContainer UnlockSEALMedic2
+ObjectTemplate.addTemplate sasrif_g36e
+ObjectTemplate.replaceItem usrif_m16a2
+ObjectTemplate.replaceItem usrif_sa80
+ObjectTemplate.unlockLevel 2
